@@ -1,0 +1,116 @@
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\AutoMapper.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\AutoMapper.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\AutoMapper.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\AutoMapper.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\IOC.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Core.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Infrastructure.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Domain.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\WebCore.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\System.Web.Http.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\EntityFramework.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\bin\Debug\Data.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\IOC\IOC\obj\Debug\IOC.pdb

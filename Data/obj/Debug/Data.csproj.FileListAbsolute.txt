@@ -1,0 +1,39 @@
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll.config
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll.config
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll.config
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\Data.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.pdb

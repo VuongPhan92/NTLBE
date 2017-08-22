@@ -1,0 +1,420 @@
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\csc.exe
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\vbc.exe
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll.config
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Owin.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Cors.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebGrease.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\csc.exe
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\vbc.exe
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll.config
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Owin.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Cors.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebGrease.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.csprojResolveAssemblyReference.cache
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\AutoMapper.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\API\bin\AutoMapper.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\csc.exe
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Collections.Immutable.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Reflection.Metadata.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\vbc.exe
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe.config
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll.config
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Logging.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Web.Infrastructure.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Owin.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Cors.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebGrease.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\AutoMapper.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\bin\AutoMapper.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.csprojResolveAssemblyReference.cache
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\csc.exe
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\vbc.exe
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\API.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Owin.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Cors.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebGrease.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Core.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Infrastructure.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Data.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Domain.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\IOC.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Newtonsoft.Json.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.Web.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\SimpleInjector.Integration.WebApi.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Cors.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Net.Http.Formatting.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Helpers.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.WebHost.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Mvc.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Optimization.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Razor.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Antlr3.Runtime.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\System.Web.Http.Owin.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\bin\WebCore.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\API\obj\Debug\API.pdb

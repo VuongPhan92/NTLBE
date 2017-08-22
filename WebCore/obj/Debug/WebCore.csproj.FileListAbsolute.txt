@@ -1,0 +1,133 @@
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll.config
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Helpers.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Mvc.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Razor.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll.config
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Helpers.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Mvc.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Razor.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\AutoMapper.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\AutoMapper.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll.config
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\AutoMapper.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Helpers.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Mvc.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Razor.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\AutoMapper.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.xml
+E:\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\obj\Debug\WebCore.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\WebCore.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\AutoMapper.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Helpers.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Mvc.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.Razor.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Core.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Infrastructure.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Data.dll.config
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\Domain.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\AutoMapper.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.xml
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml

@@ -1,0 +1,20 @@
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.dll
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.pdb
+C:\Users\ntt\Desktop\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.csprojResolveAssemblyReference.cache
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.pdb
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.csprojResolveAssemblyReference.cache
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.dll
+C:\Users\vuphan\Downloads\ntlmercurial-master\ntlmercurial-master\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.pdb
+E:\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.csprojResolveAssemblyReference.cache
+E:\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.dll
+E:\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\bin\Debug\Vuong_Utils.pdb
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.dll
+C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Vuong_Utils\obj\Debug\Vuong_Utils.pdb

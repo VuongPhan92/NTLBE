@@ -31,8 +31,6 @@ public partial class Branch
 
     public string Name { get; set; }
 
-    public Nullable<int> Type { get; set; }
-
     public string Address { get; set; }
 
     public string Phone { get; set; }
@@ -45,7 +43,7 @@ public partial class Branch
 
     public Nullable<System.DateTime> CreatedDate { get; set; }
 
-    public string CreatedBy { get; set; }
+    public Nullable<int> CreatedBy { get; set; }
 
     public Nullable<System.DateTime> DeletedDate { get; set; }
 

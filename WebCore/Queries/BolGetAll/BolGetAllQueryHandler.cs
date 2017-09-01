@@ -5,13 +5,13 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllCustomerQueryHanler:IQueryHandler<GetAllCustomerQuery,IEnumerable<Customer>>
+    public class BolGetAllQueryHandler : IQueryHandler<BolGetAllQuery, IEnumerable<BillOfLanding>>
     {
        
-        public IEnumerable<Customer> Handle(GetAllCustomerQuery query)
+        public IEnumerable<BillOfLanding> Handle(BolGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
-            var result = uow.Repository<Customer>().GetAll();
+            var result = uow.Repository<BillOfLanding>().GetAll();
             uow.Dispose();
             return result;
         }

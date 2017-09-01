@@ -27,17 +27,17 @@ public partial class Customer
     }
 
 
-    public int CustomerId { get; set; }
+    public int Id { get; set; }
 
-    public string CustomerName { get; set; }
+    public string Name { get; set; }
 
-    public string CustomerPhone { get; set; }
+    public string Phone { get; set; }
 
-    public string CustomerIdNumber { get; set; }
+    public string IdNumber { get; set; }
 
     public Nullable<System.DateTime> CreatedDate { get; set; }
 
-    public string CreatedBy { get; set; }
+    public Nullable<int> CreatedBy { get; set; }
 
     public Nullable<System.DateTime> DeletedDate { get; set; }
 

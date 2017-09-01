@@ -5,9 +5,9 @@ using Infrastructure.Repository;
 
 namespace WebCore.Queries
 {
-    public class SearchCustomerQueryHandler : IQueryHandler<SearchCustomerQuery, PagedListResult<Customer>>
+    public class CustomerSearchQueryHandler : IQueryHandler<CustomerSearchQuery, PagedListResult<Customer>>
     {
-        public PagedListResult<Customer> Handle(SearchCustomerQuery query)
+        public PagedListResult<Customer> Handle(CustomerSearchQuery query)
         {
             using (var uow = new UnitOfWork<EF>())
             {

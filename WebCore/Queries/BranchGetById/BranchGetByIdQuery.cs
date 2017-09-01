@@ -3,7 +3,7 @@ using Infrastructure.Queries;
 
 namespace WebCore.Queries
 {
-    public class GetBranchByIdQuery : IQuery<Branch>
+    public class BranchGetByIdQuery : IQuery<Branch>
     {
         public int Id { get; set; }
     }

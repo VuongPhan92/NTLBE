@@ -1,9 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="NgocTrangModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="NgocTrangModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="NgocTrangModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="BillOfLandings">
       <EntityTypeMapping TypeName="NgocTrangModel.BillOfLanding">
         <MappingFragment StoreEntitySet="BillOfLanding">
+          <ScalarProperty Name="IsOnHand" ColumnName="IsOnHand" />
           <ScalarProperty Name="IsGuarantee" ColumnName="IsGuarantee" />
           <ScalarProperty Name="DeclareValue" ColumnName="DeclareValue" />
           <ScalarProperty Name="CollectInBehalf" ColumnName="CollectInBehalf" />
@@ -26,7 +53,7 @@
           <ScalarProperty Name="MerchandiseType" ColumnName="MerchandiseType" />
           <ScalarProperty Name="DeliveryType" ColumnName="DeliveryType" />
           <ScalarProperty Name="BolCode" ColumnName="BolCode" />
-          <ScalarProperty Name="BolId" ColumnName="BolId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -42,7 +69,6 @@
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
@@ -55,10 +81,10 @@
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="CustomerIdNumber" ColumnName="CustomerIdNumber" />
-          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
-          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
-          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="IdNumber" ColumnName="IdNumber" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -85,21 +111,19 @@
           <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="CalculationUnit" ColumnName="CalculationUnit" />
-          <ScalarProperty Name="Value" ColumnName="Value" />
           <ScalarProperty Name="MerchandiseType1" ColumnName="MerchandiseType" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Status">
-      <EntityTypeMapping TypeName="NgocTrangModel.Status">
-        <MappingFragment StoreEntitySet="Status">
+    <EntitySetMapping Name="Permissions">
+      <EntityTypeMapping TypeName="NgocTrangModel.Permission">
+        <MappingFragment StoreEntitySet="Permission">
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
-          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -115,20 +139,28 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <AssociationSetMapping Name="Account_Permission_Ref" TypeName="NgocTrangModel.Account_Permission_Ref" StoreEntitySet="Account_Permission_Ref">
+      <EndProperty Name="Permission">
+        <ScalarProperty Name="Id" ColumnName="PermissionId" />
+      </EndProperty>
+      <EndProperty Name="Account">
+        <ScalarProperty Name="Id" ColumnName="AccountId" />
+      </EndProperty>
+    </AssociationSetMapping>
     <AssociationSetMapping Name="Bol_Branch_Ref" TypeName="NgocTrangModel.Bol_Branch_Ref" StoreEntitySet="Bol_Branch_Ref">
       <EndProperty Name="Branch">
         <ScalarProperty Name="Id" ColumnName="BranchId" />
       </EndProperty>
       <EndProperty Name="BillOfLanding">
-        <ScalarProperty Name="BolId" ColumnName="BolId" />
+        <ScalarProperty Name="Id" ColumnName="BolId" />
       </EndProperty>
     </AssociationSetMapping>
     <AssociationSetMapping Name="Bol_Customer_Ref" TypeName="NgocTrangModel.Bol_Customer_Ref" StoreEntitySet="Bol_Customer_Ref">
       <EndProperty Name="Customer">
-        <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        <ScalarProperty Name="Id" ColumnName="CustomerId" />
       </EndProperty>
       <EndProperty Name="BillOfLanding">
-        <ScalarProperty Name="BolId" ColumnName="BolId" />
+        <ScalarProperty Name="Id" ColumnName="BolId" />
       </EndProperty>
     </AssociationSetMapping>
   </EntityContainerMapping>

@@ -29,7 +29,7 @@ public partial class BillOfLanding
     }
 
 
-    public int BolId { get; set; }
+    public int Id { get; set; }
 
     public string BolCode { get; set; }
 
@@ -61,7 +61,7 @@ public partial class BillOfLanding
 
     public Nullable<System.DateTime> CreatedDate { get; set; }
 
-    public string CreatedBy { get; set; }
+    public Nullable<int> CreatedBy { get; set; }
 
     public Nullable<System.DateTime> DeletedDate { get; set; }
 

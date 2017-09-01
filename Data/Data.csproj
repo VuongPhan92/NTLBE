@@ -52,6 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs">
+      <DependentUpon>NgocTrang_EF.tt</DependentUpon>
+    </Compile>
     <Compile Include="BillOfLanding.cs">
       <DependentUpon>NgocTrang_EF.tt</DependentUpon>
     </Compile>
@@ -82,6 +85,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>NgocTrang_EF.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Permission.cs">
+      <DependentUpon>NgocTrang_EF.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Status.cs">

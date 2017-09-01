@@ -1,10 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="NgocTrangModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Account_Permission_Ref">
+    <Key>
+      <PropertyRef Name="AccountId" />
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="PermissionId" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="BillOfLanding">
     <Key>
-      <PropertyRef Name="BolId" />
+      <PropertyRef Name="Id" />
     </Key>
-    <Property Name="BolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="BolCode" Type="nvarchar" MaxLength="30" />
     <Property Name="DeliveryType" Type="int" />
     <Property Name="MerchandiseType" Type="int" />
@@ -20,13 +40,14 @@
     <Property Name="Prepaid" Type="nvarchar" MaxLength="50" />
     <Property Name="Liabilities" Type="nvarchar" MaxLength="50" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
     <Property Name="MixValue" Type="nvarchar" MaxLength="100" />
     <Property Name="CollectInBehalf" Type="nvarchar" MaxLength="50" />
     <Property Name="DeclareValue" Type="nvarchar" MaxLength="50" />
     <Property Name="IsGuarantee" Type="bit" />
+    <Property Name="IsOnHand" Type="bit" />
   </EntityType>
   <EntityType Name="Bol_Branch_Ref">
     <Key>
@@ -50,27 +71,26 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
-    <Property Name="Type" Type="int" />
     <Property Name="Address" Type="nvarchar(max)" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
     <Property Name="BranchCode" Type="nchar" MaxLength="10" />
     <Property Name="Description" Type="nvarchar" MaxLength="50" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>
-      <PropertyRef Name="CustomerId" />
+      <PropertyRef Name="Id" />
     </Key>
-    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="CustomerName" Type="nvarchar" MaxLength="100" />
-    <Property Name="CustomerPhone" Type="nvarchar" MaxLength="20" />
-    <Property Name="CustomerIdNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="IdNumber" Type="nvarchar" MaxLength="20" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
@@ -83,7 +103,7 @@
     <Property Name="Description" Type="nvarchar(max)" />
     <Property Name="Value" Type="int" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
@@ -93,23 +113,33 @@
     </Key>
     <Property Name="Id" Type="int" Nullable="false" />
     <Property Name="MerchandiseType" Type="nvarchar" MaxLength="50" />
-    <Property Name="Value" Type="money" />
     <Property Name="CalculationUnit" Type="nchar" MaxLength="10" />
     <Property Name="Description" Type="nvarchar(max)" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" Nullable="false" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="Status">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="StatusName" Type="nvarchar" MaxLength="50" />
-    <Property Name="StatusDescription" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
@@ -138,6 +168,30 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
     <Property Name="StatusId" Type="int" />
     <Property Name="Total" Type="money" />
   </EntityType>
+  <Association Name="FK_Account_Permission_Ref_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="Account_Permission_Ref" Type="Self.Account_Permission_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account_Permission_Ref">
+        <PropertyRef Name="AccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_Permission_Ref_Permission">
+    <End Role="Permission" Type="Self.Permission" Multiplicity="1" />
+    <End Role="Account_Permission_Ref" Type="Self.Account_Permission_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account_Permission_Ref">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_BillOfLanding_DeliveryType">
     <End Role="DeliveryType" Type="Self.DeliveryType" Multiplicity="0..1" />
     <End Role="BillOfLanding" Type="Self.BillOfLanding" Multiplicity="*" />
@@ -179,7 +233,7 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
     <End Role="Bol_Branch_Ref" Type="Self.Bol_Branch_Ref" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="BillOfLanding">
-        <PropertyRef Name="BolId" />
+        <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Bol_Branch_Ref">
         <PropertyRef Name="BolId" />
@@ -203,7 +257,7 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
     <End Role="Bol_Customer_Ref" Type="Self.Bol_Customer_Ref" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="BillOfLanding">
-        <PropertyRef Name="BolId" />
+        <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Bol_Customer_Ref">
         <PropertyRef Name="BolId" />
@@ -215,7 +269,7 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
     <End Role="Bol_Customer_Ref" Type="Self.Bol_Customer_Ref" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Customer">
-        <PropertyRef Name="CustomerId" />
+        <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Bol_Customer_Ref">
         <PropertyRef Name="CustomerId" />
@@ -223,6 +277,8 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="NgocTrangModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Account_Permission_Ref" EntityType="Self.Account_Permission_Ref" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BillOfLanding" EntityType="Self.BillOfLanding" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Bol_Branch_Ref" EntityType="Self.Bol_Branch_Ref" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Bol_Customer_Ref" EntityType="Self.Bol_Customer_Ref" Schema="dbo" store:Type="Tables" />
@@ -230,6 +286,7 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
     <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DeliveryType" EntityType="Self.DeliveryType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MerchandiseType" EntityType="Self.MerchandiseType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Permission" EntityType="Self.Permission" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BillView" EntityType="Self.BillView" store:Type="Views" store:Schema="dbo">
@@ -244,6 +301,14 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
     [BillView].[Total] AS [Total]
     FROM [dbo].[BillView] AS [BillView]</DefiningQuery>
     </EntitySet>
+    <AssociationSet Name="FK_Account_Permission_Ref_Account" Association="Self.FK_Account_Permission_Ref_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Account_Permission_Ref" EntitySet="Account_Permission_Ref" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_Permission_Ref_Permission" Association="Self.FK_Account_Permission_Ref_Permission">
+      <End Role="Permission" EntitySet="Permission" />
+      <End Role="Account_Permission_Ref" EntitySet="Account_Permission_Ref" />
+    </AssociationSet>
     <AssociationSet Name="FK_BillOfLanding_DeliveryType" Association="Self.FK_BillOfLanding_DeliveryType">
       <End Role="DeliveryType" EntitySet="DeliveryType" />
       <End Role="BillOfLanding" EntitySet="BillOfLanding" />

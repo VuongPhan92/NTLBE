@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllStatusCodeQuery : IQuery<IEnumerable<Status>>
+    public class CustomerGetAllQuery : IQuery<IEnumerable<Customer>>
     {
+
     }
 }

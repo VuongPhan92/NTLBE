@@ -4,8 +4,7 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllCustomerQuery:IQuery<IEnumerable<Customer>>
+    public class DeliveryTypeGetAllQuery : IQuery<IEnumerable<DeliveryType>>
     {
-
     }
 }

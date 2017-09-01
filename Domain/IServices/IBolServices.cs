@@ -9,5 +9,6 @@ namespace Domain.IServices
         IEnumerable<BillOfLanding> GetAllBol();
         void CreateNewBol(BolVM command,CustomerVM subComamnd);
         List<Customer> ValidateCustomerInfo(BillOfLanding bol, CustomerVM subComamnd);
+        void UpdateStatus(int bolId);
     }
 }

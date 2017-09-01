@@ -9,17 +9,17 @@ namespace WebCore.Services
 {
     public class DeliveryTypeServices : IService<DeliveryType>, IDeliveryTypeServices
     {
-        private readonly IQueryHandler<GetAllDeliveryTypeQuery, IEnumerable<DeliveryType>> getAllDeliveryTypeHandler;
+        private readonly IQueryHandler<DeliveryTypeGetAllQuery, IEnumerable<DeliveryType>> getAllDeliveryTypeHandler;
 
         public DeliveryTypeServices(
-            IQueryHandler<GetAllDeliveryTypeQuery, IEnumerable<DeliveryType>> _getAllDeliveryTypeHandler
+            IQueryHandler<DeliveryTypeGetAllQuery, IEnumerable<DeliveryType>> _getAllDeliveryTypeHandler
         )
         {
             getAllDeliveryTypeHandler = _getAllDeliveryTypeHandler; 
         }
         public IEnumerable<DeliveryType> GetAllDeliveryType()
         {
-            return getAllDeliveryTypeHandler.Handle(new GetAllDeliveryTypeQuery { });
+            return getAllDeliveryTypeHandler.Handle(new DeliveryTypeGetAllQuery { });
         }
 
     

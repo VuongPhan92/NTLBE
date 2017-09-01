@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllStatusCodeQueryHandler : IQueryHandler<GetAllStatusCodeQuery, IEnumerable<Status>>
+    public class StatusCodeGetAllQueryHandler : IQueryHandler<StatusCodeGetAllQuery, IEnumerable<Status>>
     {
-        public IEnumerable<Status> Handle(GetAllStatusCodeQuery query)
+        public IEnumerable<Status> Handle(StatusCodeGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
             var result = uow.Repository<Status>().GetAll();

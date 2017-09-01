@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllMerchandiseTypeQueryHandler : IQueryHandler<GetAllMerchandiseTypeQuery, IEnumerable<MerchandiseType>>
+    public class MerchandiseTypeGetAllQueryHandler : IQueryHandler<MerchandiseTypeGetAllQuery, IEnumerable<MerchandiseType>>
     {
-        public IEnumerable<MerchandiseType> Handle(GetAllMerchandiseTypeQuery query)
+        public IEnumerable<MerchandiseType> Handle(MerchandiseTypeGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
             var result = uow.Repository<MerchandiseType>().GetAll();

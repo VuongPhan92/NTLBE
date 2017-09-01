@@ -7,46 +7,37 @@ using Infrastructure.Queries;
 using System.Collections.Generic;
 using WebCore.Command;
 using WebCore.Queries;
+using System;
 
 namespace WebCore.Services
 {
     public class CustomerServices : IService<Customer>, ICustomerServices
     {
-        private readonly IQueryHandler<GetAllCustomerQuery, IEnumerable<Customer>> getAllCustomerHandler;
-        private readonly IQueryHandler<SearchCustomerQuery, PagedListResult<Customer>> searchCustomerdHandler;
-        private readonly IQueryHandler<GetCustomerByIdQuery, Customer> getCustomerByIdHandler;
-        private readonly ICommandHandler<AddCustomerCommand> addCustomerHandler;
+        private readonly IQueryHandler<CustomerGetAllQuery, IEnumerable<Customer>> getAllCustomerHandler;
+        private readonly IQueryHandler<CustomerSearchQuery, PagedListResult<Customer>> searchCustomerdHandler;
 
-        public CustomerServices(IQueryHandler<GetAllCustomerQuery, IEnumerable<Customer>> _getAllCustomerHandler,
-                  IQueryHandler<SearchCustomerQuery, PagedListResult<Customer>> _searchCustomerdHandler,
-                  IQueryHandler<GetCustomerByIdQuery, Customer> _getCustomerByIdHandler,
-                    ICommandHandler<AddCustomerCommand> _addCustomerHandler
+        public CustomerServices(IQueryHandler<CustomerGetAllQuery, IEnumerable<Customer>> _getAllCustomerHandler,
+                  IQueryHandler<CustomerSearchQuery, PagedListResult<Customer>> _searchCustomerdHandler
             )
         {
             getAllCustomerHandler = _getAllCustomerHandler;
             searchCustomerdHandler = _searchCustomerdHandler;
-            addCustomerHandler = _addCustomerHandler;
-            getCustomerByIdHandler = _getCustomerByIdHandler;
         }
+
+        public void AddCustomer(string name, string phone, string idNumber)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Customer> GetAllCustomer()
         {
-            return getAllCustomerHandler.Handle(new GetAllCustomerQuery { });
+            return getAllCustomerHandler.Handle(new CustomerGetAllQuery { });
         }
         public PagedListResult<Customer> SearchCustomer(SearchQuery<Customer> searchQuery)
         {
-            return searchCustomerdHandler.Handle(new SearchCustomerQuery { SearchQuery = searchQuery });
+            return searchCustomerdHandler.Handle(new CustomerSearchQuery { SearchQuery = searchQuery });
         }
-        public void AddCustomer(string name,string phone,string idNumber)
-        {
-            Customer customer = new Customer();
-            customer.CustomerName = name;
-            customer.CustomerPhone = phone;
-            customer.CustomerIdNumber = idNumber;
-            addCustomerHandler.Handle(new AddCustomerCommand {Customer= customer});       
-        }
-        public Customer GetCustomerById (int customerId)
-        {
-            return getCustomerByIdHandler.Handle(new GetCustomerByIdQuery { Id = customerId });
-        }
+      
+       
     }
 }

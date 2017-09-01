@@ -4,7 +4,7 @@ using Infrastructure.Queries;
 
 namespace WebCore.Queries
 {
-    public class SearchCustomerQuery:IQuery<PagedListResult<Customer>>
+    public class CustomerSearchQuery : IQuery<PagedListResult<Customer>>
     {
         public SearchQuery<Customer> SearchQuery { get; set; }
     }

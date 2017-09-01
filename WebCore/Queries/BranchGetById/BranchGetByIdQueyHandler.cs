@@ -4,9 +4,9 @@ using Infrastructure.Repository;
 
 namespace WebCore.Queries.GetBranchById
 {
-    public class GetBranchByIdQueryHandler : IQueryHandler<GetBranchByIdQuery, Branch>
+    public class BranchGetByIdQueyHandler : IQueryHandler<BranchGetByIdQuery, Branch>
     {
-        public Branch Handle(GetBranchByIdQuery query)
+        public Branch Handle(BranchGetByIdQuery query)
         {
             var uow = new UnitOfWork<EF>();
             var result = uow.Repository<Branch>().Get(query.Id);

@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllDeliveryTypeQueryHandler : IQueryHandler<GetAllDeliveryTypeQuery, IEnumerable<DeliveryType>>
+    public class DeliveryTypeGetAllQueryHandler : IQueryHandler<DeliveryTypeGetAllQuery, IEnumerable<DeliveryType>>
     {
-        public IEnumerable<DeliveryType> Handle(GetAllDeliveryTypeQuery query)
+        public IEnumerable<DeliveryType> Handle(DeliveryTypeGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
             var result = uow.Repository<DeliveryType>().GetAll();

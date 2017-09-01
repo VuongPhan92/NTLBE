@@ -94,29 +94,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command\AddCustomer\AddCustomerCommand.cs" />
-    <Compile Include="Command\AddCustomer\AddCustomerCommandHandler.cs" />
     <Compile Include="Command\BolAdd\BolAddCommand.cs" />
     <Compile Include="Command\BolAdd\BolAddCommandHandler.cs" />
-    <Compile Include="Queries\GetAllBranch\GetAllBranchQuery.cs" />
-    <Compile Include="Queries\GetAllBol\GetAllBolQueryHandler.cs" />
-    <Compile Include="Queries\GetAllBol\GetAllBolQuery.cs" />
+    <Compile Include="Command\BolStatusUpdate\BolStatusUpdateCommand.cs" />
+    <Compile Include="Command\BolStatusUpdate\BolStatusUpdateCommandHandler.cs" />
+    <Compile Include="Queries\BranchGetAll\BranchGetAllQuery.cs" />
+    <Compile Include="Queries\BolGetAll\BolGetAllQueryHandler.cs" />
+    <Compile Include="Queries\BolGetAll\BolGetAllQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queries\GetAllBranch\GetAllBranchQueryHandler.cs" />
-    <Compile Include="Queries\GetAllCustomer\GetAllCustomerQuery.cs" />
-    <Compile Include="Queries\GetAllCustomer\GetAllCustomerQueryHanler.cs" />
-    <Compile Include="Queries\GetAllDeliveryType\GetAllDeliveryTypeQueryHandler.cs" />
-    <Compile Include="Queries\GetAllMerchandiseType\GetAllMerchandiseTypeQueryHandler.cs" />
-    <Compile Include="Queries\GetAllMerchandiseType\GetAllMerchandiseTypeQuery.cs" />
-    <Compile Include="Queries\GetAllDeliveryType\GetAllDeliveryTypeQuery.cs" />
-    <Compile Include="Queries\GetAllStatusCode\GetAllStatusCodeQueryHandler.cs" />
-    <Compile Include="Queries\GetAllStatusCode\GetAllStatusCodeQuery.cs" />
-    <Compile Include="Queries\GetBranchById\GetBranchByIdQuery.cs" />
-    <Compile Include="Queries\GetBranchById\GetBranchByIdQueryHandler.cs" />
-    <Compile Include="Queries\GetCustomerByIdQuery.cs" />
-    <Compile Include="Queries\GetCustomerByIdQueryHandler.cs" />
-    <Compile Include="Queries\SearchCustomer\SearchCustomerQuery.cs" />
-    <Compile Include="Queries\SearchCustomer\SearchCustomerQueryHandler.cs" />
+    <Compile Include="Queries\BranchGetAll\BranchGetAllQueryHandler.cs" />
+    <Compile Include="Queries\CustomerGetAll\CustomerGetAllQuery.cs" />
+    <Compile Include="Queries\CustomerGetAll\CustomerGetAllQueryHandler.cs" />
+    <Compile Include="Queries\DeliveryTypeGetAll\DeliveryTypeGetAllQueryHandler.cs" />
+    <Compile Include="Queries\MerchandiseTypeGetAll\MerchandiseTypeGetAllQueryHandler.cs" />
+    <Compile Include="Queries\MerchandiseTypeGetAll\MerchandiseTypeGetAllQuery.cs" />
+    <Compile Include="Queries\DeliveryTypeGetAll\DeliveryTypeGetAllQuery.cs" />
+    <Compile Include="Queries\StatusCodeGetAll\StatusCodeGetAllQueryHandler.cs" />
+    <Compile Include="Queries\StatusCodeGetAll\StatusCodeGetAllQuery.cs" />
+    <Compile Include="Queries\BranchGetById\BranchGetByIdQuery.cs" />
+    <Compile Include="Queries\BranchGetById\BranchGetByIdQueyHandler.cs" />
+    <Compile Include="Queries\CustomterSearch\CustomerSearchQuery.cs" />
+    <Compile Include="Queries\CustomterSearch\CustomerSearchQueryHandler.cs" />
+    <Compile Include="Services\ActivityService.cs" />
     <Compile Include="Services\BolServices.cs" />
     <Compile Include="Services\BranchServices.cs" />
     <Compile Include="Services\CustomerServices.cs" />
@@ -146,7 +145,10 @@
       <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Command\CustomerAdd\" />
+    <Folder Include="Queries\BolSearch\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

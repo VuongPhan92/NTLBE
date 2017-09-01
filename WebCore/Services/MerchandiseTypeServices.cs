@@ -9,10 +9,10 @@ namespace WebCore.Services
 {
     public class MerchandiseTypeServices : IService<MerchandiseType>, IMerchandiseTypeServices
     {
-        private readonly IQueryHandler<GetAllMerchandiseTypeQuery, IEnumerable<MerchandiseType>> getAllMerchandiseTypeHandler;
+        private readonly IQueryHandler<MerchandiseTypeGetAllQuery, IEnumerable<MerchandiseType>> getAllMerchandiseTypeHandler;
 
         public MerchandiseTypeServices(
-            IQueryHandler<GetAllMerchandiseTypeQuery, IEnumerable<MerchandiseType>> _getAllMerchandiseTypeHandler
+            IQueryHandler<MerchandiseTypeGetAllQuery, IEnumerable<MerchandiseType>> _getAllMerchandiseTypeHandler
         )
         {
             getAllMerchandiseTypeHandler = _getAllMerchandiseTypeHandler;
@@ -20,8 +20,7 @@ namespace WebCore.Services
 
         public IEnumerable<MerchandiseType> GetAllMerchandiseType()
         {
-            var logger = new ActivityLogForQueryHandlerDecorator<GetAllMerchandiseTypeQuery, IEnumerable<MerchandiseType>>(getAllMerchandiseTypeHandler);
-            return logger.Handle(new GetAllMerchandiseTypeQuery { });
+            return getAllMerchandiseTypeHandler.Handle(new MerchandiseTypeGetAllQuery { });
         }
     }
 }

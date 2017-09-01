@@ -31,15 +31,13 @@ public partial class MerchandiseType
 
     public string MerchandiseType1 { get; set; }
 
-    public Nullable<decimal> Value { get; set; }
-
     public string CalculationUnit { get; set; }
 
     public string Description { get; set; }
 
     public System.DateTime CreatedDate { get; set; }
 
-    public string CreatedBy { get; set; }
+    public Nullable<int> CreatedBy { get; set; }
 
     public Nullable<System.DateTime> DeletedDate { get; set; }
 

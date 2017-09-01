@@ -37,7 +37,7 @@ public partial class DeliveryType
 
     public Nullable<System.DateTime> CreatedDate { get; set; }
 
-    public string CreatedBy { get; set; }
+    public Nullable<int> CreatedBy { get; set; }
 
     public Nullable<System.DateTime> DeletedDate { get; set; }
 

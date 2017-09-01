@@ -80,7 +80,6 @@ namespace API.Controllers
 
         #region HandleRequest
         //GET: NgocTrang/Api/Bol/GetComponent
-        //Get data source for bill of landing components
         [Route("GetComponent")]
         [HttpGet]
         public HttpResponseMessage GetComponent()
@@ -108,15 +107,37 @@ namespace API.Controllers
             }
         }
 
-        //Get NgocTrang/Api/Bol/GetAllBol
-        //Get all bill of landing info 
+        //GET: NgocTrang/Api/Bol/GetStatus
+        [Route("GetStatus")]
+        [HttpGet]
+        public HttpResponseMessage GetStatus()
+        {
+            var statusCodeList = iStatusServices.GetAllStatusCode();
+            try
+            {
+                if (statusCodeList != null)
+                {
+                    return GetResponse(statusCodeList, HttpStatusCode.OK);
+                }
+                else
+                {
+                    return GetResponse("Cannot get Status codes", HttpStatusCode.NotFound);
+                }
+            }
+            catch
+            {
+                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
+            }
+        }
+
+        //GET NgocTrang/Api/Bol/GetAllBol   
         [Route("GetAllBol")]
         [HttpGet]
         public HttpResponseMessage GetAllBol(string from = "", string to = "")
         {       
             try
             {
-                if (iBolServices.GetAllBol()!=null)
+                if (iBolServices.GetAllBol().ToList().Count() >0)
                 {
                     return GetResponse(iBolServices.GetAllBol(), HttpStatusCode.OK);
                 }
@@ -132,7 +153,6 @@ namespace API.Controllers
         }
 
         //POST: NgocTrang/Api/Bol/Add
-        //Add single item
         [Route("Add")]
         [HttpPost]
         public HttpResponseMessage Add(TransactionVM obj)
@@ -155,7 +175,21 @@ namespace API.Controllers
             }
         }
         #endregion HandleRequest
-
+        //POST: NgocTrang/Api/Bol/UpdateStatus
+        [Route("UpdateStatus")]
+        [HttpPost]
+        public HttpResponseMessage UpdateStatus(int bolId)
+        {
+            try
+            {
+                iBolServices.UpdateStatus(bolId);
+                return PostResponse(HttpStatusCode.OK);
+            }
+            catch (Exception)
+            {
+                return PostResponse(HttpStatusCode.NotAcceptable);
+            }
+        }
         #region Glue code
         private string CreateMerchandiseId(string input,int index, int total)
         {

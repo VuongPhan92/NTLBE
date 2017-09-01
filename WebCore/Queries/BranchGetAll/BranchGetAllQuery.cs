@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllBranchQuery : IQuery<IEnumerable<Branch>>
+    public class BranchGetAllQuery : IQuery<IEnumerable<Branch>>
     {
 
     }

@@ -5,10 +5,9 @@ using System.Collections.Generic;
 
 namespace WebCore.Queries
 {
-    public class GetAllBranchQueryHandler : IQueryHandler<GetAllBranchQuery, IEnumerable<Branch>>
+    public class BranchGetAllQueryHandler : IQueryHandler<BranchGetAllQuery, IEnumerable<Branch>>
     {
-      
-        public IEnumerable<Branch> Handle(GetAllBranchQuery query)
+        public IEnumerable<Branch> Handle(BranchGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
             var result = uow.Repository<Branch>().GetAll();

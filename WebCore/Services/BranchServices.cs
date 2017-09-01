@@ -9,11 +9,11 @@ namespace WebCore.Services
 {
     public class BranchServices : IService<Branch>, IBranchServices
     {
-        private readonly IQueryHandler<GetAllBranchQuery, IEnumerable<Branch>> getAllBranchHander;
-        private readonly IQueryHandler<GetBranchByIdQuery, Branch> getBranchByIdHandler;
+        private readonly IQueryHandler<BranchGetAllQuery, IEnumerable<Branch>> getAllBranchHander;
+        private readonly IQueryHandler<BranchGetByIdQuery, Branch> getBranchByIdHandler;
         public BranchServices(
-            IQueryHandler<GetAllBranchQuery, IEnumerable<Branch>> _getAllBranchHander,
-            IQueryHandler<GetBranchByIdQuery, Branch> _getBranchByIdHandler
+            IQueryHandler<BranchGetAllQuery, IEnumerable<Branch>> _getAllBranchHander,
+            IQueryHandler<BranchGetByIdQuery, Branch> _getBranchByIdHandler
             )
         {
             getAllBranchHander = _getAllBranchHander;
@@ -23,10 +23,10 @@ namespace WebCore.Services
         public IEnumerable<Branch> GetAllBranches()
         {
             //var logger = new ActivityLogForQueryHandlerDecorator<GetAllBranchQuery, IEnumerable<Branch>>(getAllBranchHander);
-            return getAllBranchHander.Handle(new GetAllBranchQuery { });
+            return getAllBranchHander.Handle(new BranchGetAllQuery { });
         }
         public Branch GetBranchById(int id) {
-            return getBranchByIdHandler.Handle(new GetBranchByIdQuery { Id = id });
+            return getBranchByIdHandler.Handle(new BranchGetByIdQuery { Id = id });
         }
     }
 }

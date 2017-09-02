@@ -46,3 +46,15 @@ C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\P
 C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Core\obj\Debug\Core.dll
 C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Core.Infrastructure\Core\obj\Debug\Core.pdb
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\Core.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\Core.pdb
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\SimpleInjector.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\bin\Debug\SimpleInjector.xml
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\obj\Debug\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Core.Infrastructure\Core\obj\Debug\Core.pdb

@@ -5,22 +5,22 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="7c31993f27bc4a7fad5e934684b798c8" Name="Diagram1" ZoomLevel="81">
-        <EntityTypeShape EntityType="NgocTrangModel.Status" Width="1.5" PointX="0.75" PointY="8.25" />
-        <EntityTypeShape EntityType="NgocTrangModel.Account" Width="1.5" PointX="10.75" PointY="1" />
-        <EntityTypeShape EntityType="NgocTrangModel.BillOfLanding" Width="1.5" PointX="6" PointY="3.875" />
-        <EntityTypeShape EntityType="NgocTrangModel.Branch" Width="1.5" PointX="8.25" PointY="7.25" />
-        <EntityTypeShape EntityType="NgocTrangModel.Customer" Width="1.5" PointX="8.25" PointY="3.75" />
-        <EntityTypeShape EntityType="NgocTrangModel.DeliveryType" Width="1.5" PointX="3.75" PointY="3.25" />
-        <EntityTypeShape EntityType="NgocTrangModel.MerchandiseType" Width="1.5" PointX="3.75" PointY="6.875" />
-        <EntityTypeShape EntityType="NgocTrangModel.Permission" Width="1.5" PointX="13" PointY="1" />
-        <EntityTypeShape EntityType="NgocTrangModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NgocTrangModel.Account" Width="1.5" PointX="7.75" PointY="2.125" />
+        <EntityTypeShape EntityType="NgocTrangModel.BillOfLanding" Width="1.5" PointX="3" PointY="2.5" />
+        <EntityTypeShape EntityType="NgocTrangModel.Branch" Width="1.5" PointX="5.25" PointY="2.375" />
+        <EntityTypeShape EntityType="NgocTrangModel.Customer" Width="1.5" PointX="5.25" PointY="6.5" />
+        <EntityTypeShape EntityType="NgocTrangModel.DeliveryType" Width="1.5" PointX="0.75" PointY="4.375" />
+        <EntityTypeShape EntityType="NgocTrangModel.MerchandiseType" Width="1.5" PointX="0.75" PointY="8" />
+        <EntityTypeShape EntityType="NgocTrangModel.Permission" Width="1.5" PointX="10" PointY="2.25" />
+        <EntityTypeShape EntityType="NgocTrangModel.Status" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NgocTrangModel.sysdiagram" Width="1.5" PointX="7.75" PointY="6" />
         <AssociationConnector Association="NgocTrangModel.FK_BillOfLanding_DeliveryType" />
         <AssociationConnector Association="NgocTrangModel.FK_BillOfLanding_MerchandiseType" />
         <AssociationConnector Association="NgocTrangModel.FK_BillOfLanding_Status" />
         <AssociationConnector Association="NgocTrangModel.Account_Permission_Ref" />
         <AssociationConnector Association="NgocTrangModel.Bol_Branch_Ref" />
         <AssociationConnector Association="NgocTrangModel.Bol_Customer_Ref" />
-        </Diagram>
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

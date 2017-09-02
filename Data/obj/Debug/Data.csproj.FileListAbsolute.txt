@@ -38,3 +38,13 @@ C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\P
 C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.dll
 C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.pdb
 C:\Users\admin\Documents\_Source\New folder\Pasv3012-ntlmercurial-ff981c788c00\Pasv3012-ntlmercurial-ff981c788c00\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\Data.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\obj\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\obj\Debug\Data.pdb

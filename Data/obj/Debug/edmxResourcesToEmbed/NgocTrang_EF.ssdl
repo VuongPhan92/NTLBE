@@ -72,7 +72,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
     <Property Name="Address" Type="nvarchar(max)" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
     <Property Name="BranchCode" Type="nchar" MaxLength="10" />
     <Property Name="Description" Type="nvarchar" MaxLength="50" />
@@ -136,8 +136,8 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="50" />
-    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="50" />
+    <Property Name="StatusDescription" Type="nvarchar(max)" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" />
     <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />

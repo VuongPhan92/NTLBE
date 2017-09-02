@@ -11,7 +11,10 @@ namespace WebCore.Queries
         public IEnumerable<BillOfLanding> Handle(BolGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
-            var result = uow.Repository<BillOfLanding>().GetAll();
+            string[] test = new string[2];
+            test[0] = "Branch";
+            test[1] = "Customer";
+            var result = uow.Repository<BillOfLanding>().GetAll("Branches,Customers");
             uow.Dispose();
             return result;
         }

@@ -1,19 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="NgocTrangModelStoreContainer" CdmEntityContainer="Entities">
-    <EntitySetMapping Name="Status">
-      <EntityTypeMapping TypeName="NgocTrangModel.Status">
-        <MappingFragment StoreEntitySet="Status">
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
-          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="NgocTrangModel.Account">
         <MappingFragment StoreEntitySet="Account">
@@ -124,6 +111,19 @@
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="NgocTrangModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

@@ -146,9 +146,9 @@ namespace API.Controllers
                     return GetResponse("Cannot find all bills of landing", HttpStatusCode.NotFound);
                 }
             }
-            catch 
+            catch(Exception e )
             {
-                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
+                return GetResponse(e.Message, HttpStatusCode.NotImplemented);
             }
         }
 

@@ -1,4 +1,5 @@
 ﻿using Data;
+using Domain.ViewModels;
 using System.Collections.Generic;
 
 namespace Domain.IServices
@@ -7,5 +8,7 @@ namespace Domain.IServices
     {
         IEnumerable<Branch> GetAllBranches();
         Branch GetBranchById(int id);
+        void AddBranch(BranchVM branchVM);
+
     }
 }

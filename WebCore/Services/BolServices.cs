@@ -67,8 +67,10 @@ namespace WebCore.Services
             //Many to Many relationship handle
             var branchFrom = new Branch() { Id = command.BolFromId };
             var branchTo = new Branch() { Id = command.BolToId };
-            var customerList =  ValidateCustomerInfo(bol, subCommand);                
+            var customerList =  ValidateCustomerInfo(bol, subCommand);
             //End
+            bol.Start = command.Start;
+            bol.Contact = command.Contact;
             bol.AdditionalFee = command.AdditionalFee;
             bol.BolCode = command.BolCode;
             bol.CreatedDate = System.DateTime.Now;

@@ -17,6 +17,8 @@
     <EntitySetMapping Name="BillOfLandings">
       <EntityTypeMapping TypeName="NgocTrangModel.BillOfLanding">
         <MappingFragment StoreEntitySet="BillOfLanding">
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
           <ScalarProperty Name="IsOnHand" ColumnName="IsOnHand" />
           <ScalarProperty Name="IsGuarantee" ColumnName="IsGuarantee" />
           <ScalarProperty Name="DeclareValue" ColumnName="DeclareValue" />

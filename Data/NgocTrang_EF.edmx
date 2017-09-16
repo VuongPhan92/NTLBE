@@ -53,6 +53,8 @@
           <Property Name="DeclareValue" Type="nvarchar" MaxLength="50" />
           <Property Name="IsGuarantee" Type="bit" />
           <Property Name="IsOnHand" Type="bit" />
+          <Property Name="Start" Type="int" />
+          <Property Name="Contact" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Bol_Branch_Ref">
           <Key>
@@ -157,21 +159,6 @@
           <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
-        </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="BillView">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Create date" Type="datetime2" Precision="7" />
-          <Property Name="From" Type="nvarchar" MaxLength="50" />
-          <Property Name="Sender" Type="nvarchar" MaxLength="100" />
-          <Property Name="To" Type="nvarchar" MaxLength="50" />
-          <Property Name="Receiver" Type="nvarchar" MaxLength="100" />
-          <Property Name="StatusId" Type="int" />
-          <Property Name="Total" Type="money" />
         </EntityType>
         <Association Name="FK_Account_Permission_Ref_Account">
           <End Role="Account" Type="Self.Account" Multiplicity="1" />
@@ -294,18 +281,6 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
           <EntitySet Name="Permission" EntityType="Self.Permission" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="BillView" EntityType="Self.BillView" store:Type="Views" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [BillView].[Id] AS [Id], 
-    [BillView].[Create date] AS [Create date], 
-    [BillView].[From] AS [From], 
-    [BillView].[Sender] AS [Sender], 
-    [BillView].[To] AS [To], 
-    [BillView].[Receiver] AS [Receiver], 
-    [BillView].[StatusId] AS [StatusId], 
-    [BillView].[Total] AS [Total]
-    FROM [dbo].[BillView] AS [BillView]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK_Account_Permission_Ref_Account" Association="Self.FK_Account_Permission_Ref_Account">
             <End Role="Account" EntitySet="Account" />
             <End Role="Account_Permission_Ref" EntitySet="Account_Permission_Ref" />
@@ -423,6 +398,8 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
           <Property Name="DeclareValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsGuarantee" Type="Boolean" />
           <Property Name="IsOnHand" Type="Boolean" />
+          <Property Name="Start" Type="Int32" />
+          <Property Name="Contact" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="DeliveryType1" Relationship="NgocTrangModel.FK_BillOfLanding_DeliveryType" FromRole="BillOfLanding" ToRole="DeliveryType" />
           <NavigationProperty Name="MerchandiseType1" Relationship="NgocTrangModel.FK_BillOfLanding_MerchandiseType" FromRole="BillOfLanding" ToRole="MerchandiseType" />
           <NavigationProperty Name="Status" Relationship="NgocTrangModel.FK_BillOfLanding_Status" FromRole="BillOfLanding" ToRole="Status" />
@@ -593,6 +570,8 @@ warning 6002: The table/view 'NgocTrang.dbo.BillView' does not have a primary ke
           <EntitySetMapping Name="BillOfLandings">
             <EntityTypeMapping TypeName="NgocTrangModel.BillOfLanding">
               <MappingFragment StoreEntitySet="BillOfLanding">
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Start" ColumnName="Start" />
                 <ScalarProperty Name="IsOnHand" ColumnName="IsOnHand" />
                 <ScalarProperty Name="IsGuarantee" ColumnName="IsGuarantee" />
                 <ScalarProperty Name="DeclareValue" ColumnName="DeclareValue" />

@@ -2,6 +2,7 @@
 using Infrastructure.Queries;
 using Infrastructure.Repository;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace WebCore.Queries
 {
@@ -10,7 +11,7 @@ namespace WebCore.Queries
         public IEnumerable<DeliveryType> Handle(DeliveryTypeGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
-            var result = uow.Repository<DeliveryType>().GetAll();
+            var result = uow.Repository<DeliveryType>().GetAll().Where(p => !p.DeletedDate.HasValue);
             uow.Dispose();
             return result;             
         }

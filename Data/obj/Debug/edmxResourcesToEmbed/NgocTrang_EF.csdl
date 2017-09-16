@@ -76,6 +76,8 @@
     <Property Name="DeclareValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsGuarantee" Type="Boolean" />
     <Property Name="IsOnHand" Type="Boolean" />
+    <Property Name="Start" Type="Int32" />
+    <Property Name="Contact" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="DeliveryType1" Relationship="NgocTrangModel.FK_BillOfLanding_DeliveryType" FromRole="BillOfLanding" ToRole="DeliveryType" />
     <NavigationProperty Name="MerchandiseType1" Relationship="NgocTrangModel.FK_BillOfLanding_MerchandiseType" FromRole="BillOfLanding" ToRole="MerchandiseType" />
     <NavigationProperty Name="Status" Relationship="NgocTrangModel.FK_BillOfLanding_Status" FromRole="BillOfLanding" ToRole="Status" />

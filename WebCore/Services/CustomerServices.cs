@@ -15,13 +15,15 @@ namespace WebCore.Services
     {
         private readonly IQueryHandler<CustomerGetAllQuery, IEnumerable<Customer>> getAllCustomerHandler;
         private readonly IQueryHandler<CustomerSearchQuery, PagedListResult<Customer>> searchCustomerdHandler;
-
+        private readonly IQueryHandler<GetCustomerByPhoneQuery, Customer> getCustomerByPhoneHandler;
         public CustomerServices(IQueryHandler<CustomerGetAllQuery, IEnumerable<Customer>> _getAllCustomerHandler,
-                  IQueryHandler<CustomerSearchQuery, PagedListResult<Customer>> _searchCustomerdHandler
+                  IQueryHandler<CustomerSearchQuery, PagedListResult<Customer>> _searchCustomerdHandler,
+                  IQueryHandler<GetCustomerByPhoneQuery, Customer> _getCustomerByPhoneHandler
             )
         {
             getAllCustomerHandler = _getAllCustomerHandler;
             searchCustomerdHandler = _searchCustomerdHandler;
+            getCustomerByPhoneHandler = _getCustomerByPhoneHandler;
         }
 
         public void AddCustomer(string name, string phone, string idNumber)
@@ -37,7 +39,11 @@ namespace WebCore.Services
         {
             return searchCustomerdHandler.Handle(new CustomerSearchQuery { SearchQuery = searchQuery });
         }
-      
-       
+        public Customer GetCustomerByPhone(string phone)
+        {
+            return getCustomerByPhoneHandler.Handle(new GetCustomerByPhoneQuery { Phone= phone });
+        }
+
+
     }
 }

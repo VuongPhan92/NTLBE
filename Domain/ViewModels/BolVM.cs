@@ -27,5 +27,7 @@
         public string DeclareValue { get; set; }
         public string Total { get; set; }
         public bool IsOnHand { get; set; } 
+        public int Start { get; set; }
+        public string Contact { get; set; }
     }
 }

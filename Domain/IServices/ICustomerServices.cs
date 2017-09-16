@@ -10,5 +10,6 @@ namespace Domain.IServices
         IEnumerable<Customer> GetAllCustomer();
         PagedListResult<Customer> SearchCustomer(SearchQuery<Customer> searchQuery);
         void AddCustomer(string name,string phone,string idNumber);
+        Customer GetCustomerByPhone(string phone);
     }
 }

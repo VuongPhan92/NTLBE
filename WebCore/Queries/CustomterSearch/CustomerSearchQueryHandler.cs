@@ -1,6 +1,7 @@
 ﻿using Core.PageResult;
 using Data;
 using Infrastructure.Queries;
+using System.Linq;
 using Infrastructure.Repository;
 
 namespace WebCore.Queries

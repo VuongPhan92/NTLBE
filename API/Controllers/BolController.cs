@@ -6,6 +6,8 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Linq;
+using System.Collections.Generic;
+
 namespace API.Controllers
 {
     [RoutePrefix("NgocTrang/Api/Bol")]
@@ -137,9 +139,22 @@ namespace API.Controllers
         {       
             try
             {
-                if (iBolServices.GetAllBol().ToList().Count() >0)
+                var bolList = iBolServices.GetAllBol();
+                foreach(var item in bolList)
                 {
-                    return GetResponse(iBolServices.GetAllBol(), HttpStatusCode.OK);
+                    foreach(var sub in item.Branches)
+                    {
+                        sub.BillOfLandings = null;
+                    }
+                    foreach (var sub in item.Customers)
+                    {
+                        sub.BillOfLandings = null;
+                    }
+                }
+                if (bolList.Count() >0)
+                {
+                    var test = bolList.ToList();
+                    return GetResponse(test, HttpStatusCode.OK);
                 }
                 else
                 {
@@ -175,6 +190,7 @@ namespace API.Controllers
             }
         }
         #endregion HandleRequest
+        #region Status
         //POST: NgocTrang/Api/Bol/UpdateStatus
         [Route("UpdateStatus")]
         [HttpPost]
@@ -190,6 +206,42 @@ namespace API.Controllers
                 return PostResponse(HttpStatusCode.NotAcceptable);
             }
         }
+        #endregion
+
+        #region Branch
+        //POST: NgocTrang/Api/Bol/AddBranch
+        [Route("AddBranch")]
+        [HttpPost]
+        public HttpResponseMessage AddBranch(BranchVM branchVM)
+        {
+            try
+            {
+                iBranchServices.AddBranch(branchVM);
+                return PostResponse(HttpStatusCode.OK);
+            }
+            catch (Exception)
+            {
+                return PostResponse(HttpStatusCode.NotAcceptable);
+            }
+
+        }
+        //GET: NgocTrang/Api/Bol/GetBranches
+        [Route("GetBranches")]
+        [HttpGet]
+        public HttpResponseMessage GetAllBranch()
+        {
+            try
+            {
+                iBranchServices.GetAllBranches();
+                return PostResponse(HttpStatusCode.OK);
+            }
+            catch (Exception)
+            {
+                return PostResponse(HttpStatusCode.NotAcceptable);
+            }
+
+        }
+        #endregion
         #region Glue code
         private string CreateMerchandiseId(string input,int index, int total)
         {

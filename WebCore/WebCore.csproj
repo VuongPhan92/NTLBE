@@ -98,6 +98,8 @@
     <Compile Include="Command\BolAdd\BolAddCommandHandler.cs" />
     <Compile Include="Command\BolStatusUpdate\BolStatusUpdateCommand.cs" />
     <Compile Include="Command\BolStatusUpdate\BolStatusUpdateCommandHandler.cs" />
+    <Compile Include="Command\BranchAdd\BranchAddCommand.cs" />
+    <Compile Include="Command\BranchAdd\BranchAddCommandHandler.cs" />
     <Compile Include="Queries\BranchGetAll\BranchGetAllQuery.cs" />
     <Compile Include="Queries\BolGetAll\BolGetAllQueryHandler.cs" />
     <Compile Include="Queries\BolGetAll\BolGetAllQuery.cs" />
@@ -105,6 +107,8 @@
     <Compile Include="Queries\BranchGetAll\BranchGetAllQueryHandler.cs" />
     <Compile Include="Queries\CustomerGetAll\CustomerGetAllQuery.cs" />
     <Compile Include="Queries\CustomerGetAll\CustomerGetAllQueryHandler.cs" />
+    <Compile Include="Queries\CustomerGetById\GetCustomerByPhoneQuery.cs" />
+    <Compile Include="Queries\CustomerGetById\GetCustomerByPhoneQueryHandler.cs" />
     <Compile Include="Queries\DeliveryTypeGetAll\DeliveryTypeGetAllQueryHandler.cs" />
     <Compile Include="Queries\MerchandiseTypeGetAll\MerchandiseTypeGetAllQueryHandler.cs" />
     <Compile Include="Queries\MerchandiseTypeGetAll\MerchandiseTypeGetAllQuery.cs" />

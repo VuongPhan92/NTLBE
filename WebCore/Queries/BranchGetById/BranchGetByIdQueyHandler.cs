@@ -9,7 +9,7 @@ namespace WebCore.Queries.GetBranchById
         public Branch Handle(BranchGetByIdQuery query)
         {
             var uow = new UnitOfWork<EF>();
-            var result = uow.Repository<Branch>().Get(query.Id);
+            var result = uow.Repository<Branch>().GetById(p=>p.Id ==query.Id && !p.DeletedDate.HasValue);
             uow.Dispose();
             return result;
         }

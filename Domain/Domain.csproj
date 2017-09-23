@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\ActivityAddCommand.cs" />
+    <Compile Include="IServices\IAccountServices.cs" />
     <Compile Include="IServices\IActivityService.cs" />
     <Compile Include="IServices\IBolServices.cs" />
     <Compile Include="IServices\IBranchServices.cs" />

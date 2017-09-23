@@ -48,3 +48,13 @@ C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.x
 C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\obj\Debug\Data.dll
 C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\obj\Debug\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\bin\Debug\Data.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\obj\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\obj\Debug\Data.pdb

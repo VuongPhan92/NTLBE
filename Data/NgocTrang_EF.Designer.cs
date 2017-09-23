@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\ntt\Desktop\Vuong Phan\ntlbe\Data\NgocTrang_EF.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Data\NgocTrang_EF.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

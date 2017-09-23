@@ -16,18 +16,22 @@ using Microsoft.Owin.Security.OAuth;
 using API.Models;
 using API.Providers;
 using API.Results;
+using Domain.IServices;
+using System.Net;
 
 namespace API.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
-    public class AccountController : ApiController
+    public class AccountController : BaseController
     {
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
+     
 
         public AccountController()
         {
+           
         }
 
         public AccountController(ApplicationUserManager userManager,
@@ -490,5 +494,7 @@ namespace API.Controllers
         }
 
         #endregion
+
+      
     }
 }

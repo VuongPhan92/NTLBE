@@ -19,16 +19,19 @@ namespace IOC
 
         public void Boot()
         {
+            container.Register(typeof(IAccountServices), typeof(AccountServices));
             container.Register(typeof(IDeliveryTypeServices), typeof(DeliveryTypeServices));
             container.Register(typeof(IBolServices), typeof(BolServices));
             container.Register(typeof(IBranchServices), typeof(BranchServices));
             container.Register(typeof(ICustomerServices), typeof(CustomerServices));
             container.Register(typeof(IStatusServices), typeof(StatusServices));
             container.Register(typeof(IMerchandiseTypeServices), typeof(MerchandiseTypeServices));
+            container.Register(typeof(IActivityService), typeof(ActivityServices));
             container.Register(typeof(IService<>), AppDomain.CurrentDomain.GetAssemblies());
             container.Register(typeof(IQueryHandler<,>), AppDomain.CurrentDomain.GetAssemblies());
             container.Register(typeof(ICommandHandler<>), AppDomain.CurrentDomain.GetAssemblies());
             container.Register(typeof(ComponentVM),typeof(ComponentVM));
+            
         }
     }
 }

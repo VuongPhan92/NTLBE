@@ -11,7 +11,7 @@ using System.Collections.Generic;
 namespace API.Controllers
 {
     [RoutePrefix("NgocTrang/Api/Bol")]
-    public class BolController : ApiController
+    public class BolController : BaseController
     {                                                                                                               
 
         #region constructor 4 injection
@@ -29,8 +29,8 @@ namespace API.Controllers
             IMerchandiseTypeServices _iMerchandiseTypeServices,
             IBranchServices _iBranchServices,
             IDeliveryTypeServices _iDeliveryTypeServices,
-            IStatusServices _iStatusServices
-        )
+            IStatusServices _iStatusServices)
+        
         {
             iBolServices = _iBolServices;
             iBranchServices = _iBranchServices;
@@ -41,46 +41,7 @@ namespace API.Controllers
         }
 
         #endregion constructor 4 injection
-
-        #region HttpResponse
-
-        //All Request will have the same core respone,status code, the only the return values are different
-        private HttpResponseMessage GetResponse(object obj, HttpStatusCode httpCode)
-        {
-            HttpResponseMessage response = Request.CreateResponse();
-            response.StatusCode = httpCode;
-            if (HttpStatusCode.OK.Equals(httpCode))
-            {
-                response.Content = new StringContent(JsonConvert.SerializeObject(obj));
-            }
-            else if (HttpStatusCode.NotFound.Equals(httpCode))
-            {
-                response.Content = new StringContent("Not Found");
-            }
-            else if (HttpStatusCode.NotImplemented.Equals(httpCode))
-            {
-                response.Content = new StringContent("Not Implemented");
-            }
-            return response;
-        }
-        private HttpResponseMessage PostResponse(HttpStatusCode httpCode)
-        {
-            HttpResponseMessage response = Request.CreateResponse();
-            response.StatusCode = httpCode;
-            if (HttpStatusCode.OK.Equals(httpCode))
-            {
-                response.Content = new StringContent("Submit Item Complete!");
-            }
-            else
-            {
-                response.Content = new StringContent("Submit Error");
-            }
-            return response;
-        }
-
-        #endregion HttpResponse
-
-        #region HandleRequest
+ 
         //GET: NgocTrang/Api/Bol/GetComponent
         [Route("GetComponent")]
         [HttpGet]
@@ -108,34 +69,11 @@ namespace API.Controllers
                 return GetResponse("Not implement", HttpStatusCode.NotImplemented);
             }
         }
-
-        //GET: NgocTrang/Api/Bol/GetStatus
-        [Route("GetStatus")]
-        [HttpGet]
-        public HttpResponseMessage GetStatus()
-        {
-            var statusCodeList = iStatusServices.GetAllStatusCode();
-            try
-            {
-                if (statusCodeList != null)
-                {
-                    return GetResponse(statusCodeList, HttpStatusCode.OK);
-                }
-                else
-                {
-                    return GetResponse("Cannot get Status codes", HttpStatusCode.NotFound);
-                }
-            }
-            catch
-            {
-                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
-            }
-        }
-
+       
         //GET NgocTrang/Api/Bol/GetAllBol   
         [Route("GetAllBol")]
         [HttpGet]
-        public HttpResponseMessage GetAllBol(string from = "", string to = "")
+        public HttpResponseMessage GetAllBol()
         {       
             try
             {
@@ -189,8 +127,7 @@ namespace API.Controllers
                     return PostResponse(HttpStatusCode.NotAcceptable);
             }
         }
-        #endregion HandleRequest
-        #region Status
+
         //POST: NgocTrang/Api/Bol/UpdateStatus
         [Route("UpdateStatus")]
         [HttpPost]
@@ -199,6 +136,7 @@ namespace API.Controllers
             try
             {
                 iBolServices.UpdateStatus(bolId);
+                var temp = bolId;
                 return PostResponse(HttpStatusCode.OK);
             }
             catch (Exception)
@@ -206,47 +144,11 @@ namespace API.Controllers
                 return PostResponse(HttpStatusCode.NotAcceptable);
             }
         }
-        #endregion
+    
 
-        #region Branch
-        //POST: NgocTrang/Api/Bol/AddBranch
-        [Route("AddBranch")]
-        [HttpPost]
-        public HttpResponseMessage AddBranch(BranchVM branchVM)
-        {
-            try
-            {
-                iBranchServices.AddBranch(branchVM);
-                return PostResponse(HttpStatusCode.OK);
-            }
-            catch (Exception)
-            {
-                return PostResponse(HttpStatusCode.NotAcceptable);
-            }
 
-        }
-        //GET: NgocTrang/Api/Bol/GetBranches
-        [Route("GetBranches")]
-        [HttpGet]
-        public HttpResponseMessage GetAllBranch()
-        {
-            try
-            {
-                iBranchServices.GetAllBranches();
-                return PostResponse(HttpStatusCode.OK);
-            }
-            catch (Exception)
-            {
-                return PostResponse(HttpStatusCode.NotAcceptable);
-            }
 
-        }
-        #endregion
-        #region Glue code
-        private string CreateMerchandiseId(string input,int index, int total)
-        {
-            return input + "-" + index+1 + "/" + total;
-        }
-        #endregion Glue code
+
+
     }
 }

@@ -28,7 +28,7 @@ namespace Data
         public string BranchCode { get; set; }
         public string Description { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
-        public Nullable<int> CreatedBy { get; set; }
+        public string CreatedBy { get; set; }
         public Nullable<System.DateTime> DeletedDate { get; set; }
         public string DeletedBy { get; set; }
     

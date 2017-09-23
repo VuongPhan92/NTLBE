@@ -55,6 +55,9 @@
     <Compile Include="Account.cs">
       <DependentUpon>NgocTrang_EF.tt</DependentUpon>
     </Compile>
+    <Compile Include="Activity.cs">
+      <DependentUpon>NgocTrang_EF.tt</DependentUpon>
+    </Compile>
     <Compile Include="BillOfLanding.cs">
       <DependentUpon>NgocTrang_EF.tt</DependentUpon>
     </Compile>

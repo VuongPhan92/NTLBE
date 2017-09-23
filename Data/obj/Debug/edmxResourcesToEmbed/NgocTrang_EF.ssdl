@@ -20,6 +20,19 @@
     <Property Name="AccountId" Type="int" Nullable="false" />
     <Property Name="PermissionId" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Source" Type="nvarchar" MaxLength="50" />
+    <Property Name="Action" Type="nvarchar" MaxLength="10" />
+    <Property Name="Previous_value" Type="nvarchar(max)" />
+    <Property Name="Current_value" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Source_Id" Type="int" />
+  </EntityType>
   <EntityType Name="BillOfLanding">
     <Key>
       <PropertyRef Name="Id" />
@@ -79,7 +92,7 @@
     <Property Name="BranchCode" Type="nchar" MaxLength="10" />
     <Property Name="Description" Type="nvarchar" MaxLength="50" />
     <Property Name="CreatedDate" Type="datetime2" Precision="7" />
-    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
@@ -113,14 +126,12 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MerchandiseType" Type="nvarchar" MaxLength="50" />
-    <Property Name="CalculationUnit" Type="nchar" MaxLength="10" />
     <Property Name="Description" Type="nvarchar(max)" />
-    <Property Name="CreatedDate" Type="datetime2" Precision="7" Nullable="false" />
-    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CalculationUnit" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
-    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Permission">
     <Key>
@@ -266,6 +277,7 @@
   <EntityContainer Name="NgocTrangModelStoreContainer">
     <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Account_Permission_Ref" EntityType="Self.Account_Permission_Ref" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Activity" EntityType="Self.Activity" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BillOfLanding" EntityType="Self.BillOfLanding" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Bol_Branch_Ref" EntityType="Self.Bol_Branch_Ref" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Bol_Customer_Ref" EntityType="Self.Bol_Customer_Ref" Schema="dbo" store:Type="Tables" />

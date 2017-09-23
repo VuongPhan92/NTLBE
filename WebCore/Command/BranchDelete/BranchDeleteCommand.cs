@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebCore.Services
+namespace WebCore.Command
 {
-    public class ActivityService
+    public class BranchDeleteCommand
     {
+        public int Id { get; set; }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Data;
-using Domain.IServices;
 using Infrastructure.Decorator;
 using Infrastructure.Repository;
 using System;
@@ -10,29 +9,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebCore.Command.BolStatusUpdate
+namespace WebCore.Command
 {
-    class BolStatusUpdateCommandHandler : ICommandHandler<BolStatusUpdateCommand>
+    public class BranchAddressUpdateCommandHandler : ICommandHandler<BranchAddressUpdateCommand>
     {
-        protected readonly IStatusServices statusServices;
-        public BolStatusUpdateCommandHandler(IStatusServices _statusServices)
-        {
-            statusServices = _statusServices;
-        }
-        public void Handle(BolStatusUpdateCommand command)
+        public void Handle(BranchAddressUpdateCommand command)
         {
             using (var uow = new UnitOfWork<EF>())
             {
                 try
-                {                  
-                    var bolEntity = uow.Repository<BillOfLanding>().GetById(p=>p.Id == command.Id);
-                    var statusCodeList = statusServices.GetAllStatusCode().OrderBy(p=>p.Id).ToList();
-                    if (bolEntity.StatusCode  != statusCodeList[statusCodeList.Count()-1].Id)
-                    {
-                        bolEntity.StatusCode = bolEntity.StatusCode + 1;
-                    }
-                    uow.Repository<BillOfLanding>().Update(bolEntity);        
+                {
+                    //update
+                    var branch = uow.Repository<Branch>().Get(command.Id);
+                    branch.Address = command.Address;
+                    uow.Repository<Branch>().Update(branch);
                     uow.SubmitChanges();
+                    //log
                 }
                 catch (DbEntityValidationException dbEx)
                 {

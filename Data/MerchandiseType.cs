@@ -24,10 +24,8 @@ namespace Data
         public string MerchandiseType1 { get; set; }
         public string CalculationUnit { get; set; }
         public string Description { get; set; }
-        public System.DateTime CreatedDate { get; set; }
-        public Nullable<int> CreatedBy { get; set; }
+        public Nullable<System.DateTime> CreatedDate { get; set; }
         public Nullable<System.DateTime> DeletedDate { get; set; }
-        public string DeletedBy { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BillOfLanding> BillOfLandings { get; set; }

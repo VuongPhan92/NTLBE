@@ -40,25 +40,25 @@ namespace WebCore.Services
         {
             var sender = iCusomterservices.GetAllCustomer().Where(p => p.Name.Equals(subCommand.SenderName) && p.Phone.Equals(subCommand.SenderPhone));
             var receiver = iCusomterservices.GetAllCustomer().Where(p => p.Name.Equals(subCommand.ReceiverName) && p.Phone.Equals(subCommand.ReceiverPhone));
-            if (sender.Count() < 1 && receiver.Count() > 1)
+            if (sender.Count() < 1 && receiver.Count() > 0)
             {
                 bol.Customers.Add(new Customer() { Name = subCommand.SenderName, Phone = subCommand.SenderPhone, CreatedDate = System.DateTime.Now });
                 return new List<Customer> { receiver.FirstOrDefault() };
             }
-            else if (sender.Count() > 1 && receiver.Count() < 1)
+            else if (sender.Count() > 0 && receiver.Count() < 1)
             {
                 bol.Customers.Add (new Customer() { Name = subCommand.ReceiverName, Phone = subCommand.ReceiverPhone, CreatedDate = System.DateTime.Now });
                 return new List<Customer> { sender.FirstOrDefault() };
             }
-            else if (sender.Count() > 1 && receiver.Count() > 1)
+            else if (sender.Count() > 0 && receiver.Count() > 0)
             {
                 return new List<Customer> { sender.FirstOrDefault(),receiver.FirstOrDefault() };
             }
             else
             {
-                bol.Customers.Add ( new Customer() { Name = subCommand.SenderName, Phone = subCommand.SenderPhone, CreatedDate = System.DateTime.Now });
-                bol.Customers.Add(new Customer() { Name = subCommand.ReceiverName, Phone = subCommand.ReceiverPhone, CreatedDate = System.DateTime.Now });            
-                return new List<Customer> { };
+                bol.Customers.Add(new Customer() {  Name = subCommand.SenderName, Phone = subCommand.SenderPhone, CreatedDate = System.DateTime.Now });
+                bol.Customers.Add(new Customer() {  Name = subCommand.ReceiverName, Phone = subCommand.ReceiverPhone, CreatedDate = System.DateTime.Now });            
+                return  bol.Customers.ToList();
             }
         }
         public void CreateNewBol(BolVM command,CustomerVM subCommand)

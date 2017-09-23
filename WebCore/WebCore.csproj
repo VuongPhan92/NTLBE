@@ -94,12 +94,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\ActivityAdd\ActivityAddCommandHandler.cs" />
     <Compile Include="Command\BolAdd\BolAddCommand.cs" />
     <Compile Include="Command\BolAdd\BolAddCommandHandler.cs" />
-    <Compile Include="Command\BolStatusUpdate\BolStatusUpdateCommand.cs" />
-    <Compile Include="Command\BolStatusUpdate\BolStatusUpdateCommandHandler.cs" />
+    <Compile Include="Command\BolUpdateStatus\BolStatusUpdateCommand.cs" />
+    <Compile Include="Command\BolUpdateStatus\BolStatusUpdateCommandHandler.cs" />
+    <Compile Include="Command\BranchDelete\BranchDeleteCommandHandler.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateAddress\BranchAddressUpdateCommand.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateAddress\BranchAddressUpdateCommandHandler.cs" />
     <Compile Include="Command\BranchAdd\BranchAddCommand.cs" />
     <Compile Include="Command\BranchAdd\BranchAddCommandHandler.cs" />
+    <Compile Include="Command\BranchDelete\BranchDeleteCommand.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateCode\BranchUpdateCodeCommand.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateCode\BranchUpdateCodeCommandHandler.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateEmail\BranchEmailUpdateCommand.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateEmail\BranchEmailUpdateCommandHandler.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateName\BranchUpdateNameCommand.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdateName\BranchUpdateNameCommandHandler.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdatePhone\BranchPhoneUpdateCommand.cs" />
+    <Compile Include="Command\BranchUpdate\BranchUpdatePhone\BranchPhoneUpdateCommandHandler.cs" />
+    <Compile Include="Command\MerchandiseTypeAdd\MerchandiseTypeAddCommandHandler.cs" />
+    <Compile Include="Command\MerchandiseTypeAdd\MerchandiseTypeAddCommand.cs" />
+    <Compile Include="Command\MerchandiseTypeDelete\MerchandiseTypeDeleteCommand.cs" />
+    <Compile Include="Command\MerchandiseTypeDelete\MerchandiseTypeDeleteCommandHandler.cs" />
+    <Compile Include="Queries\Account\AccountValidationByIdPasswordQuery.cs" />
+    <Compile Include="Queries\Account\AccountValidationByIdPasswordQueryHandler.cs" />
     <Compile Include="Queries\BranchGetAll\BranchGetAllQuery.cs" />
     <Compile Include="Queries\BolGetAll\BolGetAllQueryHandler.cs" />
     <Compile Include="Queries\BolGetAll\BolGetAllQuery.cs" />
@@ -119,7 +138,8 @@
     <Compile Include="Queries\BranchGetById\BranchGetByIdQueyHandler.cs" />
     <Compile Include="Queries\CustomterSearch\CustomerSearchQuery.cs" />
     <Compile Include="Queries\CustomterSearch\CustomerSearchQueryHandler.cs" />
-    <Compile Include="Services\ActivityService.cs" />
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\ActivityServices.cs" />
     <Compile Include="Services\BolServices.cs" />
     <Compile Include="Services\BranchServices.cs" />
     <Compile Include="Services\CustomerServices.cs" />

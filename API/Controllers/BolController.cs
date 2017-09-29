@@ -91,7 +91,19 @@ namespace API.Controllers
                 }
                 if (bolList.Count() >0)
                 {
+                    var statusList = iStatusServices.GetAllStatusCode().ToList();
                     var test = bolList.ToList();
+                    foreach (var bol in test)
+                    {
+                        foreach (var statusCode in statusList)
+                        {
+                            if(bol.StatusCode == statusCode.Id)
+                            {
+                                bol.Status = statusCode;
+                            }
+                        }
+                    }
+                   
                     return GetResponse(test, HttpStatusCode.OK);
                 }
                 else

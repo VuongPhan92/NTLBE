@@ -14,6 +14,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="NgocTrangModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="Source_Id" ColumnName="Source_Id" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Current_value" ColumnName="Current_value" />
+          <ScalarProperty Name="Previous_value" ColumnName="Previous_value" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="BillOfLandings">
       <EntityTypeMapping TypeName="NgocTrangModel.BillOfLanding">
         <MappingFragment StoreEntitySet="BillOfLanding">
@@ -42,6 +56,23 @@
           <ScalarProperty Name="MerchandiseType" ColumnName="MerchandiseType" />
           <ScalarProperty Name="DeliveryType" ColumnName="DeliveryType" />
           <ScalarProperty Name="BolCode" ColumnName="BolCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="NgocTrangModel.Branch">
+        <MappingFragment StoreEntitySet="Branch">
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -79,8 +110,8 @@
         <MappingFragment StoreEntitySet="MerchandiseType">
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
           <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="CalculationUnit" ColumnName="CalculationUnit" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="MerchandiseType1" ColumnName="MerchandiseType" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
@@ -130,31 +161,6 @@
         <ScalarProperty Name="Id" ColumnName="AccountId" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="Bol_Customer_Ref" TypeName="NgocTrangModel.Bol_Customer_Ref" StoreEntitySet="Bol_Customer_Ref">
-      <EndProperty Name="Customer">
-        <ScalarProperty Name="Id" ColumnName="CustomerId" />
-      </EndProperty>
-      <EndProperty Name="BillOfLanding">
-        <ScalarProperty Name="Id" ColumnName="BolId" />
-      </EndProperty>
-    </AssociationSetMapping>
-    <EntitySetMapping Name="Branches">
-      <EntityTypeMapping TypeName="NgocTrangModel.Branch">
-        <MappingFragment StoreEntitySet="Branch">
-          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
-          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
-          <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <AssociationSetMapping Name="Bol_Branch_Ref" TypeName="NgocTrangModel.Bol_Branch_Ref" StoreEntitySet="Bol_Branch_Ref">
       <EndProperty Name="Branch">
         <ScalarProperty Name="Id" ColumnName="BranchId" />
@@ -163,19 +169,13 @@
         <ScalarProperty Name="Id" ColumnName="BolId" />
       </EndProperty>
     </AssociationSetMapping>
-    <EntitySetMapping Name="Activities">
-      <EntityTypeMapping TypeName="NgocTrangModel.Activity">
-        <MappingFragment StoreEntitySet="Activity">
-          <ScalarProperty Name="Source_Id" ColumnName="Source_Id" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="Current_value" ColumnName="Current_value" />
-          <ScalarProperty Name="Previous_value" ColumnName="Previous_value" />
-          <ScalarProperty Name="Action" ColumnName="Action" />
-          <ScalarProperty Name="Source" ColumnName="Source" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
+    <AssociationSetMapping Name="Bol_Customer_Ref" TypeName="NgocTrangModel.Bol_Customer_Ref" StoreEntitySet="Bol_Customer_Ref">
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="Id" ColumnName="CustomerId" />
+      </EndProperty>
+      <EndProperty Name="BillOfLanding">
+        <ScalarProperty Name="Id" ColumnName="BolId" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

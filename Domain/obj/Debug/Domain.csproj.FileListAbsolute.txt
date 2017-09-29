@@ -78,3 +78,16 @@ C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Domain\bin\Debug\EntityFramework.xml
 C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Domain\obj\Debug\Domain.dll
 C:\Users\ntt\Desktop\Vuong Phan\Dev\ntlbe\Domain\obj\Debug\Domain.pdb
+H:\NTL Repo\NTLBE\Domain\bin\Debug\Domain.dll
+H:\NTL Repo\NTLBE\Domain\bin\Debug\Domain.pdb
+H:\NTL Repo\NTLBE\Domain\bin\Debug\Core.dll
+H:\NTL Repo\NTLBE\Domain\bin\Debug\Data.dll
+H:\NTL Repo\NTLBE\Domain\bin\Debug\SimpleInjector.dll
+H:\NTL Repo\NTLBE\Domain\bin\Debug\EntityFramework.dll
+H:\NTL Repo\NTLBE\Domain\bin\Debug\Core.pdb
+H:\NTL Repo\NTLBE\Domain\bin\Debug\Data.pdb
+H:\NTL Repo\NTLBE\Domain\bin\Debug\SimpleInjector.xml
+H:\NTL Repo\NTLBE\Domain\bin\Debug\EntityFramework.xml
+H:\NTL Repo\NTLBE\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+H:\NTL Repo\NTLBE\Domain\obj\Debug\Domain.dll
+H:\NTL Repo\NTLBE\Domain\obj\Debug\Domain.pdb

@@ -26,16 +26,34 @@ namespace WebCore.Command
             {
                 try
                 {
-                    var branch = new Branch();
-                    branch.Name = command.Branch.Name;
-                    branch.Address = command.Branch.Address;
-                    branch.BranchCode = command.Branch.BranchCode;
-                    branch.Email = command.Branch.Email;
-                    branch.Phone = command.Branch.Phone;
-                    branch.Description = command.Branch.Description;
-                    branch.CreatedDate = System.DateTime.Now;
-                    uow.Repository<Branch>().Add(command.Branch);
-                    uow.SubmitChanges();
+                    var branchList = uow.Repository<Branch>().GetAll().ToList();
+                    var lastItem = branchList[branchList.Count() - 1];
+                    foreach (var item in branchList)
+                    {
+                        if(item.Name != command.Branch.Name) {
+                            if (item.Equals(lastItem))
+                            {
+                                var branch = new Branch();
+                                branch.Name = command.Branch.Name;
+                                branch.Address = command.Branch.Address;
+                                branch.BranchCode = command.Branch.BranchCode;
+                                branch.Email = command.Branch.Email;
+                                branch.Phone = command.Branch.Phone;
+                                branch.Description = command.Branch.Description;
+                                branch.CreatedDate = System.DateTime.Now;
+                                uow.Repository<Branch>().Add(command.Branch);
+                                uow.SubmitChanges();
+                            }
+                        }
+
+                        if (item.Name == command.Branch.Name && item.DeletedDate.HasValue)
+                        {
+                            item.DeletedDate = null;
+                            uow.Repository<Branch>().Update(item);
+                            uow.SubmitChanges();
+                            break;
+                        }   
+                    }
 
                     //log
                     var activity = new Activity();

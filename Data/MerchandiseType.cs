@@ -22,8 +22,8 @@ namespace Data
     
         public int Id { get; set; }
         public string MerchandiseType1 { get; set; }
-        public string CalculationUnit { get; set; }
         public string Description { get; set; }
+        public string CalculationUnit { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
         public Nullable<System.DateTime> DeletedDate { get; set; }
     

@@ -90,6 +90,8 @@ namespace WebCore.Services
             bol.IsGuarantee = command.IsGuarantee;
             bol.IsOnHand = command.IsOnHand;
             bol.DeclareValue = command.DeclareValue;
+            bol.Contact = command.Contact;
+            bol.Start = command.Start;
             addBolHandler.Handle(new BolAddCommand { BOL = bol, Branches = new List<Branch> { branchFrom, branchTo }, Customers = customerList});                   
         }
         public void UpdateStatus(int bolId)

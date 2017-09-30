@@ -145,6 +145,7 @@
     <Compile Include="Services\CustomerServices.cs" />
     <Compile Include="Services\DeliveryTypeServices.cs" />
     <Compile Include="Services\MerchandiseTypeServices.cs" />
+    <Compile Include="Services\StatisticServices.cs" />
     <Compile Include="Services\StatusServices.cs" />
   </ItemGroup>
   <ItemGroup>

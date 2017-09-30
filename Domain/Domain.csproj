@@ -53,8 +53,10 @@
     <Compile Include="IServices\ICustomerServices.cs" />
     <Compile Include="IServices\IDeliveryTypeServices.cs" />
     <Compile Include="IServices\IMerchandiseTypeServices.cs" />
+    <Compile Include="IServices\IStatisticServices.cs" />
     <Compile Include="IServices\IStatusServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BarChartVM.cs" />
     <Compile Include="ViewModels\BolManageVM.cs" />
     <Compile Include="ViewModels\BolVM.cs" />
     <Compile Include="ViewModels\BranchVM.cs" />

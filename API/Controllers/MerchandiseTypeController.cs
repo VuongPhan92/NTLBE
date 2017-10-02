@@ -51,8 +51,8 @@ namespace API.Controllers
             }
         }
 
-        //POST: NgocTrang/Api/MerchandiseType/Delete
-        [Route("Delete")]
+        //POST: NgocTrang/Api/MerchandiseType/Delete/id
+        [Route("Delete/{id}")]
         [HttpPost]
         public HttpResponseMessage Delete(int id)
         {

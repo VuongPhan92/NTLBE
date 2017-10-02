@@ -36,7 +36,7 @@ namespace WebCore.Command
                                 var branch = new Branch();
                                 branch.Name = command.Branch.Name;
                                 branch.Address = command.Branch.Address;
-                                branch.BranchCode = command.Branch.BranchCode;
+                                branch.BranchCode = command.Branch.BranchCode.Trim();
                                 branch.Email = command.Branch.Email;
                                 branch.Phone = command.Branch.Phone;
                                 branch.Description = command.Branch.Description;

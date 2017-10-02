@@ -141,7 +141,7 @@ namespace API.Controllers
         }
 
         //POST: NgocTrang/Api/Bol/UpdateStatus
-        [Route("UpdateStatus")]
+        [Route("UpdateStatus/{bolId}")]
         [HttpPost]
         public HttpResponseMessage UpdateStatus(int bolId)
         {

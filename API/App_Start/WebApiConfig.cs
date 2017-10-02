@@ -40,7 +40,8 @@ namespace API
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
         {
             actionExecutedContext.Response.Headers.Add("Access-Control-Allow-Origin", "*");
-            actionExecutedContext.Request.Headers.Add("Access-Control-Allow-Origin", "*");
+            actionExecutedContext.Response.Headers.Add("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+            actionExecutedContext.Response.Headers.Add("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         }
     }
 }

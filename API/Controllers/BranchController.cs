@@ -53,8 +53,8 @@ namespace API.Controllers
 
         }
 
-        //POST: NgocTrang/Api/Bol/UpdateName
-        [Route("UpdateName")]
+        //POST: NgocTrang/Api/Bol/UpdateName/1/ABC
+        [Route("UpdateName/{id}/{name}")]
         [HttpPost]
         public HttpResponseMessage UpdateBranchName(int id, string name)
         {
@@ -70,8 +70,8 @@ namespace API.Controllers
             }
         }
 
-        //POST: NgocTrang/Api/Bol/UpdateAddress
-        [Route("UpdateAddress")]
+        //POST: NgocTrang/Api/Bol/UpdateAddress/1/address
+        [Route("UpdateAddress/{id}/{address}")]
         [HttpPost]
         public HttpResponseMessage UpdateBranchAddress(int id, string address)
         {
@@ -87,8 +87,8 @@ namespace API.Controllers
             }
         }
 
-        //POST: NgocTrang/Api/Bol/UpdatePhone
-        [Route("UpdatePhone")]
+        //POST: NgocTrang/Api/Bol/UpdatePhone/1/012345
+        [Route("UpdatePhone/{id}/{phone}")]
         [HttpPost]
         public HttpResponseMessage UpdateBranchPhone(int id, string phone)
         {
@@ -104,8 +104,8 @@ namespace API.Controllers
             }
         }
 
-        //POST: NgocTrang/Api/Bol/UpdateEmail
-        [Route("UpdateEmail")]
+        //POST: NgocTrang/Api/Bol/UpdateEmail/1/abc@gxyz.com
+        [Route("UpdateEmail/{id}/{email}")]
         [HttpPost]
         public HttpResponseMessage UpdateBranchEmail(int id, string email)
         {
@@ -122,7 +122,7 @@ namespace API.Controllers
         }
 
         //POST: NgocTrang/Api/Bol/UpdateCode
-        [Route("UpdateCode")]
+        [Route("UpdateCode/{id}/{branchCode}")]
         [HttpPost]
         public HttpResponseMessage UpdateBranchCode(int id, string branchCode)
         {
@@ -139,7 +139,7 @@ namespace API.Controllers
         }
 
         //POST: NgocTrang/Api/Bol/Delete
-        [Route("Delete")]
+        [Route("Delete/{id}")]
         [HttpPost]
         public HttpResponseMessage DeleteBranch(int id)
         {

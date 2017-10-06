@@ -37,6 +37,7 @@ namespace WebCore.Command.BolStatusUpdate
                     if (bolEntity.StatusCode  != statusCodeList[statusCodeList.Count()-1].Id)
                     {
                         bolEntity.StatusCode = bolEntity.StatusCode + 1;
+                        bolEntity.ReceiveDate = DateTime.Now;
 
                     }
                     uow.Repository<BillOfLanding>().Update(bolEntity);        

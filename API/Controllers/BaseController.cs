@@ -6,10 +6,12 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Mvc;
 
 namespace API.Controllers
 {
+    [EnableCors(origins: "http://localhost:3000", headers: "*", methods: "*")]
     public class BaseController : ApiController
     {
         protected HttpResponseMessage GetResponse(object obj, HttpStatusCode httpCode)

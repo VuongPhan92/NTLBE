@@ -9,6 +9,8 @@ namespace Domain.IServices
 {
     public interface IStatisticServices
     {
-        List<BarChartVM> GetBolBarChartData();
+        List<BarChartVM> GetBolOnDayBarChartData();
+        List<GetBolOnSpecificLocationDataVM> GetBolOnLocationData();
+        List<GetMerchandiseOnSpecificLocationDataVM> GetMerchandiseOnLocationData();
     }
 }

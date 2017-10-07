@@ -2,6 +2,7 @@
 using Domain.ViewModels;
 using Infrastructure.Queries;
 using Infrastructure.Repository;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
@@ -13,6 +14,11 @@ namespace WebCore.Queries
 
         public IEnumerable<BillOfLanding> Handle(BolGetAllQuery query)
         {
+            var endWorkingTime = new TimeSpan(22, 31, 00);
+            var today = DateTime.Now;
+            var endWorkingDay = today.Add(endWorkingTime);
+            var previousWorkingDay = endWorkingDay.AddDays(-1);
+
             try
             {
                 var uow = new UnitOfWork<EF>();

@@ -119,6 +119,8 @@
     <Compile Include="Command\MerchandiseTypeDelete\MerchandiseTypeDeleteCommandHandler.cs" />
     <Compile Include="Queries\Account\AccountValidationByIdPasswordQuery.cs" />
     <Compile Include="Queries\Account\AccountValidationByIdPasswordQueryHandler.cs" />
+    <Compile Include="Queries\BolSearch\GetBolByIdQuery.cs" />
+    <Compile Include="Queries\BolSearch\GetBolByIdQueryHandler.cs" />
     <Compile Include="Queries\BranchGetAll\BranchGetAllQuery.cs" />
     <Compile Include="Queries\BolGetAll\BolGetAllQueryHandler.cs" />
     <Compile Include="Queries\BolGetAll\BolGetAllQuery.cs" />
@@ -172,7 +174,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Command\CustomerAdd\" />
-    <Folder Include="Queries\BolSearch\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

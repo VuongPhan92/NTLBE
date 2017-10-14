@@ -15,18 +15,21 @@ namespace WebCore.Services
     public class BolServices : IService<BillOfLanding>, IBolServices
     {
         private readonly IQueryHandler<BolGetAllQuery, IEnumerable<BillOfLanding>> getAllBolHandler;
+        private readonly IQueryHandler<GetBolByIdQuery, BillOfLanding> getBolByIdHandler;
         private readonly ICommandHandler<BolAddCommand> addBolHandler;
         private readonly ICustomerServices iCusomterservices;
         private readonly ICommandHandler<BolStatusUpdateCommand> bolStatusUpdateHandler;
 
         public BolServices(
             IQueryHandler<BolGetAllQuery, IEnumerable<BillOfLanding>> _getAllBolHandler,
+            IQueryHandler<GetBolByIdQuery,BillOfLanding> _getBolByIdHandler,
             ICommandHandler<BolAddCommand> _addBolHandler,
             ICustomerServices _iCusomterservices   ,
             ICommandHandler<BolStatusUpdateCommand> _bolStatusUpdateHandler
             )
         {
             getAllBolHandler = _getAllBolHandler;
+            getBolByIdHandler = _getBolByIdHandler;
             addBolHandler = _addBolHandler;
             iCusomterservices = _iCusomterservices;
             bolStatusUpdateHandler = _bolStatusUpdateHandler;
@@ -97,6 +100,11 @@ namespace WebCore.Services
         public void UpdateStatus(int bolId)
         {
             bolStatusUpdateHandler.Handle(new BolStatusUpdateCommand { Id = bolId });
+        }
+
+        public BillOfLanding GetBolById(int id)
+        {
+            return getBolByIdHandler.Handle(new GetBolByIdQuery { Id = id });
         }
     }
 }

@@ -40,6 +40,10 @@ namespace API.Controllers
             {
                 response.Content = new StringContent("Post request successfully handle!");
             }
+            else if(HttpStatusCode.BadRequest.Equals(httpCode))
+            {
+                response.Content = new StringContent("Message not sent successfully");
+            }
             else
             {
                 response.Content = new StringContent("Post request encounter error");

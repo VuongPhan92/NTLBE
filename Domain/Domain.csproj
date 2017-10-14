@@ -56,6 +56,7 @@
     <Compile Include="IServices\IStatisticServices.cs" />
     <Compile Include="IServices\IStatusServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ConvertVie.cs" />
     <Compile Include="ViewModels\Chart\BarChartVM.cs" />
     <Compile Include="ViewModels\BolManageVM.cs" />
     <Compile Include="ViewModels\BolVM.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="ViewModels\Chart\GetBolOnSpecificLocationDataVM.cs" />
     <Compile Include="ViewModels\MerchandiseTypeVM.cs" />
     <Compile Include="ViewModels\ComponentVM.cs" />
+    <Compile Include="ViewModels\SpeedSMS.cs" />
     <Compile Include="ViewModels\TransactionVM.cs" />
   </ItemGroup>
   <ItemGroup>

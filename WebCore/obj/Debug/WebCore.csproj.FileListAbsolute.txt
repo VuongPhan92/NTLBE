@@ -263,3 +263,36 @@ H:\NTL Repo\1102017\BE\NTLBE\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mv
 H:\NTL Repo\1102017\BE\NTLBE\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
 H:\NTL Repo\1102017\BE\NTLBE\WebCore\obj\Debug\WebCore.dll
 H:\NTL Repo\1102017\BE\NTLBE\WebCore\obj\Debug\WebCore.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\WebCore.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\WebCore.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\WebCore.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\AutoMapper.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Domain.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Infrastructure.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\SimpleInjector.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\System.Web.Helpers.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\System.Web.Mvc.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\System.Web.Razor.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\System.Web.WebPages.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Core.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Infrastructure.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\Domain.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\AutoMapper.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\SimpleInjector.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Debug\WebCore.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Debug\WebCore.pdb

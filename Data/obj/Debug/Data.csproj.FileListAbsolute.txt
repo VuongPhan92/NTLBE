@@ -78,3 +78,13 @@ H:\NTL Repo\1102017\BE\NTLBE\Data\bin\Debug\EntityFramework.SqlServer.xml
 H:\NTL Repo\1102017\BE\NTLBE\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 H:\NTL Repo\1102017\BE\NTLBE\Data\obj\Debug\Data.dll
 H:\NTL Repo\1102017\BE\NTLBE\Data\obj\Debug\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\Data.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.pdb

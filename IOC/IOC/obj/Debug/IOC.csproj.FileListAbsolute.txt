@@ -222,3 +222,30 @@ H:\NTL Repo\1102017\BE\NTLBE\IOC\IOC\bin\Debug\Data.pdb
 H:\NTL Repo\1102017\BE\NTLBE\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
 H:\NTL Repo\1102017\BE\NTLBE\IOC\IOC\obj\Debug\IOC.dll
 H:\NTL Repo\1102017\BE\NTLBE\IOC\IOC\obj\Debug\IOC.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\IOC.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\IOC.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Domain.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Infrastructure.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\System.Web.Http.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\WebCore.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Core.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Infrastructure.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Domain.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\WebCore.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\System.Web.Http.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Debug\IOC.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Debug\IOC.pdb

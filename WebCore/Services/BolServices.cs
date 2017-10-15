@@ -15,17 +15,22 @@ namespace WebCore.Services
     public class BolServices : IService<BillOfLanding>, IBolServices
     {
         private readonly IQueryHandler<BolGetAllQuery, IEnumerable<BillOfLanding>> getAllBolHandler;
+        private readonly IQueryHandler<GetBolByBolCodeQuery, BillOfLanding> getBolByBolCodeHandler;
         private readonly IQueryHandler<GetBolByIdQuery, BillOfLanding> getBolByIdHandler;
         private readonly ICommandHandler<BolAddCommand> addBolHandler;
         private readonly ICustomerServices iCusomterservices;
         private readonly ICommandHandler<BolStatusUpdateCommand> bolStatusUpdateHandler;
+        private readonly ICommandHandler<BolUpdateStatusByBolCodeCommand> bolStatusUpdateByBolCodeHandler;
+
 
         public BolServices(
             IQueryHandler<BolGetAllQuery, IEnumerable<BillOfLanding>> _getAllBolHandler,
             IQueryHandler<GetBolByIdQuery,BillOfLanding> _getBolByIdHandler,
+            IQueryHandler<GetBolByBolCodeQuery, BillOfLanding> _getBolByBolCodeHandler,
             ICommandHandler<BolAddCommand> _addBolHandler,
             ICustomerServices _iCusomterservices   ,
-            ICommandHandler<BolStatusUpdateCommand> _bolStatusUpdateHandler
+            ICommandHandler<BolStatusUpdateCommand> _bolStatusUpdateHandler,
+            ICommandHandler<BolUpdateStatusByBolCodeCommand> _bolStatusUpdateByBolCodeHandler
             )
         {
             getAllBolHandler = _getAllBolHandler;
@@ -33,6 +38,9 @@ namespace WebCore.Services
             addBolHandler = _addBolHandler;
             iCusomterservices = _iCusomterservices;
             bolStatusUpdateHandler = _bolStatusUpdateHandler;
+            getBolByBolCodeHandler = _getBolByBolCodeHandler;
+            bolStatusUpdateByBolCodeHandler = _bolStatusUpdateByBolCodeHandler;
+
         }
 
         public IEnumerable<BillOfLanding> GetAllBol()
@@ -101,10 +109,18 @@ namespace WebCore.Services
         {
             bolStatusUpdateHandler.Handle(new BolStatusUpdateCommand { Id = bolId });
         }
+        public void UpdateStatus(string bolCode)
+        {
+            bolStatusUpdateByBolCodeHandler.Handle(new BolUpdateStatusByBolCodeCommand { BolCode = bolCode });
+        }
 
         public BillOfLanding GetBolById(int id)
         {
             return getBolByIdHandler.Handle(new GetBolByIdQuery { Id = id });
+        }
+        public BillOfLanding GetBolByBolCode(string bolCode)
+        {
+            return getBolByBolCodeHandler.Handle(new GetBolByBolCodeQuery { BolCode = bolCode });
         }
     }
 }

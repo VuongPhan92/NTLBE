@@ -99,6 +99,8 @@
     <Compile Include="Command\BolAdd\BolAddCommandHandler.cs" />
     <Compile Include="Command\BolUpdateStatus\BolStatusUpdateCommand.cs" />
     <Compile Include="Command\BolUpdateStatus\BolStatusUpdateCommandHandler.cs" />
+    <Compile Include="Command\BolUpdateStatus\BolUpdateStatusByBolCodeCommand.cs" />
+    <Compile Include="Command\BolUpdateStatus\BolUpdateStatusByBolCodeCommandHandler.cs" />
     <Compile Include="Command\BranchDelete\BranchDeleteCommandHandler.cs" />
     <Compile Include="Command\BranchUpdate\BranchUpdateAddress\BranchAddressUpdateCommand.cs" />
     <Compile Include="Command\BranchUpdate\BranchUpdateAddress\BranchAddressUpdateCommandHandler.cs" />
@@ -119,6 +121,8 @@
     <Compile Include="Command\MerchandiseTypeDelete\MerchandiseTypeDeleteCommandHandler.cs" />
     <Compile Include="Queries\Account\AccountValidationByIdPasswordQuery.cs" />
     <Compile Include="Queries\Account\AccountValidationByIdPasswordQueryHandler.cs" />
+    <Compile Include="Queries\BolSearch\GetBolByBolCodeQuery.cs" />
+    <Compile Include="Queries\BolSearch\GetBolByBolCodeQueryHandler.cs" />
     <Compile Include="Queries\BolSearch\GetBolByIdQuery.cs" />
     <Compile Include="Queries\BolSearch\GetBolByIdQueryHandler.cs" />
     <Compile Include="Queries\BranchGetAll\BranchGetAllQuery.cs" />

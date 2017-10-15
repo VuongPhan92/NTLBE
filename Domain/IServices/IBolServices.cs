@@ -8,8 +8,10 @@ namespace Domain.IServices
     {
         IEnumerable<BillOfLanding> GetAllBol();
         BillOfLanding GetBolById(int id);
+        BillOfLanding GetBolByBolCode(string bolCode);
         void CreateNewBol(BolVM command,CustomerVM subComamnd);
         List<Customer> ValidateCustomerInfo(BillOfLanding bol, CustomerVM subComamnd);
         void UpdateStatus(int bolId);
+        void UpdateStatus(string bolCode);
     }
 }

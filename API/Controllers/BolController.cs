@@ -49,10 +49,8 @@ namespace API.Controllers
         public HttpResponseMessage GetComponent()
         {
             ComponentVM vm = new ComponentVM();
-            string format = "ddMMyyHHmmss";
             vm.DeliveryType = iDeliveryTypeServices.GetAllDeliveryType();
-            vm.CurrentTimeStamp = DateTime.Now.ToString(format);
-            vm.Branch = iBranchServices.GetAllBranches();
+           vm.Branch = iBranchServices.GetAllBranches();
             vm.Type = iMerchandiseTypeServices.GetAllMerchandiseType();     
             try
             {
@@ -69,6 +67,16 @@ namespace API.Controllers
             {
                 return GetResponse("Not implement", HttpStatusCode.NotImplemented);
             }
+        }
+
+        //GET: NgocTrang/Api/Bol/GetCurrentTimeStamp
+        [Route("GetCurrentTimeStamp")]
+        [HttpGet]
+        public string GetCurrentTimeStamp()
+        {
+            string format = "ddMMyyHHmmss";
+            var currentTimeStamp = DateTime.Now.ToString(format);
+            return currentTimeStamp;
         }
        
         //GET NgocTrang/Api/Bol/GetAllBol   
@@ -163,6 +171,28 @@ namespace API.Controllers
                 return PostResponse(HttpStatusCode.NotAcceptable);
             }
         }
+
+        [Route("UpdateStatusByCode/{bolCode}")]
+        [HttpPost]
+        public HttpResponseMessage UpdateStatusByCode(string bolCode)
+        {
+            try
+            {
+                iBolServices.UpdateStatus(bolCode);
+                var bolId = iBolServices.GetBolByBolCode(bolCode).Id;
+                var isSuccess = SendDeliverySMS(bolId);
+                if (isSuccess)
+                {
+                    return PostResponse(HttpStatusCode.OK);
+                }
+                return PostResponse(HttpStatusCode.BadRequest);
+            }
+            catch (Exception)
+            {
+                return PostResponse(HttpStatusCode.NotAcceptable);
+            }
+        }
+
         public bool SendNotificationSMS(string bolId,string contact)
         {
             try

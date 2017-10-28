@@ -941,3 +941,4 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\WebCore.pdb
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.Azure.AppService.ApiApps.Service.dll

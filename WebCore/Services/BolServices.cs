@@ -43,9 +43,9 @@ namespace WebCore.Services
 
         }
 
-        public IEnumerable<BillOfLanding> GetAllBol()
+        public IEnumerable<BillOfLanding> GetAllBol(string filterDate)
         {
-            return getAllBolHandler.Handle(new BolGetAllQuery { });
+            return getAllBolHandler.Handle(new BolGetAllQuery { FilterString = filterDate });
         }
         public List<Customer> ValidateCustomerInfo (BillOfLanding bol, CustomerVM subCommand)
         {
@@ -109,7 +109,7 @@ namespace WebCore.Services
         {
             bolStatusUpdateHandler.Handle(new BolStatusUpdateCommand { Id = bolId });
         }
-        public void UpdateStatus(string bolCode)
+        public void UpdateStatusByBolCode(string bolCode)
         {
             bolStatusUpdateByBolCodeHandler.Handle(new BolUpdateStatusByBolCodeCommand { BolCode = bolCode });
         }

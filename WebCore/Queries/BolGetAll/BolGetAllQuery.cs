@@ -6,6 +6,6 @@ namespace WebCore.Queries
 {
     public class BolGetAllQuery : IQuery<IEnumerable<BillOfLanding>>
     {
-        //
+        public string FilterString { get; set; }
     }
 }

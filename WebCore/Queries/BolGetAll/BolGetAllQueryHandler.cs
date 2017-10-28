@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 namespace WebCore.Queries
 {
@@ -14,16 +15,14 @@ namespace WebCore.Queries
 
         public IEnumerable<BillOfLanding> Handle(BolGetAllQuery query)
         {
-            var endWorkingTime = new TimeSpan(22, 31, 00);
-            var today = DateTime.Now;
-            var endWorkingDay = today.Add(endWorkingTime);
-            var previousWorkingDay = endWorkingDay.AddDays(-1);
 
             try
             {
                 var uow = new UnitOfWork<EF>();
-                var result = uow.Repository<BillOfLanding>().GetAll("Branches,Customers").Where(p => !p.DeletedDate.HasValue);
-            //    result.Select(p => new BolManageVM
+                var filterDate = System.DateTime.ParseExact(query.FilterString, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                var result = uow.Repository<BillOfLanding>().GetAll("Branches,Customers").Where(p => !p.DeletedDate.HasValue && p.CreatedDate.Value.ToShortDateString().Equals(filterDate.ToShortDateString()));
+                var test = result.ToList();
+                //    result.Select(p => new BolManageVM
             //    {
             //        Id = p.Id,
             //        AdditionalFee = p.AdditionalFee,

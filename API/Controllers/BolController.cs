@@ -82,11 +82,11 @@ namespace API.Controllers
         //GET NgocTrang/Api/Bol/GetAllBol   
         [Route("GetAllBol")]
         [HttpGet]
-        public HttpResponseMessage GetAllBol()
+        public HttpResponseMessage GetAllBol(string conditionQuery)
         {       
             try
             {
-                var bolList = iBolServices.GetAllBol();
+                var bolList = iBolServices.GetAllBol(conditionQuery).ToList();
                 foreach(var item in bolList)
                 {
                     foreach(var sub in item.Branches)
@@ -98,27 +98,19 @@ namespace API.Controllers
                         sub.BillOfLandings = null;
                     }
                 }
-                if (bolList.Count() >0)
+                var statusList = iStatusServices.GetAllStatusCode().ToList();
+                var data = bolList.ToList();
+                foreach (var bol in data)
                 {
-                    var statusList = iStatusServices.GetAllStatusCode().ToList();
-                    var test = bolList.ToList();
-                    foreach (var bol in test)
+                    foreach (var statusCode in statusList)
                     {
-                        foreach (var statusCode in statusList)
+                        if(bol.StatusCode == statusCode.Id)
                         {
-                            if(bol.StatusCode == statusCode.Id)
-                            {
-                                bol.Status = statusCode;
-                            }
+                            bol.Status = statusCode;
                         }
                     }
-                   
-                    return GetResponse(test, HttpStatusCode.OK);
                 }
-                else
-                {
-                    return GetResponse("Cannot find all bills of landing", HttpStatusCode.NotFound);
-                }
+                return GetResponse(data, HttpStatusCode.OK);
             }
             catch(Exception e )
             {
@@ -172,13 +164,13 @@ namespace API.Controllers
             }
         }
 
-        [Route("UpdateStatusByCode/{bolCode}")]
+        [Route("UpdateStatusByCode")]
         [HttpPost]
         public HttpResponseMessage UpdateStatusByCode(string bolCode)
         {
             try
             {
-                iBolServices.UpdateStatus(bolCode);
+                iBolServices.UpdateStatusByBolCode(bolCode);
                 var bolId = iBolServices.GetBolByBolCode(bolCode).Id;
                 var isSuccess = SendDeliverySMS(bolId);
                 if (isSuccess)

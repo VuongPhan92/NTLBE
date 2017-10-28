@@ -6,12 +6,12 @@ namespace Domain.IServices
 {
     public interface IBolServices
     {
-        IEnumerable<BillOfLanding> GetAllBol();
+        IEnumerable<BillOfLanding> GetAllBol(string filterDate);
         BillOfLanding GetBolById(int id);
         BillOfLanding GetBolByBolCode(string bolCode);
         void CreateNewBol(BolVM command,CustomerVM subComamnd);
         List<Customer> ValidateCustomerInfo(BillOfLanding bol, CustomerVM subComamnd);
         void UpdateStatus(int bolId);
-        void UpdateStatus(string bolCode);
+        void UpdateStatusByBolCode(string bolCode);
     }
 }

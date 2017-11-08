@@ -236,6 +236,54 @@ namespace API.Controllers
                 return false;
             }
         }
+
+        [Route("GetBolDeliveryByBolCode")]
+        [HttpGet]
+        public HttpResponseMessage GetBolDeliveryByBolCode(string bolCode)
+        {
+            try
+            {
+                var record =  iBolServices.GetBolByBolCode(bolCode);
+                var recordDelivery = record.DeliveryType1;
+                var result = new
+                {
+                    id = recordDelivery.Id,
+                    name = recordDelivery.Name
+                };
+                return GetResponse(result, HttpStatusCode.OK);
+            }
+            catch (Exception e)
+            {
+                return GetResponse(e.Message, HttpStatusCode.NotImplemented);
+            }
+        }
+
+        [Route("GetBolByBolCode")]
+        [HttpGet]
+        public HttpResponseMessage GetBolByBolCode(string bolCode)
+        {
+            try
+            {
+                var record = iBolServices.GetBolByBolCode(bolCode);
+                record.DeliveryType1.BillOfLandings = null;
+                foreach (var item in record.Branches)
+                {
+                    item.BillOfLandings = null;
+                };
+                foreach (var sub in record.Customers)
+                {
+                    sub.BillOfLandings = null;
+                };
+                
+                    record.Status.BillOfLandings = null;
+                
+                return GetResponse(record, HttpStatusCode.OK);
+            }
+            catch (Exception e)
+            {
+                return GetResponse(e.Message, HttpStatusCode.NotImplemented);
+            }
+        }
     }
 
     public class SMScontent

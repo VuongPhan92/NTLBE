@@ -942,3 +942,4 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.csprojResolveAs
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.pdb
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
+H:\NTL Repo\1102017\BE\NTLBE\API\bin\Microsoft.Azure.AppService.ApiApps.Service.dll

@@ -3,6 +3,7 @@
     public class BolVM
     {
         public int Id { get; set; }
+        public string DeliveryPrice { get; set; }
         public string AdditionalFee { get; set; }
         public string BolCode { get; set; }
         public string CollectInBehalf { get; set; }

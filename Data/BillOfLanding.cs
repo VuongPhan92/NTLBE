@@ -47,6 +47,7 @@ namespace Data
         public Nullable<bool> IsOnHand { get; set; }
         public Nullable<int> Start { get; set; }
         public string Contact { get; set; }
+        public string DeliveryPrice { get; set; }
     
         public virtual DeliveryType DeliveryType1 { get; set; }
         public virtual MerchandiseType MerchandiseType1 { get; set; }

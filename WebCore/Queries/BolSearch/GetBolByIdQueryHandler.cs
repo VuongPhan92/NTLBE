@@ -14,7 +14,7 @@ namespace WebCore.Queries.BolSearch
         public BillOfLanding Handle(GetBolByIdQuery query)
         {
             var uow = new UnitOfWork<EF>();
-            var result = uow.Repository<BillOfLanding>().GetAll("Branches,Customers,Status").SingleOrDefault(p => !p.DeletedDate.HasValue && p.Id==query.Id);
+            var result = uow.Repository<BillOfLanding>().GetAll("Branches,Customers,Status,MerchandiseType1").SingleOrDefault(p => !p.DeletedDate.HasValue && p.Id==query.Id);
             return result;
         }
     }

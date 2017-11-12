@@ -97,6 +97,7 @@
     <NavigationProperty Name="Status" Relationship="NgocTrangModel.FK_BillOfLanding_Status" FromRole="BillOfLanding" ToRole="Status" />
     <NavigationProperty Name="Branches" Relationship="NgocTrangModel.Bol_Branch_Ref" FromRole="BillOfLanding" ToRole="Branch" />
     <NavigationProperty Name="Customers" Relationship="NgocTrangModel.Bol_Customer_Ref" FromRole="BillOfLanding" ToRole="Customer" />
+    <Property Name="DeliveryPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Branch">
     <Key>

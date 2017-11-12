@@ -276,7 +276,7 @@ namespace API.Controllers
                 };
                 
                     record.Status.BillOfLandings = null;
-                
+                record.MerchandiseType1.BillOfLandings = null;
                 return GetResponse(record, HttpStatusCode.OK);
             }
             catch (Exception e)

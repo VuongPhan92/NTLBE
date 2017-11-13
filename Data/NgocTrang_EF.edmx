@@ -68,6 +68,9 @@
           <Property Name="IsOnHand" Type="bit" />
           <Property Name="Start" Type="int" />
           <Property Name="Contact" Type="nvarchar" MaxLength="20" />
+          <Property Name="DeliveryPrice" Type="nvarchar" MaxLength="50" />
+          <Property Name="SubTotal" Type="nvarchar" MaxLength="50" />
+          <Property Name="Discount" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Bol_Branch_Ref">
           <Key>
@@ -426,11 +429,14 @@
           <Property Name="IsOnHand" Type="Boolean" />
           <Property Name="Start" Type="Int32" />
           <Property Name="Contact" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DeliveryPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="DeliveryType1" Relationship="NgocTrangModel.FK_BillOfLanding_DeliveryType" FromRole="BillOfLanding" ToRole="DeliveryType" />
           <NavigationProperty Name="MerchandiseType1" Relationship="NgocTrangModel.FK_BillOfLanding_MerchandiseType" FromRole="BillOfLanding" ToRole="MerchandiseType" />
           <NavigationProperty Name="Status" Relationship="NgocTrangModel.FK_BillOfLanding_Status" FromRole="BillOfLanding" ToRole="Status" />
           <NavigationProperty Name="Branches" Relationship="NgocTrangModel.Bol_Branch_Ref" FromRole="BillOfLanding" ToRole="Branch" />
           <NavigationProperty Name="Customers" Relationship="NgocTrangModel.Bol_Customer_Ref" FromRole="BillOfLanding" ToRole="Customer" />
+          <Property Name="SubTotal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Discount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Branch">
           <Key>
@@ -608,6 +614,9 @@
           <EntitySetMapping Name="BillOfLandings">
             <EntityTypeMapping TypeName="NgocTrangModel.BillOfLanding">
               <MappingFragment StoreEntitySet="BillOfLanding">
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="DeliveryPrice" ColumnName="DeliveryPrice" />
                 <ScalarProperty Name="Contact" ColumnName="Contact" />
                 <ScalarProperty Name="Start" ColumnName="Start" />
                 <ScalarProperty Name="IsOnHand" ColumnName="IsOnHand" />

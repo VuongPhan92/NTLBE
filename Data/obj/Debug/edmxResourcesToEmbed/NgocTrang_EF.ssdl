@@ -63,6 +63,9 @@
     <Property Name="IsOnHand" Type="bit" />
     <Property Name="Start" Type="int" />
     <Property Name="Contact" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeliveryPrice" Type="nvarchar" MaxLength="50" />
+    <Property Name="SubTotal" Type="nvarchar" MaxLength="50" />
+    <Property Name="Discount" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Bol_Branch_Ref">
     <Key>

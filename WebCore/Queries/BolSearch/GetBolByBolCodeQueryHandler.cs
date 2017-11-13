@@ -15,7 +15,7 @@ namespace WebCore.Queries.BolSearch
         {
             var uow = new UnitOfWork<EF>();
             
-            var result = uow.Repository<BillOfLanding>().GetAll("DeliveryType1,Branches,Customers,Status").SingleOrDefault(p => !p.DeletedDate.HasValue && p.BolCode.Equals(query.BolCode));
+            var result = uow.Repository<BillOfLanding>().GetAll("DeliveryType1,Branches,Customers,Status,MerchandiseType1").SingleOrDefault(p => !p.DeletedDate.HasValue && p.BolCode.Equals(query.BolCode));
             return result;
         }
     }

@@ -98,6 +98,9 @@ namespace WebCore.Services
             bol.Weight = command.Weight;
             bol.Quantity = command.Quantity;
             bol.MixValue = command.MixedValue;
+            bol.DeliveryPrice = command.DeliveryPrice;
+            bol.SubTotal = command.SubTotal;
+            bol.Discount = command.Discount;
             bol.IsGuarantee = command.IsGuarantee;
             bol.IsOnHand = command.IsOnHand;
             bol.DeclareValue = command.DeclareValue;

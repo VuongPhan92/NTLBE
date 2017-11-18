@@ -257,6 +257,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BranchController.cs" />
     <Compile Include="Controllers\DeliveryTypeController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\BolController.cs" />
     <Compile Include="Controllers\MerchandiseTypeController.cs" />

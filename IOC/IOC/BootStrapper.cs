@@ -19,6 +19,7 @@ namespace IOC
 
         public void Boot()
         {
+            container.Register(typeof(IEmployeeServices), typeof(EmployeeServices));
             container.Register(typeof(IStatisticServices), typeof(StatisticServices));
             container.Register(typeof(IAccountServices), typeof(AccountServices));
             container.Register(typeof(IDeliveryTypeServices), typeof(DeliveryTypeServices));

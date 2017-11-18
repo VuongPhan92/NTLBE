@@ -1,0 +1,13 @@
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\Domain.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\Domain.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\SimpleInjector.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\Core.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\SimpleInjector.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Release\Domain.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Release\Domain.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Release\Domain.pdb

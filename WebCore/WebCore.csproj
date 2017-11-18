@@ -115,8 +115,12 @@
     <Compile Include="Command\BranchUpdate\BranchUpdateName\BranchUpdateNameCommandHandler.cs" />
     <Compile Include="Command\BranchUpdate\BranchUpdatePhone\BranchPhoneUpdateCommand.cs" />
     <Compile Include="Command\BranchUpdate\BranchUpdatePhone\BranchPhoneUpdateCommandHandler.cs" />
+    <Compile Include="Command\EmployeeAdd\EmployeeAddCommand.cs" />
+    <Compile Include="Command\EmployeeAdd\EmployeeAddCommandHandler.cs" />
+    <Compile Include="Command\EmployeeDelete\EmployeeDeleteCommandHandler.cs" />
     <Compile Include="Command\MerchandiseTypeAdd\MerchandiseTypeAddCommandHandler.cs" />
     <Compile Include="Command\MerchandiseTypeAdd\MerchandiseTypeAddCommand.cs" />
+    <Compile Include="Command\EmployeeDelete\EmployeeDeleteCommand.cs" />
     <Compile Include="Command\MerchandiseTypeDelete\MerchandiseTypeDeleteCommand.cs" />
     <Compile Include="Command\MerchandiseTypeDelete\MerchandiseTypeDeleteCommandHandler.cs" />
     <Compile Include="Queries\Account\AccountValidationByIdPasswordQuery.cs" />
@@ -135,6 +139,8 @@
     <Compile Include="Queries\CustomerGetById\GetCustomerByPhoneQuery.cs" />
     <Compile Include="Queries\CustomerGetById\GetCustomerByPhoneQueryHandler.cs" />
     <Compile Include="Queries\DeliveryTypeGetAll\DeliveryTypeGetAllQueryHandler.cs" />
+    <Compile Include="Queries\EmployeeGetAll\EmployeeGetAllQuery.cs" />
+    <Compile Include="Queries\EmployeeGetAll\EmployeeGetAllQueryHandler.cs" />
     <Compile Include="Queries\MerchandiseTypeGetAll\MerchandiseTypeGetAllQueryHandler.cs" />
     <Compile Include="Queries\MerchandiseTypeGetAll\MerchandiseTypeGetAllQuery.cs" />
     <Compile Include="Queries\DeliveryTypeGetAll\DeliveryTypeGetAllQuery.cs" />
@@ -150,6 +156,7 @@
     <Compile Include="Services\BranchServices.cs" />
     <Compile Include="Services\CustomerServices.cs" />
     <Compile Include="Services\DeliveryTypeServices.cs" />
+    <Compile Include="Services\EmployeeServices.cs" />
     <Compile Include="Services\MerchandiseTypeServices.cs" />
     <Compile Include="Services\StatisticServices.cs" />
     <Compile Include="Services\StatusServices.cs" />
@@ -178,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Command\CustomerAdd\" />
+    <Folder Include="Queries\EmployeeGetById\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

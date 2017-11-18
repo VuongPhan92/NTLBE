@@ -16,6 +16,7 @@
           <Property Name="CreatedBy" Type="int" />
           <Property Name="DeletedDate" Type="datetime2" Precision="7" />
           <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmpId" Type="int" />
         </EntityType>
         <EntityType Name="Account_Permission_Ref">
           <Key>
@@ -71,6 +72,7 @@
           <Property Name="DeliveryPrice" Type="nvarchar" MaxLength="50" />
           <Property Name="SubTotal" Type="nvarchar" MaxLength="50" />
           <Property Name="Discount" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsAlarm" Type="bit" />
         </EntityType>
         <EntityType Name="Bol_Branch_Ref">
           <Key>
@@ -130,6 +132,18 @@
           <Property Name="DeletedDate" Type="datetime2" Precision="7" />
           <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpId" />
+          </Key>
+          <Property Name="EmpId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+          <Property Name="DOB" Type="datetime2" Precision="7" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="30" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+          <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+        </EntityType>
         <EntityType Name="MerchandiseType">
           <Key>
             <PropertyRef Name="Id" />
@@ -174,6 +188,18 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
+        <Association Name="FK_Account_Employee">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+          <End Role="Account" Type="Self.Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpId" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="EmpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Account_Permission_Ref_Account">
           <End Role="Account" Type="Self.Account" Multiplicity="1" />
           <End Role="Account_Permission_Ref" Type="Self.Account_Permission_Ref" Multiplicity="*" />
@@ -292,10 +318,15 @@
           <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DeliveryType" EntityType="Self.DeliveryType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MerchandiseType" EntityType="Self.MerchandiseType" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Permission" EntityType="Self.Permission" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Account_Employee" Association="Self.FK_Account_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Account" EntitySet="Account" />
+          </AssociationSet>
           <AssociationSet Name="FK_Account_Permission_Ref_Account" Association="Self.FK_Account_Permission_Ref_Account">
             <End Role="Account" EntitySet="Account" />
             <End Role="Account_Permission_Ref" EntitySet="Account_Permission_Ref" />
@@ -340,7 +371,6 @@
         <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Accounts" EntityType="NgocTrangModel.Account" />
           <EntitySet Name="Activities" EntityType="NgocTrangModel.Activity" />
-          <EntitySet Name="BillOfLandings" EntityType="NgocTrangModel.BillOfLanding" />
           <EntitySet Name="Branches" EntityType="NgocTrangModel.Branch" />
           <EntitySet Name="Customers" EntityType="NgocTrangModel.Customer" />
           <EntitySet Name="DeliveryTypes" EntityType="NgocTrangModel.DeliveryType" />
@@ -348,6 +378,11 @@
           <EntitySet Name="Permissions" EntityType="NgocTrangModel.Permission" />
           <EntitySet Name="Status" EntityType="NgocTrangModel.Status" />
           <EntitySet Name="sysdiagrams" EntityType="NgocTrangModel.sysdiagram" />
+          <AssociationSet Name="Account_Permission_Ref" Association="NgocTrangModel.Account_Permission_Ref">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="Permission" EntitySet="Permissions" />
+          </AssociationSet>
+          <EntitySet Name="BillOfLandings" EntityType="NgocTrangModel.BillOfLanding" />
           <AssociationSet Name="FK_BillOfLanding_DeliveryType" Association="NgocTrangModel.FK_BillOfLanding_DeliveryType">
             <End Role="DeliveryType" EntitySet="DeliveryTypes" />
             <End Role="BillOfLanding" EntitySet="BillOfLandings" />
@@ -360,10 +395,6 @@
             <End Role="Status" EntitySet="Status" />
             <End Role="BillOfLanding" EntitySet="BillOfLandings" />
           </AssociationSet>
-          <AssociationSet Name="Account_Permission_Ref" Association="NgocTrangModel.Account_Permission_Ref">
-            <End Role="Account" EntitySet="Accounts" />
-            <End Role="Permission" EntitySet="Permissions" />
-          </AssociationSet>
           <AssociationSet Name="Bol_Branch_Ref" Association="NgocTrangModel.Bol_Branch_Ref">
             <End Role="BillOfLanding" EntitySet="BillOfLandings" />
             <End Role="Branch" EntitySet="Branches" />
@@ -372,7 +403,12 @@
             <End Role="BillOfLanding" EntitySet="BillOfLandings" />
             <End Role="Customer" EntitySet="Customers" />
           </AssociationSet>
-        </EntityContainer>
+          <EntitySet Name="Employees" EntityType="NgocTrangModel.Employee" />
+          <AssociationSet Name="FK_Account_Employee" Association="NgocTrangModel.FK_Account_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Account" EntitySet="Accounts" />
+          </AssociationSet>
+          </EntityContainer>
         <EntityType Name="Account">
           <Key>
             <PropertyRef Name="Id" />
@@ -385,6 +421,8 @@
           <Property Name="DeletedDate" Type="DateTime" Precision="7" />
           <Property Name="DeletedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Permissions" Relationship="NgocTrangModel.Account_Permission_Ref" FromRole="Account" ToRole="Permission" />
+          <Property Name="EmpId" Type="Int32" />
+          <NavigationProperty Name="Employee" Relationship="NgocTrangModel.FK_Account_Employee" FromRole="Account" ToRole="Employee" />
         </EntityType>
         <EntityType Name="Activity">
           <Key>
@@ -398,45 +436,6 @@
           <Property Name="CreatedDate" Type="DateTime" Precision="7" />
           <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Source_Id" Type="Int32" />
-        </EntityType>
-        <EntityType Name="BillOfLanding">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="BolCode" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="DeliveryType" Type="Int32" />
-          <Property Name="MerchandiseType" Type="Int32" />
-          <Property Name="StatusCode" Type="Int32" />
-          <Property Name="Weight" Type="Double" />
-          <Property Name="Quantity" Type="Int32" />
-          <Property Name="ReceiveDate" Type="DateTime" Precision="7" />
-          <Property Name="ReceiveTime" Type="DateTime" Precision="7" />
-          <Property Name="SendDate" Type="DateTime" Precision="7" />
-          <Property Name="SendAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="AdditionalFee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Total" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Prepaid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Liabilities" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CreatedDate" Type="DateTime" Precision="7" />
-          <Property Name="CreatedBy" Type="Int32" />
-          <Property Name="DeletedDate" Type="DateTime" Precision="7" />
-          <Property Name="DeletedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="MixValue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="CollectInBehalf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="DeclareValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="IsGuarantee" Type="Boolean" />
-          <Property Name="IsOnHand" Type="Boolean" />
-          <Property Name="Start" Type="Int32" />
-          <Property Name="Contact" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="DeliveryPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="DeliveryType1" Relationship="NgocTrangModel.FK_BillOfLanding_DeliveryType" FromRole="BillOfLanding" ToRole="DeliveryType" />
-          <NavigationProperty Name="MerchandiseType1" Relationship="NgocTrangModel.FK_BillOfLanding_MerchandiseType" FromRole="BillOfLanding" ToRole="MerchandiseType" />
-          <NavigationProperty Name="Status" Relationship="NgocTrangModel.FK_BillOfLanding_Status" FromRole="BillOfLanding" ToRole="Status" />
-          <NavigationProperty Name="Branches" Relationship="NgocTrangModel.Bol_Branch_Ref" FromRole="BillOfLanding" ToRole="Branch" />
-          <NavigationProperty Name="Customers" Relationship="NgocTrangModel.Bol_Customer_Ref" FromRole="BillOfLanding" ToRole="Customer" />
-          <Property Name="SubTotal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Discount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Branch">
           <Key>
@@ -530,6 +529,50 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
+        <Association Name="Account_Permission_Ref">
+          <End Type="NgocTrangModel.Account" Role="Account" Multiplicity="*" />
+          <End Type="NgocTrangModel.Permission" Role="Permission" Multiplicity="*" />
+        </Association>
+        <EntityType Name="BillOfLanding">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BolCode" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DeliveryType" Type="Int32" />
+          <Property Name="MerchandiseType" Type="Int32" />
+          <Property Name="StatusCode" Type="Int32" />
+          <Property Name="Weight" Type="Double" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="ReceiveDate" Type="DateTime" Precision="7" />
+          <Property Name="ReceiveTime" Type="DateTime" Precision="7" />
+          <Property Name="SendDate" Type="DateTime" Precision="7" />
+          <Property Name="SendAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AdditionalFee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Total" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Prepaid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Liabilities" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="7" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="DeletedDate" Type="DateTime" Precision="7" />
+          <Property Name="DeletedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MixValue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CollectInBehalf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DeclareValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsGuarantee" Type="Boolean" />
+          <Property Name="IsOnHand" Type="Boolean" />
+          <Property Name="Start" Type="Int32" />
+          <Property Name="Contact" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DeliveryPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SubTotal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Discount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsAlarm" Type="Boolean" />
+          <NavigationProperty Name="DeliveryType1" Relationship="NgocTrangModel.FK_BillOfLanding_DeliveryType" FromRole="BillOfLanding" ToRole="DeliveryType" />
+          <NavigationProperty Name="MerchandiseType1" Relationship="NgocTrangModel.FK_BillOfLanding_MerchandiseType" FromRole="BillOfLanding" ToRole="MerchandiseType" />
+          <NavigationProperty Name="Status" Relationship="NgocTrangModel.FK_BillOfLanding_Status" FromRole="BillOfLanding" ToRole="Status" />
+          <NavigationProperty Name="Branches" Relationship="NgocTrangModel.Bol_Branch_Ref" FromRole="BillOfLanding" ToRole="Branch" />
+          <NavigationProperty Name="Customers" Relationship="NgocTrangModel.Bol_Customer_Ref" FromRole="BillOfLanding" ToRole="Customer" />
+        </EntityType>
         <Association Name="FK_BillOfLanding_DeliveryType">
           <End Type="NgocTrangModel.DeliveryType" Role="DeliveryType" Multiplicity="0..1" />
           <End Type="NgocTrangModel.BillOfLanding" Role="BillOfLanding" Multiplicity="*" />
@@ -566,10 +609,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="Account_Permission_Ref">
-          <End Type="NgocTrangModel.Account" Role="Account" Multiplicity="*" />
-          <End Type="NgocTrangModel.Permission" Role="Permission" Multiplicity="*" />
-        </Association>
         <Association Name="Bol_Branch_Ref">
           <End Type="NgocTrangModel.BillOfLanding" Role="BillOfLanding" Multiplicity="*" />
           <End Type="NgocTrangModel.Branch" Role="Branch" Multiplicity="*" />
@@ -577,6 +616,31 @@
         <Association Name="Bol_Customer_Ref">
           <End Type="NgocTrangModel.BillOfLanding" Role="BillOfLanding" Multiplicity="*" />
           <End Type="NgocTrangModel.Customer" Role="Customer" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpId" />
+          </Key>
+          <Property Name="EmpId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DOB" Type="DateTime" Precision="7" />
+          <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="7" />
+          <Property Name="DeletedDate" Type="DateTime" Precision="7" />
+          <NavigationProperty Name="Accounts" Relationship="NgocTrangModel.FK_Account_Employee" FromRole="Employee" ToRole="Account" />
+        </EntityType>
+        <Association Name="FK_Account_Employee">
+          <End Type="NgocTrangModel.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="NgocTrangModel.Account" Role="Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpId" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="EmpId" />
+            </Dependent>
+          </ReferentialConstraint>
         </Association>
         </Schema>
     </edmx:ConceptualModels>
@@ -587,6 +651,7 @@
           <EntitySetMapping Name="Accounts">
             <EntityTypeMapping TypeName="NgocTrangModel.Account">
               <MappingFragment StoreEntitySet="Account">
+                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
                 <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
                 <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
@@ -607,41 +672,6 @@
                 <ScalarProperty Name="Previous_value" ColumnName="Previous_value" />
                 <ScalarProperty Name="Action" ColumnName="Action" />
                 <ScalarProperty Name="Source" ColumnName="Source" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="BillOfLandings">
-            <EntityTypeMapping TypeName="NgocTrangModel.BillOfLanding">
-              <MappingFragment StoreEntitySet="BillOfLanding">
-                <ScalarProperty Name="Discount" ColumnName="Discount" />
-                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
-                <ScalarProperty Name="DeliveryPrice" ColumnName="DeliveryPrice" />
-                <ScalarProperty Name="Contact" ColumnName="Contact" />
-                <ScalarProperty Name="Start" ColumnName="Start" />
-                <ScalarProperty Name="IsOnHand" ColumnName="IsOnHand" />
-                <ScalarProperty Name="IsGuarantee" ColumnName="IsGuarantee" />
-                <ScalarProperty Name="DeclareValue" ColumnName="DeclareValue" />
-                <ScalarProperty Name="CollectInBehalf" ColumnName="CollectInBehalf" />
-                <ScalarProperty Name="MixValue" ColumnName="MixValue" />
-                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
-                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
-                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-                <ScalarProperty Name="Liabilities" ColumnName="Liabilities" />
-                <ScalarProperty Name="Prepaid" ColumnName="Prepaid" />
-                <ScalarProperty Name="Total" ColumnName="Total" />
-                <ScalarProperty Name="AdditionalFee" ColumnName="AdditionalFee" />
-                <ScalarProperty Name="SendAddress" ColumnName="SendAddress" />
-                <ScalarProperty Name="SendDate" ColumnName="SendDate" />
-                <ScalarProperty Name="ReceiveTime" ColumnName="ReceiveTime" />
-                <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
-                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-                <ScalarProperty Name="Weight" ColumnName="Weight" />
-                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
-                <ScalarProperty Name="MerchandiseType" ColumnName="MerchandiseType" />
-                <ScalarProperty Name="DeliveryType" ColumnName="DeliveryType" />
-                <ScalarProperty Name="BolCode" ColumnName="BolCode" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -747,6 +777,42 @@
               <ScalarProperty Name="Id" ColumnName="AccountId" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="BillOfLandings">
+            <EntityTypeMapping TypeName="NgocTrangModel.BillOfLanding">
+              <MappingFragment StoreEntitySet="BillOfLanding">
+                <ScalarProperty Name="IsAlarm" ColumnName="IsAlarm" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="DeliveryPrice" ColumnName="DeliveryPrice" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Start" ColumnName="Start" />
+                <ScalarProperty Name="IsOnHand" ColumnName="IsOnHand" />
+                <ScalarProperty Name="IsGuarantee" ColumnName="IsGuarantee" />
+                <ScalarProperty Name="DeclareValue" ColumnName="DeclareValue" />
+                <ScalarProperty Name="CollectInBehalf" ColumnName="CollectInBehalf" />
+                <ScalarProperty Name="MixValue" ColumnName="MixValue" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Liabilities" ColumnName="Liabilities" />
+                <ScalarProperty Name="Prepaid" ColumnName="Prepaid" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="AdditionalFee" ColumnName="AdditionalFee" />
+                <ScalarProperty Name="SendAddress" ColumnName="SendAddress" />
+                <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+                <ScalarProperty Name="ReceiveTime" ColumnName="ReceiveTime" />
+                <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+                <ScalarProperty Name="MerchandiseType" ColumnName="MerchandiseType" />
+                <ScalarProperty Name="DeliveryType" ColumnName="DeliveryType" />
+                <ScalarProperty Name="BolCode" ColumnName="BolCode" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <AssociationSetMapping Name="Bol_Branch_Ref" TypeName="NgocTrangModel.Bol_Branch_Ref" StoreEntitySet="Bol_Branch_Ref">
             <EndProperty Name="Branch">
               <ScalarProperty Name="Id" ColumnName="BranchId" />
@@ -763,7 +829,20 @@
               <ScalarProperty Name="Id" ColumnName="BolId" />
             </EndProperty>
           </AssociationSetMapping>
-        </EntityContainerMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="NgocTrangModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
   </edmx:Runtime>

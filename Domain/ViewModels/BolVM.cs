@@ -29,7 +29,8 @@
         public string MixedValue { get; set; }
         public string DeclareValue { get; set; }
         public string Total { get; set; }
-        public bool IsOnHand { get; set; } 
+        public bool IsOnHand { get; set; }
+        public bool IsAlarm { get; set; }
         public int Start { get; set; }
         public string Contact { get; set; }
     }

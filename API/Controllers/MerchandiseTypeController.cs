@@ -25,8 +25,8 @@ namespace API.Controllers
         {
             try
             {
-                iMerchandiseTypeServices.GetAllMerchandiseType();
-                return GetResponse(iMerchandiseTypeServices.GetAllMerchandiseType(), HttpStatusCode.OK);
+                var merchandiseType = iMerchandiseTypeServices.GetAllMerchandiseType();
+                return GetResponse(merchandiseType, HttpStatusCode.OK);
             }
             catch (Exception)
             {

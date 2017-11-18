@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="NgocTrangAPI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\ntt\\Desktop\\Vuong\ Phan\\New\ pull\\ntlbe\\API\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\ntt\\Desktop\\Vuong\ Phan\\New\ pull\\ntlbe\\API\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:ngoctrangdb.database.windows.net,1433;Initial Catalog=NgocTrang;Persist Security Info=False;User ID=NgocTrang;Password=P@ssword;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ntt\\Desktop\\Vuong\ Phan\\New\ pull\\ntlbe\\API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Entities-Web.config Connection String" description="Entities Connection String used in web.config by the application to access the database." value="metadata=res://*/NgocTrang_EF.csdl|res://*/NgocTrang_EF.ssdl|res://*/NgocTrang_EF.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:ngoctrangdb.database.windows.net,1433;Initial Catalog=NgocTrang;Persist Security Info=False;User ID=NgocTrang;Password=P@ssword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ntt\\Desktop\\Vuong\ Phan\\New\ pull\\ntlbe\\API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Entities']/@connectionString" />
+  </parameter>
+</parameters>

@@ -11,6 +11,7 @@
     <Property Name="CreatedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmpId" Type="int" />
   </EntityType>
   <EntityType Name="Account_Permission_Ref">
     <Key>
@@ -66,6 +67,7 @@
     <Property Name="DeliveryPrice" Type="nvarchar" MaxLength="50" />
     <Property Name="SubTotal" Type="nvarchar" MaxLength="50" />
     <Property Name="Discount" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsAlarm" Type="bit" />
   </EntityType>
   <EntityType Name="Bol_Branch_Ref">
     <Key>
@@ -125,6 +127,18 @@
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmpId" />
+    </Key>
+    <Property Name="EmpId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DOB" Type="datetime2" Precision="7" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="30" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+  </EntityType>
   <EntityType Name="MerchandiseType">
     <Key>
       <PropertyRef Name="Id" />
@@ -169,6 +183,18 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
+  <Association Name="FK_Account_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Account" Type="Self.Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmpId" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="EmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Account_Permission_Ref_Account">
     <End Role="Account" Type="Self.Account" Multiplicity="1" />
     <End Role="Account_Permission_Ref" Type="Self.Account_Permission_Ref" Multiplicity="*" />
@@ -287,10 +313,15 @@
     <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DeliveryType" EntityType="Self.DeliveryType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MerchandiseType" EntityType="Self.MerchandiseType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Permission" EntityType="Self.Permission" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Account_Employee" Association="Self.FK_Account_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Account" EntitySet="Account" />
+    </AssociationSet>
     <AssociationSet Name="FK_Account_Permission_Ref_Account" Association="Self.FK_Account_Permission_Ref_Account">
       <End Role="Account" EntitySet="Account" />
       <End Role="Account_Permission_Ref" EntitySet="Account_Permission_Ref" />

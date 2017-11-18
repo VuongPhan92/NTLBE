@@ -103,6 +103,7 @@ namespace WebCore.Services
             bol.Discount = command.Discount;
             bol.IsGuarantee = command.IsGuarantee;
             bol.IsOnHand = command.IsOnHand;
+            bol.IsAlarm = command.IsAlarm;
             bol.DeclareValue = command.DeclareValue;
             bol.Contact = command.Contact;
             bol.Start = command.Start;

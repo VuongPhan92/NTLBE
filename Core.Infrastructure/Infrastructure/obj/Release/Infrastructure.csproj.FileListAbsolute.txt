@@ -1,0 +1,16 @@
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Infrastructure.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Infrastructure.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Infrastructure.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\log4net.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\SimpleInjector.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Core.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\log4net.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\SimpleInjector.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.pdb

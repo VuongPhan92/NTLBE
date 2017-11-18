@@ -50,6 +50,7 @@ namespace Data
         public string DeliveryPrice { get; set; }
         public string SubTotal { get; set; }
         public string Discount { get; set; }
+        public Nullable<bool> IsAlarm { get; set; }
     
         public virtual DeliveryType DeliveryType1 { get; set; }
         public virtual MerchandiseType MerchandiseType1 { get; set; }

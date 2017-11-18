@@ -27,7 +27,6 @@ namespace Data
     
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Activity> Activities { get; set; }
-        public virtual DbSet<BillOfLanding> BillOfLandings { get; set; }
         public virtual DbSet<Branch> Branches { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<DeliveryType> DeliveryTypes { get; set; }
@@ -35,5 +34,7 @@ namespace Data
         public virtual DbSet<Permission> Permissions { get; set; }
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<BillOfLanding> BillOfLandings { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
     }
 }

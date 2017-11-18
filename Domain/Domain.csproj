@@ -52,6 +52,7 @@
     <Compile Include="IServices\IBranchServices.cs" />
     <Compile Include="IServices\ICustomerServices.cs" />
     <Compile Include="IServices\IDeliveryTypeServices.cs" />
+    <Compile Include="IServices\IEmployeeServices.cs" />
     <Compile Include="IServices\IMerchandiseTypeServices.cs" />
     <Compile Include="IServices\IStatisticServices.cs" />
     <Compile Include="IServices\IStatusServices.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="ViewModels\CustomerVM.cs" />
     <Compile Include="ViewModels\DeliveryTypeVM.cs" />
     <Compile Include="ViewModels\Chart\GetBolOnSpecificLocationDataVM.cs" />
+    <Compile Include="ViewModels\EmployeeVM.cs" />
     <Compile Include="ViewModels\MerchandiseTypeVM.cs" />
     <Compile Include="ViewModels\ComponentVM.cs" />
     <Compile Include="ViewModels\SpeedSMS.cs" />

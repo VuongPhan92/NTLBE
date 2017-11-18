@@ -1,0 +1,10 @@
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\Data.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\Data.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Release\Data.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Release\Data.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Release\Data.pdb

@@ -1,0 +1,12 @@
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\Core.dll.config
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\Core.pdb
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\SimpleInjector.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Release\SimpleInjector.xml
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.pdb

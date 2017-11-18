@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NgocTrangModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Account_Permission_Ref">
+    <Key>
+      <PropertyRef Name="AccountId" />
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="PermissionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Source" Type="nvarchar" MaxLength="50" />
+    <Property Name="Action" Type="nvarchar" MaxLength="10" />
+    <Property Name="Previous_value" Type="nvarchar(max)" />
+    <Property Name="Current_value" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Source_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="BillOfLanding">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BolCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="DeliveryType" Type="int" />
+    <Property Name="MerchandiseType" Type="int" />
+    <Property Name="StatusCode" Type="int" />
+    <Property Name="Weight" Type="float" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ReceiveDate" Type="datetime2" Precision="7" />
+    <Property Name="ReceiveTime" Type="datetime2" Precision="7" />
+    <Property Name="SendDate" Type="datetime2" Precision="7" />
+    <Property Name="SendAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdditionalFee" Type="nvarchar" MaxLength="50" />
+    <Property Name="Total" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prepaid" Type="nvarchar" MaxLength="50" />
+    <Property Name="Liabilities" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="MixValue" Type="nvarchar" MaxLength="100" />
+    <Property Name="CollectInBehalf" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeclareValue" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsGuarantee" Type="bit" />
+    <Property Name="IsOnHand" Type="bit" />
+    <Property Name="Start" Type="int" />
+    <Property Name="Contact" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Bol_Branch_Ref">
+    <Key>
+      <PropertyRef Name="BolId" />
+      <PropertyRef Name="BranchId" />
+    </Key>
+    <Property Name="BolId" Type="int" Nullable="false" />
+    <Property Name="BranchId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bol_Customer_Ref">
+    <Key>
+      <PropertyRef Name="BolId" />
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="BolId" Type="int" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchCode" Type="nchar" MaxLength="10" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="IdNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DeliveryType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Value" Type="int" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MerchandiseType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MerchandiseType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="CalculationUnit" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="50" />
+    <Property Name="StatusDescription" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime2" Precision="7" />
+    <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Account_Permission_Ref_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="Account_Permission_Ref" Type="Self.Account_Permission_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account_Permission_Ref">
+        <PropertyRef Name="AccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_Permission_Ref_Permission">
+    <End Role="Permission" Type="Self.Permission" Multiplicity="1" />
+    <End Role="Account_Permission_Ref" Type="Self.Account_Permission_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Account_Permission_Ref">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BillOfLanding_DeliveryType">
+    <End Role="DeliveryType" Type="Self.DeliveryType" Multiplicity="0..1" />
+    <End Role="BillOfLanding" Type="Self.BillOfLanding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DeliveryType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BillOfLanding">
+        <PropertyRef Name="DeliveryType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BillOfLanding_MerchandiseType">
+    <End Role="MerchandiseType" Type="Self.MerchandiseType" Multiplicity="0..1" />
+    <End Role="BillOfLanding" Type="Self.BillOfLanding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MerchandiseType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BillOfLanding">
+        <PropertyRef Name="MerchandiseType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BillOfLanding_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="BillOfLanding" Type="Self.BillOfLanding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BillOfLanding">
+        <PropertyRef Name="StatusCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bol_Branch_Ref_BillOfLanding">
+    <End Role="BillOfLanding" Type="Self.BillOfLanding" Multiplicity="1" />
+    <End Role="Bol_Branch_Ref" Type="Self.Bol_Branch_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BillOfLanding">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bol_Branch_Ref">
+        <PropertyRef Name="BolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bol_Branch_Ref_Branch">
+    <End Role="Branch" Type="Self.Branch" Multiplicity="1" />
+    <End Role="Bol_Branch_Ref" Type="Self.Bol_Branch_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bol_Branch_Ref">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bol_Customer_Ref_BillOfLanding">
+    <End Role="BillOfLanding" Type="Self.BillOfLanding" Multiplicity="1" />
+    <End Role="Bol_Customer_Ref" Type="Self.Bol_Customer_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BillOfLanding">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bol_Customer_Ref">
+        <PropertyRef Name="BolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bol_Customer_Ref_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Bol_Customer_Ref" Type="Self.Bol_Customer_Ref" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bol_Customer_Ref">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NgocTrangModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Account_Permission_Ref" EntityType="Self.Account_Permission_Ref" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Activity" EntityType="Self.Activity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BillOfLanding" EntityType="Self.BillOfLanding" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bol_Branch_Ref" EntityType="Self.Bol_Branch_Ref" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bol_Customer_Ref" EntityType="Self.Bol_Customer_Ref" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DeliveryType" EntityType="Self.DeliveryType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MerchandiseType" EntityType="Self.MerchandiseType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Permission" EntityType="Self.Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Account_Permission_Ref_Account" Association="Self.FK_Account_Permission_Ref_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Account_Permission_Ref" EntitySet="Account_Permission_Ref" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_Permission_Ref_Permission" Association="Self.FK_Account_Permission_Ref_Permission">
+      <End Role="Permission" EntitySet="Permission" />
+      <End Role="Account_Permission_Ref" EntitySet="Account_Permission_Ref" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BillOfLanding_DeliveryType" Association="Self.FK_BillOfLanding_DeliveryType">
+      <End Role="DeliveryType" EntitySet="DeliveryType" />
+      <End Role="BillOfLanding" EntitySet="BillOfLanding" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BillOfLanding_MerchandiseType" Association="Self.FK_BillOfLanding_MerchandiseType">
+      <End Role="MerchandiseType" EntitySet="MerchandiseType" />
+      <End Role="BillOfLanding" EntitySet="BillOfLanding" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BillOfLanding_Status" Association="Self.FK_BillOfLanding_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="BillOfLanding" EntitySet="BillOfLanding" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bol_Branch_Ref_BillOfLanding" Association="Self.FK_Bol_Branch_Ref_BillOfLanding">
+      <End Role="BillOfLanding" EntitySet="BillOfLanding" />
+      <End Role="Bol_Branch_Ref" EntitySet="Bol_Branch_Ref" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bol_Branch_Ref_Branch" Association="Self.FK_Bol_Branch_Ref_Branch">
+      <End Role="Branch" EntitySet="Branch" />
+      <End Role="Bol_Branch_Ref" EntitySet="Bol_Branch_Ref" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bol_Customer_Ref_BillOfLanding" Association="Self.FK_Bol_Customer_Ref_BillOfLanding">
+      <End Role="BillOfLanding" EntitySet="BillOfLanding" />
+      <End Role="Bol_Customer_Ref" EntitySet="Bol_Customer_Ref" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bol_Customer_Ref_Customer" Association="Self.FK_Bol_Customer_Ref_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Bol_Customer_Ref" EntitySet="Bol_Customer_Ref" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

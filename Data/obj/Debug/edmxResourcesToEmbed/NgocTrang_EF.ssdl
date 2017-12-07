@@ -173,16 +173,6 @@
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
   <Association Name="FK_Account_Employee">
     <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
     <End Role="Account" Type="Self.Account" Multiplicity="*" />
@@ -317,7 +307,6 @@
     <EntitySet Name="MerchandiseType" EntityType="Self.MerchandiseType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Permission" EntityType="Self.Permission" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Account_Employee" Association="Self.FK_Account_Employee">
       <End Role="Employee" EntitySet="Employee" />
       <End Role="Account" EntitySet="Account" />

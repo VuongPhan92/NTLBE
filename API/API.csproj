@@ -223,7 +223,6 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
@@ -309,6 +308,7 @@
     <None Include="Properties\PublishProfiles\NgocTrangAPI - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\NgocTrangAPI - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\NgocTrangAPI - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\NgocTrangAPI-MatBao.pubxml" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

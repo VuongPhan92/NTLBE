@@ -28,7 +28,7 @@ namespace API.Controllers
                 var merchandiseType = iMerchandiseTypeServices.GetAllMerchandiseType();
                 return GetResponse(merchandiseType, HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return PostResponse(HttpStatusCode.NotAcceptable);
             }

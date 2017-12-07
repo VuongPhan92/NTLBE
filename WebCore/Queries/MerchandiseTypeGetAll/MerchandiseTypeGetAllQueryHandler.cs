@@ -11,6 +11,7 @@ namespace WebCore.Queries
         public IEnumerable<MerchandiseType> Handle(MerchandiseTypeGetAllQuery query)
         {
             var uow = new UnitOfWork<EF>();
+            
             var result = uow.Repository<MerchandiseType>().GetAll().Where(p => !p.DeletedDate.HasValue);
             uow.Dispose();
             return result;

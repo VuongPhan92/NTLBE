@@ -111,17 +111,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="NgocTrangModel.sysdiagram">
-        <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="definition" ColumnName="definition" />
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="name" ColumnName="name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <AssociationSetMapping Name="Account_Permission_Ref" TypeName="NgocTrangModel.Account_Permission_Ref" StoreEntitySet="Account_Permission_Ref">
       <EndProperty Name="Permission">
         <ScalarProperty Name="Id" ColumnName="PermissionId" />
@@ -166,6 +155,19 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="NgocTrangModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <AssociationSetMapping Name="Bol_Branch_Ref" TypeName="NgocTrangModel.Bol_Branch_Ref" StoreEntitySet="Bol_Branch_Ref">
       <EndProperty Name="Branch">
         <ScalarProperty Name="Id" ColumnName="BranchId" />
@@ -182,18 +184,5 @@
         <ScalarProperty Name="Id" ColumnName="BolId" />
       </EndProperty>
     </AssociationSetMapping>
-    <EntitySetMapping Name="Employees">
-      <EntityTypeMapping TypeName="NgocTrangModel.Employee">
-        <MappingFragment StoreEntitySet="Employee">
-          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
-          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="DOB" ColumnName="DOB" />
-          <ScalarProperty Name="FullName" ColumnName="FullName" />
-          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -178,16 +178,6 @@
           <Property Name="DeletedDate" Type="datetime2" Precision="7" />
           <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
-        </EntityType>
         <Association Name="FK_Account_Employee">
           <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
           <End Role="Account" Type="Self.Account" Multiplicity="*" />
@@ -322,7 +312,6 @@
           <EntitySet Name="MerchandiseType" EntityType="Self.MerchandiseType" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Permission" EntityType="Self.Permission" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Account_Employee" Association="Self.FK_Account_Employee">
             <End Role="Employee" EntitySet="Employee" />
             <End Role="Account" EntitySet="Account" />
@@ -377,12 +366,16 @@
           <EntitySet Name="MerchandiseTypes" EntityType="NgocTrangModel.MerchandiseType" />
           <EntitySet Name="Permissions" EntityType="NgocTrangModel.Permission" />
           <EntitySet Name="Status" EntityType="NgocTrangModel.Status" />
-          <EntitySet Name="sysdiagrams" EntityType="NgocTrangModel.sysdiagram" />
           <AssociationSet Name="Account_Permission_Ref" Association="NgocTrangModel.Account_Permission_Ref">
             <End Role="Account" EntitySet="Accounts" />
             <End Role="Permission" EntitySet="Permissions" />
           </AssociationSet>
           <EntitySet Name="BillOfLandings" EntityType="NgocTrangModel.BillOfLanding" />
+          <EntitySet Name="Employees" EntityType="NgocTrangModel.Employee" />
+          <AssociationSet Name="FK_Account_Employee" Association="NgocTrangModel.FK_Account_Employee">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Account" EntitySet="Accounts" />
+          </AssociationSet>
           <AssociationSet Name="FK_BillOfLanding_DeliveryType" Association="NgocTrangModel.FK_BillOfLanding_DeliveryType">
             <End Role="DeliveryType" EntitySet="DeliveryTypes" />
             <End Role="BillOfLanding" EntitySet="BillOfLandings" />
@@ -402,11 +395,6 @@
           <AssociationSet Name="Bol_Customer_Ref" Association="NgocTrangModel.Bol_Customer_Ref">
             <End Role="BillOfLanding" EntitySet="BillOfLandings" />
             <End Role="Customer" EntitySet="Customers" />
-          </AssociationSet>
-          <EntitySet Name="Employees" EntityType="NgocTrangModel.Employee" />
-          <AssociationSet Name="FK_Account_Employee" Association="NgocTrangModel.FK_Account_Employee">
-            <End Role="Employee" EntitySet="Employees" />
-            <End Role="Account" EntitySet="Accounts" />
           </AssociationSet>
           </EntityContainer>
         <EntityType Name="Account">
@@ -519,16 +507,6 @@
           <Property Name="DeletedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="BillOfLandings" Relationship="NgocTrangModel.FK_BillOfLanding_Status" FromRole="Status" ToRole="BillOfLanding" />
         </EntityType>
-        <EntityType Name="sysdiagram">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-        </EntityType>
         <Association Name="Account_Permission_Ref">
           <End Type="NgocTrangModel.Account" Role="Account" Multiplicity="*" />
           <End Type="NgocTrangModel.Permission" Role="Permission" Multiplicity="*" />
@@ -573,6 +551,31 @@
           <NavigationProperty Name="Branches" Relationship="NgocTrangModel.Bol_Branch_Ref" FromRole="BillOfLanding" ToRole="Branch" />
           <NavigationProperty Name="Customers" Relationship="NgocTrangModel.Bol_Customer_Ref" FromRole="BillOfLanding" ToRole="Customer" />
         </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpId" />
+          </Key>
+          <Property Name="EmpId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DOB" Type="DateTime" Precision="7" />
+          <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="7" />
+          <Property Name="DeletedDate" Type="DateTime" Precision="7" />
+          <NavigationProperty Name="Accounts" Relationship="NgocTrangModel.FK_Account_Employee" FromRole="Employee" ToRole="Account" />
+        </EntityType>
+        <Association Name="FK_Account_Employee">
+          <End Type="NgocTrangModel.Employee" Role="Employee" Multiplicity="0..1" />
+          <End Type="NgocTrangModel.Account" Role="Account" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpId" />
+            </Principal>
+            <Dependent Role="Account">
+              <PropertyRef Name="EmpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_BillOfLanding_DeliveryType">
           <End Type="NgocTrangModel.DeliveryType" Role="DeliveryType" Multiplicity="0..1" />
           <End Type="NgocTrangModel.BillOfLanding" Role="BillOfLanding" Multiplicity="*" />
@@ -616,31 +619,6 @@
         <Association Name="Bol_Customer_Ref">
           <End Type="NgocTrangModel.BillOfLanding" Role="BillOfLanding" Multiplicity="*" />
           <End Type="NgocTrangModel.Customer" Role="Customer" Multiplicity="*" />
-        </Association>
-        <EntityType Name="Employee">
-          <Key>
-            <PropertyRef Name="EmpId" />
-          </Key>
-          <Property Name="EmpId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="DOB" Type="DateTime" Precision="7" />
-          <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CreatedDate" Type="DateTime" Precision="7" />
-          <Property Name="DeletedDate" Type="DateTime" Precision="7" />
-          <NavigationProperty Name="Accounts" Relationship="NgocTrangModel.FK_Account_Employee" FromRole="Employee" ToRole="Account" />
-        </EntityType>
-        <Association Name="FK_Account_Employee">
-          <End Type="NgocTrangModel.Employee" Role="Employee" Multiplicity="0..1" />
-          <End Type="NgocTrangModel.Account" Role="Account" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Employee">
-              <PropertyRef Name="EmpId" />
-            </Principal>
-            <Dependent Role="Account">
-              <PropertyRef Name="EmpId" />
-            </Dependent>
-          </ReferentialConstraint>
         </Association>
         </Schema>
     </edmx:ConceptualModels>
@@ -758,17 +736,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="NgocTrangModel.sysdiagram">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="definition" ColumnName="definition" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="name" ColumnName="name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <AssociationSetMapping Name="Account_Permission_Ref" TypeName="NgocTrangModel.Account_Permission_Ref" StoreEntitySet="Account_Permission_Ref">
             <EndProperty Name="Permission">
               <ScalarProperty Name="Id" ColumnName="PermissionId" />
@@ -813,6 +780,19 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="NgocTrangModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <AssociationSetMapping Name="Bol_Branch_Ref" TypeName="NgocTrangModel.Bol_Branch_Ref" StoreEntitySet="Bol_Branch_Ref">
             <EndProperty Name="Branch">
               <ScalarProperty Name="Id" ColumnName="BranchId" />
@@ -829,19 +809,6 @@
               <ScalarProperty Name="Id" ColumnName="BolId" />
             </EndProperty>
           </AssociationSetMapping>
-          <EntitySetMapping Name="Employees">
-            <EntityTypeMapping TypeName="NgocTrangModel.Employee">
-              <MappingFragment StoreEntitySet="Employee">
-                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
-                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="Phone" ColumnName="Phone" />
-                <ScalarProperty Name="DOB" ColumnName="DOB" />
-                <ScalarProperty Name="FullName" ColumnName="FullName" />
-                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

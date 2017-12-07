@@ -836,6 +836,7 @@ H:\NTL Repo\1102017\BE\NTLBE\API\bin\WebCore.pdb
 H:\NTL Repo\1102017\BE\NTLBE\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 H:\NTL Repo\1102017\BE\NTLBE\API\obj\Debug\API.dll
 H:\NTL Repo\1102017\BE\NTLBE\API\obj\Debug\API.pdb
+H:\NTL Repo\1102017\BE\NTLBE\API\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\roslyn\csc.exe
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -862,6 +863,7 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\IOC.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.IdentityModel.Logging.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.IdentityModel.Tokens.dll
@@ -941,5 +943,3 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\WebCore.pdb
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\obj\Debug\API.pdb
-C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\API\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
-H:\NTL Repo\1102017\BE\NTLBE\API\bin\Microsoft.Azure.AppService.ApiApps.Service.dll

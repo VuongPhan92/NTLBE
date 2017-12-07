@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7c31993f27bc4a7fad5e934684b798c8" Name="Diagram1" ZoomLevel="50">
+      <Diagram DiagramId="7c31993f27bc4a7fad5e934684b798c8" Name="Diagram1" ZoomLevel="49">
         <EntityTypeShape EntityType="NgocTrangModel.BillOfLanding" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="NgocTrangModel.Employee" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="NgocTrangModel.Employee" Width="1.5" PointX="2.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

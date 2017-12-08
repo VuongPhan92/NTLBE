@@ -1,8 +1,6 @@
 ﻿using Domain.IServices;
 using Domain.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -18,7 +16,6 @@ namespace API.Controllers
             iBranchServices = _iBranchServices;
         }
 
-
         //GET: NgocTrang/Api/Bol/GetBranches
         [Route("GetAll")]
         [HttpGet]
@@ -26,14 +23,20 @@ namespace API.Controllers
         {
             try
             {
-                iBranchServices.GetAllBranches();
-                return GetResponse(iBranchServices.GetAllBranches(), HttpStatusCode.OK);
+                var branches = iBranchServices.GetAllBranches();
+                if (branches != null)
+                {
+                    return GetResponse(iBranchServices.GetAllBranches(), HttpStatusCode.OK);
+                }
+                else
+                {
+                    return GetResponse(HttpStatusCode.ExpectationFailed, "Cannot get all branches");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return GetResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
-
         }
 
         //POST: NgocTrang/Api/Bol/Add
@@ -46,11 +49,10 @@ namespace API.Controllers
                 iBranchServices.AddBranch(branchVM);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
-
         }
 
         //POST: NgocTrang/Api/Bol/UpdateName/1/ABC
@@ -63,10 +65,9 @@ namespace API.Controllers
                 iBranchServices.UpdateBranchName(id, name);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -80,10 +81,9 @@ namespace API.Controllers
                 iBranchServices.UpdateBranchAddress(id, address);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -97,10 +97,9 @@ namespace API.Controllers
                 iBranchServices.UpdateBranchName(id, phone);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -114,10 +113,9 @@ namespace API.Controllers
                 iBranchServices.UpdateBranchName(id, email);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -131,10 +129,9 @@ namespace API.Controllers
                 iBranchServices.UpdateBranchCode(id, branchCode);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -148,12 +145,10 @@ namespace API.Controllers
                 iBranchServices.DeleteBranch(id);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
-
     }
 }

@@ -3,6 +3,7 @@ using Domain.Command;
 using Domain.IServices;
 using Infrastructure.Decorator;
 using Infrastructure.Repository;
+using System;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
 namespace WebCore.Command
@@ -62,6 +63,10 @@ namespace WebCore.Command
                                                     validationError.ErrorMessage);
                         }
                     }
+                }
+                catch (Exception)
+                {
+                    throw;
                 }
             }         
         }

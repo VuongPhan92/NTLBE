@@ -4,12 +4,8 @@ using Domain.IServices;
 using Infrastructure.Decorator;
 using Infrastructure.Repository;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebCore.Command.EmployeeAdd
 {
@@ -58,6 +54,10 @@ namespace WebCore.Command.EmployeeAdd
                                                     validationError.ErrorMessage);
                         }
                     }
+                }
+                catch (Exception)
+                {
+                    throw;
                 }
             }
         }

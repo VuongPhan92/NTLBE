@@ -1,20 +1,15 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web;
 using System.Web.Http;
 using System.Web.Http.Cors;
-using System.Web.Mvc;
 
 namespace API.Controllers
 {
     [EnableCors(origins: "http://localhost:3000", headers: "*", methods: "*")]
     public class BaseController : ApiController
     {
-        protected HttpResponseMessage GetResponse(object obj, HttpStatusCode httpCode)
+        protected HttpResponseMessage GetResponse(object obj, HttpStatusCode httpCode,string errMessage="")
         {
             HttpResponseMessage response = Request.CreateResponse();
             response.StatusCode = httpCode;
@@ -22,16 +17,27 @@ namespace API.Controllers
             {
                 response.Content = new StringContent(JsonConvert.SerializeObject(obj));
             }
-            else if (HttpStatusCode.NotFound.Equals(httpCode))
+            else
             {
-                response.Content = new StringContent("Not Found");
-            }
-            else if (HttpStatusCode.NotImplemented.Equals(httpCode))
-            {
-                response.Content = new StringContent("Not Implemented");
+                response.Content = new StringContent(errMessage);
             }
             return response;
         }
+        protected HttpResponseMessage GetResponse(HttpStatusCode httpCode, string errMassage = "")
+        {
+            HttpResponseMessage response = Request.CreateResponse();
+            response.StatusCode = httpCode;
+            if (HttpStatusCode.OK.Equals(httpCode))
+            {
+                response.Content = new StringContent("Get request successfully handle!");
+            }
+            else
+            {
+                response.Content = new StringContent(errMassage);
+            }
+            return response;
+        }
+
         protected HttpResponseMessage PostResponse(HttpStatusCode httpCode)
         {
             HttpResponseMessage response = Request.CreateResponse();
@@ -40,13 +46,23 @@ namespace API.Controllers
             {
                 response.Content = new StringContent("Post request successfully handle!");
             }
-            else if(HttpStatusCode.BadRequest.Equals(httpCode))
-            {
-                response.Content = new StringContent("Message not sent successfully");
-            }
             else
             {
                 response.Content = new StringContent("Post request encounter error");
+            }
+            return response;
+        }
+        protected HttpResponseMessage PostResponse(HttpStatusCode httpCode, string errMesssage = " ")
+        {
+            HttpResponseMessage response = Request.CreateResponse();
+            response.StatusCode = httpCode;
+            if (HttpStatusCode.OK.Equals(httpCode))
+            {
+                response.Content = new StringContent("Post request successfully handle!");
+            }
+            else
+            {
+                response.Content = new StringContent(errMesssage);
             }
             return response;
         }

@@ -1,5 +1,4 @@
 ﻿using Data;
-using Domain.ViewModels;
 using Infrastructure.Queries;
 using Infrastructure.Repository;
 using System;
@@ -15,38 +14,11 @@ namespace WebCore.Queries
 
         public IEnumerable<BillOfLanding> Handle(BolGetAllQuery query)
         {
-
             try
             {
                 var uow = new UnitOfWork<EF>();
                 var filterDate = System.DateTime.ParseExact(query.FilterString, "dd/MM/yyyy", CultureInfo.InvariantCulture);
                 var result = uow.Repository<BillOfLanding>().GetAll("Branches,Customers").Where(p => !p.DeletedDate.HasValue && p.CreatedDate.Value.ToShortDateString().Equals(filterDate.ToShortDateString()));
-                var test = result.ToList();
-                //    result.Select(p => new BolManageVM
-            //    {
-            //        Id = p.Id,
-            //        AdditionalFee = p.AdditionalFee,
-            //        BolCode = p.BolCode,
-            //        CollectInBehalf = p.CollectInBehalf,
-            //        MerchandiseTypeId = p.MerchandiseType.Value,
-            //        Weight = (float)p.Weight.Value,
-            //        Quantity = p.Quantity.Value,
-            //        Liabilities = p.Liabilities,
-            //        Prepaid = p.Prepaid,
-            //        PrepaidTemp = p.Prepaid.ToString(),
-            //        ReceiveDate = p.ReceiveDate.Value.ToString(),
-            //        ReceiveTime = p.ReceiveTime.Value.ToString(),
-            //        SendAddress = p.SendAddress,
-            //        IsGuarantee = p.IsGuarantee.Value,
-            //        StatusCode = p.StatusCode.Value,
-            //        MixedValue = p.MixValue,
-            //        DeclareValue = p.DeclareValue,
-            //        Total = p.Total,
-            //        IsOnHand = p.IsOnHand.Value,
-            //        Start = p.Start.Value,
-            //        Contact = p.Contact.Value,
-            //    }
-            //);
                 uow.Dispose();
                 return result;
             }
@@ -62,6 +34,10 @@ namespace WebCore.Queries
                     }
                 }
                 return null;
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
     }

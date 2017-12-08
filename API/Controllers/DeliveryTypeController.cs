@@ -1,6 +1,5 @@
 ﻿using Domain.IServices;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -16,19 +15,25 @@ namespace API.Controllers
         {
             iDeliveryTypeServices = _iDeliveryTypeServices;
         }
-
         [Route("GetAll")]
         [HttpGet]
         public HttpResponseMessage GetAllDeliveryType()
         {
             try
             {
-                iDeliveryTypeServices.GetAllDeliveryType();
-                return GetResponse(iDeliveryTypeServices.GetAllDeliveryType(), HttpStatusCode.OK);
+                var deliveryTypes = iDeliveryTypeServices.GetAllDeliveryType();
+                if(deliveryTypes.Count() >0)
+                {
+                    return GetResponse(deliveryTypes, HttpStatusCode.OK);
+                }
+                else
+                {
+                    return GetResponse(HttpStatusCode.NotFound, "Cannot get all delivery types");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return GetResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
 
         }

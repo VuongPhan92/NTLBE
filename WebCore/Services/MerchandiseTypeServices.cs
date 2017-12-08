@@ -14,7 +14,7 @@ namespace WebCore.Services
         private readonly IQueryHandler<MerchandiseTypeGetAllQuery, IEnumerable<MerchandiseType>> getAllMerchandiseTypeHandler;
         private readonly ICommandHandler<MerchandiseTypeAddCommand> addMerchandiseTypeHandler;
         private readonly ICommandHandler<MerchandiseTypeDeleteCommand> deleteMerchandiseTypeHandler;
-    
+
         public MerchandiseTypeServices(
             IQueryHandler<MerchandiseTypeGetAllQuery, IEnumerable<MerchandiseType>> _getAllMerchandiseTypeHandler,
             ICommandHandler<MerchandiseTypeAddCommand> _addMerchandiseTypeHandler,
@@ -24,8 +24,7 @@ namespace WebCore.Services
             getAllMerchandiseTypeHandler = _getAllMerchandiseTypeHandler;
             addMerchandiseTypeHandler = _addMerchandiseTypeHandler;
             deleteMerchandiseTypeHandler = _deleteMerchandiseTypeHandler;
-          
-    }
+        }
 
         public IEnumerable<MerchandiseType> GetAllMerchandiseType()
         {
@@ -43,7 +42,6 @@ namespace WebCore.Services
 
         public void DeleteMerchandise(int id)
         {
-
             deleteMerchandiseTypeHandler.Handle(new MerchandiseTypeDeleteCommand { Id = id });
         }
     }

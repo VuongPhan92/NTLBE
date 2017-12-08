@@ -1,13 +1,8 @@
 ﻿using Data;
 using Infrastructure.Decorator;
 using Infrastructure.Repository;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebCore.Command
 {
@@ -37,6 +32,10 @@ namespace WebCore.Command
                                                     validationError.ErrorMessage);
                         }
                     }
+                }
+                catch (Exception)
+                {
+                    throw;
                 }
             }
         }

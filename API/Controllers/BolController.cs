@@ -1,19 +1,18 @@
-﻿using Domain.IServices;
+﻿using API.Models;
+using Domain.IServices;
+using Domain.Utility;
 using Domain.ViewModels;
-using Newtonsoft.Json;
 using System;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Linq;
-using System.Collections.Generic;
-using Domain.Utility;
 
 namespace API.Controllers
 {
     [RoutePrefix("NgocTrang/Api/Bol")]
     public class BolController : BaseController
-    {                                                                                                               
+    {
 
         #region constructor 4 injection
 
@@ -31,7 +30,7 @@ namespace API.Controllers
             IBranchServices _iBranchServices,
             IDeliveryTypeServices _iDeliveryTypeServices,
             IStatusServices _iStatusServices)
-        
+
         {
             iBolServices = _iBolServices;
             iBranchServices = _iBranchServices;
@@ -42,7 +41,7 @@ namespace API.Controllers
         }
 
         #endregion constructor 4 injection
- 
+
         //GET: NgocTrang/Api/Bol/GetComponent
         [Route("GetComponent")]
         [HttpGet]
@@ -50,22 +49,22 @@ namespace API.Controllers
         {
             ComponentVM vm = new ComponentVM();
             vm.DeliveryType = iDeliveryTypeServices.GetAllDeliveryType();
-           vm.Branch = iBranchServices.GetAllBranches();
-            vm.Type = iMerchandiseTypeServices.GetAllMerchandiseType();     
+            vm.Branch = iBranchServices.GetAllBranches();
+            vm.Type = iMerchandiseTypeServices.GetAllMerchandiseType();
             try
             {
-                if (vm.Branch != null && vm.Type != null && vm.DeliveryType!=null)
+                if (vm.Branch != null && vm.Type != null && vm.DeliveryType != null)
                 {
                     return GetResponse(vm, HttpStatusCode.OK);
                 }
                 else
                 {
-                    return GetResponse("Cannot find components for billing services", HttpStatusCode.NotFound);
+                    return GetResponse(HttpStatusCode.NotFound, "Cannot find components for billing services");
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -74,22 +73,21 @@ namespace API.Controllers
         [HttpGet]
         public string GetCurrentTimeStamp()
         {
-            string format = "ddMMyyHHmmss";
-            var currentTimeStamp = DateTime.Now.ToString(format);
+            var currentTimeStamp = DateTime.Now.ToString("ddMMyyHHmmss");
             return currentTimeStamp;
         }
-       
+
         //GET NgocTrang/Api/Bol/GetAllBol   
         [Route("GetAllBol")]
         [HttpGet]
         public HttpResponseMessage GetAllBol(string conditionQuery)
-        {       
+        {
             try
             {
                 var bolList = iBolServices.GetAllBol(conditionQuery).ToList();
-                foreach(var item in bolList)
+                foreach (var item in bolList)
                 {
-                    foreach(var sub in item.Branches)
+                    foreach (var sub in item.Branches)
                     {
                         sub.BillOfLandings = null;
                     }
@@ -104,7 +102,7 @@ namespace API.Controllers
                 {
                     foreach (var statusCode in statusList)
                     {
-                        if(bol.StatusCode == statusCode.Id)
+                        if (bol.StatusCode == statusCode.Id)
                         {
                             bol.Status = statusCode;
                         }
@@ -112,9 +110,9 @@ namespace API.Controllers
                 }
                 return GetResponse(data, HttpStatusCode.OK);
             }
-            catch(Exception e )
+            catch (Exception ex)
             {
-                return GetResponse(e.Message, HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.ExpectationFailed,ex.Message);
             }
         }
 
@@ -122,23 +120,23 @@ namespace API.Controllers
         [Route("Add")]
         [HttpPost]
         public HttpResponseMessage Add(TransactionVM obj)
-        {       
+        {
             try
             {
                 var customerInfo = obj.CustomerInfo;
-                var billInfo = obj.BillOfLandingInfo;               
+                var billInfo = obj.BillOfLandingInfo;
                 //Create new Bol for customer to confirm Transaction
-                if(billInfo.ReceiveTime==null)
+                if (billInfo.ReceiveTime == null)
                 {
                     billInfo.ReceiveTime = "00:00:00";
                 }
-                iBolServices.CreateNewBol(obj.BillOfLandingInfo,obj.CustomerInfo);
-                SendNotificationSMS(obj.BillOfLandingInfo.BolCode, obj.BillOfLandingInfo.Contact);          
+                iBolServices.CreateNewBol(obj.BillOfLandingInfo, obj.CustomerInfo);
+                SendNotificationSMS(obj.BillOfLandingInfo.BolCode, obj.BillOfLandingInfo.Contact);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                    return PostResponse(HttpStatusCode.NotAcceptable);
+                return GetResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -150,17 +148,16 @@ namespace API.Controllers
             try
             {
                 iBolServices.UpdateStatus(bolId);
-                
                 var isSuccess = SendDeliverySMS(bolId);
-                if(isSuccess)
+                if (isSuccess)
                 {
                     return PostResponse(HttpStatusCode.OK);
                 }
-                return PostResponse(HttpStatusCode.BadRequest);
+                return PostResponse(HttpStatusCode.BadRequest, "Cannot update Bol Status of bol id " + bolId);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -177,15 +174,15 @@ namespace API.Controllers
                 {
                     return PostResponse(HttpStatusCode.OK);
                 }
-                return PostResponse(HttpStatusCode.BadRequest);
+                return PostResponse(HttpStatusCode.BadRequest, "Cannot update Bol Status of bol code " + bolCode);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
-        public bool SendNotificationSMS(string bolId,string contact)
+        public bool SendNotificationSMS(string bolId, string contact)
         {
             try
             {
@@ -200,7 +197,7 @@ namespace API.Controllers
                 api.sendSMS(contactArr, msg, 2, "");
                 return true;
             }
-            catch(Exception)
+            catch 
             {
                 return false;
             }
@@ -231,7 +228,7 @@ namespace API.Controllers
                 }
                 return true;
             }
-            catch(Exception)
+            catch
             {
                 return false;
             }
@@ -243,18 +240,25 @@ namespace API.Controllers
         {
             try
             {
-                var record =  iBolServices.GetBolByBolCode(bolCode);
+                var record = iBolServices.GetBolByBolCode(bolCode);
                 var recordDelivery = record.DeliveryType1;
-                var result = new
-                {
+                //anonymous object
+                var result = new {
                     id = recordDelivery.Id,
                     name = recordDelivery.Name
                 };
-                return GetResponse(result, HttpStatusCode.OK);
+                if(result != null)
+                {
+                    return GetResponse(result, HttpStatusCode.OK);
+                }
+                else
+                {
+                    return GetResponse(HttpStatusCode.NotFound, "Cannot find bol delivery by bol code " + bolCode);
+                }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return GetResponse(e.Message, HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
 
@@ -265,30 +269,28 @@ namespace API.Controllers
             try
             {
                 var record = iBolServices.GetBolByBolCode(bolCode);
-                record.DeliveryType1.BillOfLandings = null;
-                foreach (var item in record.Branches)
+                if(record != null)
                 {
-                    item.BillOfLandings = null;
-                };
-                foreach (var sub in record.Customers)
-                {
-                    sub.BillOfLandings = null;
-                };
-                
+                    record.DeliveryType1.BillOfLandings = null;
+                    foreach (var item in record.Branches)
+                    {
+                        item.BillOfLandings = null;
+                    };
+                    foreach (var sub in record.Customers)
+                    {
+                        sub.BillOfLandings = null;
+                    };
+
                     record.Status.BillOfLandings = null;
-                record.MerchandiseType1.BillOfLandings = null;
-                return GetResponse(record, HttpStatusCode.OK);
+                    record.MerchandiseType1.BillOfLandings = null;
+                    return GetResponse(record, HttpStatusCode.OK);
+                }
+                return GetResponse(HttpStatusCode.NotFound, "Cannot find bol with bol code " + bolCode);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return GetResponse(e.Message, HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.ExpectationFailed ,ex.Message);
             }
         }
-    }
-
-    public class SMScontent
-    {
-        public string Address { get; set; }
-        public string Phone { get; set; }
-    }
+    } 
 }

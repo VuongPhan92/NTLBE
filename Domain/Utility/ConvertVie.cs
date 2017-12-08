@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Utility
+﻿namespace Domain.Utility
 {
-   public static class ConvertVie
+    public static class ConvertVie
     {
         private static readonly string[] VietNamChar = new string[]
             {

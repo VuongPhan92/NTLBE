@@ -1,6 +1,5 @@
 ﻿using Core.PageResult;
 using Data;
-using Domain.ViewModels;
 using System.Collections.Generic;
 
 namespace Domain.IServices

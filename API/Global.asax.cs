@@ -1,6 +1,4 @@
-﻿using API.Controllers;
-using Domain.ViewModels;
-using IOC;
+﻿using IOC;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.WebApi;

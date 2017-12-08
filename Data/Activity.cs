@@ -10,8 +10,7 @@
 namespace Data
 {
     using System;
-    using System.Collections.Generic;
-    
+
     public partial class Activity
     {
         public int Id { get; set; }

@@ -27,12 +27,12 @@ namespace API.Controllers
                 }
                 else
                 {
-                    return GetResponse("No data", HttpStatusCode.NotFound);
+                    return GetResponse( HttpStatusCode.NotFound,"Cannot get statistic data");
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.NotImplemented,ex.Message);
             }
         }
 
@@ -49,13 +49,12 @@ namespace API.Controllers
                 }
                 else
                 {
-                    return GetResponse("No data", HttpStatusCode.NotFound);
+                    return GetResponse(HttpStatusCode.NotFound, "Cannot get statistic data");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.NotImplemented, ex.Message);
             }
         }
 
@@ -72,13 +71,12 @@ namespace API.Controllers
                 }
                 else
                 {
-                    return GetResponse("No data", HttpStatusCode.NotFound);
+                    return GetResponse(HttpStatusCode.NotFound, "Cannot get statistic data");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.NotImplemented, ex.Message);
             }
         }
     }

@@ -1,6 +1,5 @@
 ﻿using Domain.IServices;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -25,18 +24,18 @@ namespace API.Controllers
             var statusCodeList = iStatusServices.GetAllStatusCode();
             try
             {
-                if (statusCodeList != null)
+                if (statusCodeList.Count()>0)
                 {
                     return GetResponse(statusCodeList, HttpStatusCode.OK);
                 }
                 else
                 {
-                    return GetResponse("Cannot get Status codes", HttpStatusCode.NotFound);
+                    return GetResponse(HttpStatusCode.NotFound ,"Cannot get all status list");
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                return GetResponse("Not implement", HttpStatusCode.NotImplemented);
+                return GetResponse(HttpStatusCode.NotImplemented, ex.Message);
             }
         }
       

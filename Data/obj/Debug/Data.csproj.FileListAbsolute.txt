@@ -88,3 +88,13 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\EntityFramework.Sq
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.pdb
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\bin\Debug\Data.dll.config
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\bin\Debug\Data.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\bin\Debug\Data.pdb
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\bin\Debug\EntityFramework.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\bin\Debug\EntityFramework.xml
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\obj\Debug\Data.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Data\obj\Debug\Data.pdb

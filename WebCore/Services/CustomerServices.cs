@@ -1,13 +1,11 @@
 ﻿using Core.PageResult;
 using Data;
 using Domain.IServices;
-using Domain.ViewModels;
 using Infrastructure.Decorator;
 using Infrastructure.Queries;
-using System.Collections.Generic;
-using WebCore.Command;
-using WebCore.Queries;
 using System;
+using System.Collections.Generic;
+using WebCore.Queries;
 
 namespace WebCore.Services
 {
@@ -43,7 +41,5 @@ namespace WebCore.Services
         {
             return getCustomerByPhoneHandler.Handle(new GetCustomerByPhoneQuery { Phone= phone });
         }
-
-
     }
 }

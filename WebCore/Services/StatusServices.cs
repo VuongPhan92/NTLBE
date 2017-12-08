@@ -21,6 +21,5 @@ namespace WebCore.Services
         {
             return getAllStatusCodeHandler.Handle(new StatusCodeGetAllQuery { });
         }
-
     }
 }

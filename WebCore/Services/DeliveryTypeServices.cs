@@ -12,8 +12,7 @@ namespace WebCore.Services
         private readonly IQueryHandler<DeliveryTypeGetAllQuery, IEnumerable<DeliveryType>> getAllDeliveryTypeHandler;
 
         public DeliveryTypeServices(
-            IQueryHandler<DeliveryTypeGetAllQuery, IEnumerable<DeliveryType>> _getAllDeliveryTypeHandler
-        )
+            IQueryHandler<DeliveryTypeGetAllQuery, IEnumerable<DeliveryType>> _getAllDeliveryTypeHandler)
         {
             getAllDeliveryTypeHandler = _getAllDeliveryTypeHandler; 
         }
@@ -21,7 +20,5 @@ namespace WebCore.Services
         {
             return getAllDeliveryTypeHandler.Handle(new DeliveryTypeGetAllQuery { });
         }
-
-    
     }
 }

@@ -1,8 +1,6 @@
 ﻿using Domain.IServices;
 using Domain.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -26,11 +24,18 @@ namespace API.Controllers
             try
             {
                 var employeeInfo = iEmployeeServices.GetAllEmployee();
-                return GetResponse(employeeInfo, HttpStatusCode.OK);
+                if(employeeInfo!=null)
+                {
+                    return GetResponse(employeeInfo, HttpStatusCode.OK);
+                }
+                else
+                {
+                    return GetResponse(HttpStatusCode.NotFound,"Cannot get all employee");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return GetResponse(HttpStatusCode.ExpectationFailed,ex.Message);
             }
         }
 
@@ -44,9 +49,9 @@ namespace API.Controllers
                 iEmployeeServices.AddEmployee(employeeVm);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed,ex.Message);
             }
         }
 
@@ -60,9 +65,9 @@ namespace API.Controllers
                 iEmployeeServices.DeleteEmployee(empId);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
         }
     }

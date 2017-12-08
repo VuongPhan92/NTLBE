@@ -1,13 +1,9 @@
 ﻿using Data;
 using Domain.IServices;
+using Domain.ViewModels;
 using Infrastructure.Decorator;
 using Infrastructure.Queries;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.ViewModels;
 using WebCore.Command;
 using WebCore.Queries;
 

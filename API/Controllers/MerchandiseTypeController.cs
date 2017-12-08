@@ -1,7 +1,6 @@
 ﻿using Domain.IServices;
 using Domain.ViewModels;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -26,11 +25,18 @@ namespace API.Controllers
             try
             {
                 var merchandiseType = iMerchandiseTypeServices.GetAllMerchandiseType();
-                return GetResponse(merchandiseType, HttpStatusCode.OK);
+                if(merchandiseType.Count() >0)
+                {
+                    return GetResponse(merchandiseType, HttpStatusCode.OK);
+                }
+                else
+                {
+                    return GetResponse(HttpStatusCode.NotFound,"Cannot get all merchandise types");
+                }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return GetResponse(HttpStatusCode.ExpectationFailed,ex.Message);
             }
 
         }
@@ -45,9 +51,9 @@ namespace API.Controllers
                 iMerchandiseTypeServices.AddMerchandise(merchandiseTypeVM);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed,ex.Message);
             }
         }
 
@@ -61,11 +67,10 @@ namespace API.Controllers
                 iMerchandiseTypeServices.DeleteMerchandise(id);
                 return PostResponse(HttpStatusCode.OK);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return PostResponse(HttpStatusCode.NotAcceptable);
+                return PostResponse(HttpStatusCode.ExpectationFailed, ex.Message);
             }
-
         }
     }
 }

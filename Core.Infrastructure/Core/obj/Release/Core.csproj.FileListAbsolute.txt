@@ -10,3 +10,15 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Rele
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.pdb
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\Core.dll.config
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\Core.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\Core.pdb
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\EntityFramework.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\SimpleInjector.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\EntityFramework.xml
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\bin\Release\SimpleInjector.xml
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\obj\Release\Core.dll
+C:\Users\admin\Documents\_Source\New folder\New folder\NTLBE\Core.Infrastructure\Core\obj\Release\Core.pdb

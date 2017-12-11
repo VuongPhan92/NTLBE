@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="NgocTrangModel.Account">
         <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="Role" ColumnName="Role" />
           <ScalarProperty Name="EmpId" ColumnName="EmpId" />
           <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
           <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />

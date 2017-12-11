@@ -1,6 +1,7 @@
 ﻿using Data;
 using Infrastructure.Queries;
 using Infrastructure.Repository;
+using System;
 using System.Data.Entity.Validation;
 using System.Diagnostics;
 
@@ -36,7 +37,7 @@ namespace WebCore.Queries
                 }
                 catch (Exception)
                 {
-                    throw;
+                    return null;
                 }
             }
         }

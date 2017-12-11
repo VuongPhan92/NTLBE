@@ -11,7 +11,7 @@ namespace Data
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Account
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -28,6 +28,7 @@ namespace Data
         public Nullable<System.DateTime> DeletedDate { get; set; }
         public string DeletedBy { get; set; }
         public Nullable<int> EmpId { get; set; }
+        public string Role { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Permission> Permissions { get; set; }

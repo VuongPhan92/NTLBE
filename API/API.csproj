@@ -306,6 +306,7 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
     <Content Include="apiapp.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\NgocTrangAPI - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\NgocTrangAPI - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\NgocTrangAPI - Web Deploy.pubxml" />

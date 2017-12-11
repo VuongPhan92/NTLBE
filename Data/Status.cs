@@ -11,7 +11,7 @@ namespace Data
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Status
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]

@@ -54,6 +54,7 @@
     <NavigationProperty Name="Permissions" Relationship="NgocTrangModel.Account_Permission_Ref" FromRole="Account" ToRole="Permission" />
     <Property Name="EmpId" Type="Int32" />
     <NavigationProperty Name="Employee" Relationship="NgocTrangModel.FK_Account_Employee" FromRole="Account" ToRole="Employee" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Activity">
     <Key>

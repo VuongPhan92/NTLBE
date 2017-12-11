@@ -52,6 +52,21 @@ namespace API.Controllers
             }
             return response;
         }
+        protected HttpResponseMessage PostResponse(object obj, HttpStatusCode httpCode, string errMessage = "")
+        {
+            HttpResponseMessage response = Request.CreateResponse();
+            response.StatusCode = httpCode;
+            if (HttpStatusCode.OK.Equals(httpCode))
+            {
+                response.Content = new StringContent(JsonConvert.SerializeObject(obj));
+            }
+            else
+            {
+                response.Content = new StringContent(errMessage);
+            }
+            return response;
+        }
+
         protected HttpResponseMessage PostResponse(HttpStatusCode httpCode, string errMesssage = " ")
         {
             HttpResponseMessage response = Request.CreateResponse();

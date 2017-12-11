@@ -71,6 +71,7 @@
     <Compile Include="ViewModels\ComponentVM.cs" />
     <Compile Include="ViewModels\SpeedSMS.cs" />
     <Compile Include="ViewModels\TransactionVM.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core.Infrastructure\Core\Core.csproj">

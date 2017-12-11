@@ -12,6 +12,7 @@
     <Property Name="DeletedDate" Type="datetime2" Precision="7" />
     <Property Name="DeletedBy" Type="nvarchar" MaxLength="50" />
     <Property Name="EmpId" Type="int" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Account_Permission_Ref">
     <Key>

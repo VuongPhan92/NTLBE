@@ -10,3 +10,15 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\bin\Rele
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Core\obj\Release\Core.pdb
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\Core.dll.config
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\Core.dll
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\Core.pdb
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.dll
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.SqlServer.dll
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\SimpleInjector.dll
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.xml
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\EntityFramework.SqlServer.xml
+E:\NTL\ntlbe\Core.Infrastructure\Core\bin\Release\SimpleInjector.xml
+E:\NTL\ntlbe\Core.Infrastructure\Core\obj\Release\Core.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\Core.Infrastructure\Core\obj\Release\Core.dll
+E:\NTL\ntlbe\Core.Infrastructure\Core\obj\Release\Core.pdb

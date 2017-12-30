@@ -14,3 +14,19 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructur
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.pdb
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Infrastructure.dll.config
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Infrastructure.dll
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Infrastructure.pdb
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Core.dll
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.dll
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.SqlServer.dll
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\log4net.dll
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\SimpleInjector.dll
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\Core.pdb
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.xml
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\EntityFramework.SqlServer.xml
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\log4net.xml
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\bin\Release\SimpleInjector.xml
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.dll
+E:\NTL\ntlbe\Core.Infrastructure\Infrastructure\obj\Release\Infrastructure.pdb

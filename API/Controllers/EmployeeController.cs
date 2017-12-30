@@ -12,10 +12,12 @@ namespace API.Controllers
     [RoutePrefix("NgocTrang/Api/Employee")]
     public class EmployeeController : BaseController
     {
+        private IAccountServices iAccountServices;
         private IEmployeeServices iEmployeeServices;
-        public EmployeeController(IEmployeeServices _iEmployeeServices)
+        public EmployeeController(IEmployeeServices _iEmployeeServices, IAccountServices _iAccountServices)
         {
             iEmployeeServices = _iEmployeeServices;
+            iAccountServices = _iAccountServices;
         }
 
         //GET: NgocTrang/Api/Employee/GetAll
@@ -42,6 +44,7 @@ namespace API.Controllers
             try
             {
                 iEmployeeServices.AddEmployee(employeeVm);
+                
                 return PostResponse(HttpStatusCode.OK);
             }
             catch (Exception)

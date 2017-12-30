@@ -35,6 +35,10 @@ namespace WebCore.Command.EmployeeAdd
                     employee.CreatedDate = System.DateTime.Now;
                     uow.Repository<Employee>().Add(employee);
                     uow.SubmitChanges();
+
+                    var account = new Account();
+                    account.Username = command.EmployeeInfo.FullName;
+                    account.Password = command.Password;
                     //log
                     var activity = new Activity();
                     activity.Source = "Nhân Viên";

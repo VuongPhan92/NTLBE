@@ -37,8 +37,8 @@ namespace WebCore.Services
             employee.FullName = employeeVM.FullName;
             employee.DOB = employeeVM.DOB;
             employee.Address = employeeVM.Address;
-            employee.Phone = employee.Phone;
-            addEmployeeHandler.Handle(new EmployeeAddCommand { EmployeeInfo = employee });
+            employee.Phone = employeeVM.Phone;
+            addEmployeeHandler.Handle(new EmployeeAddCommand { EmployeeInfo = employee,Password=employeeVM.Password });
         }
 
         public void DeleteEmployee(int id)

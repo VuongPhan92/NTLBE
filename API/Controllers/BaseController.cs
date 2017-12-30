@@ -11,7 +11,8 @@ using System.Web.Mvc;
 
 namespace API.Controllers
 {
-    [EnableCors(origins: "http://localhost:3000", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
+
     public class BaseController : ApiController
     {
         protected HttpResponseMessage GetResponse(object obj, HttpStatusCode httpCode)

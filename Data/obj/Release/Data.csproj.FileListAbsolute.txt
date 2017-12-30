@@ -8,3 +8,13 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Release\EntityFramework.
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Release\Data.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Release\Data.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Release\Data.pdb
+E:\NTL\ntlbe\Data\bin\Release\Data.dll.config
+E:\NTL\ntlbe\Data\bin\Release\Data.dll
+E:\NTL\ntlbe\Data\bin\Release\Data.pdb
+E:\NTL\ntlbe\Data\bin\Release\EntityFramework.dll
+E:\NTL\ntlbe\Data\bin\Release\EntityFramework.SqlServer.dll
+E:\NTL\ntlbe\Data\bin\Release\EntityFramework.xml
+E:\NTL\ntlbe\Data\bin\Release\EntityFramework.SqlServer.xml
+E:\NTL\ntlbe\Data\obj\Release\Data.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\Data\obj\Release\Data.dll
+E:\NTL\ntlbe\Data\obj\Release\Data.pdb

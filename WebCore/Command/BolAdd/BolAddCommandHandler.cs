@@ -47,7 +47,7 @@ namespace WebCore.Command
                     activity.Action = "Tạo";
                     activity.Current_value = command.BOL.BolCode;
                     activity.CreatedDate = command.BOL.CreatedDate;
-                    activity.CreatedBy = "Admin";
+                    activity.CreatedBy = "";
                     iActivityServices.AddActivity(new ActivityAddCommand { Activity = activity });
                     uow.SubmitChanges();
                 }

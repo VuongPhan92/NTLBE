@@ -1,4 +1,5 @@
-﻿using Domain.IServices;
+﻿using Domain;
+using Domain.IServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,10 +21,29 @@ namespace API.Controllers
         //POST: NgocTrang/Api/User/Login
         [Route("Login")]
         [HttpPost]
-        public HttpResponseMessage Login(string username, string password)
+        public HttpResponseMessage Login(UserViewModel credential)
         {
-            iAccountServices.ValidateAccount(username, password);
-            return PostResponse(HttpStatusCode.OK);
+            try
+            {
+                var userInfo = iAccountServices.ValidateAccount(credential.UserName, credential.Password);
+                if (userInfo != null)
+                {
+                    var harcodeEmp = new UserViewModel();
+                    harcodeEmp.Id = userInfo.Id.ToString();
+                    harcodeEmp.UserName = userInfo.Username;
+                    harcodeEmp.FullName = userInfo.Username;
+                    harcodeEmp.Role = "Emp";
+                    return GetResponse(harcodeEmp, HttpStatusCode.OK);
+                }
+                else
+                {
+                    return PostResponse(HttpStatusCode.ExpectationFailed);
+                }
+            }
+            catch(Exception ex)
+            {
+                return PostResponse(HttpStatusCode.ExpectationFailed);
+            }
         }
     }
 }

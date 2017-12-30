@@ -88,3 +88,13 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\bin\Debug\EntityFramework.Sq
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Data\obj\Debug\Data.pdb
+E:\NTL\ntlbe\Data\bin\Debug\Data.dll.config
+E:\NTL\ntlbe\Data\bin\Debug\Data.dll
+E:\NTL\ntlbe\Data\bin\Debug\Data.pdb
+E:\NTL\ntlbe\Data\bin\Debug\EntityFramework.dll
+E:\NTL\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\NTL\ntlbe\Data\bin\Debug\EntityFramework.xml
+E:\NTL\ntlbe\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\NTL\ntlbe\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\Data\obj\Debug\Data.dll
+E:\NTL\ntlbe\Data\obj\Debug\Data.pdb

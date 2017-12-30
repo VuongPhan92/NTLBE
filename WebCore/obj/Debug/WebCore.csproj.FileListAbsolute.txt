@@ -296,3 +296,36 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Debug\SimpleInjector.
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Debug\WebCore.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Debug\WebCore.pdb
+E:\NTL\ntlbe\WebCore\bin\Debug\WebCore.dll.config
+E:\NTL\ntlbe\WebCore\bin\Debug\WebCore.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\WebCore.pdb
+E:\NTL\ntlbe\WebCore\bin\Debug\AutoMapper.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\Core.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\Data.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\Domain.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\EntityFramework.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\EntityFramework.SqlServer.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\Infrastructure.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\SimpleInjector.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\System.Web.Helpers.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\System.Web.Mvc.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\System.Web.Razor.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\System.Web.WebPages.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\System.Web.WebPages.Razor.dll
+E:\NTL\ntlbe\WebCore\bin\Debug\Core.pdb
+E:\NTL\ntlbe\WebCore\bin\Debug\Infrastructure.pdb
+E:\NTL\ntlbe\WebCore\bin\Debug\Data.pdb
+E:\NTL\ntlbe\WebCore\bin\Debug\Domain.pdb
+E:\NTL\ntlbe\WebCore\bin\Debug\AutoMapper.xml
+E:\NTL\ntlbe\WebCore\bin\Debug\EntityFramework.xml
+E:\NTL\ntlbe\WebCore\bin\Debug\EntityFramework.SqlServer.xml
+E:\NTL\ntlbe\WebCore\bin\Debug\SimpleInjector.xml
+E:\NTL\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.xml
+E:\NTL\ntlbe\WebCore\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+E:\NTL\ntlbe\WebCore\obj\Debug\WebCore.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\WebCore\obj\Debug\WebCore.dll
+E:\NTL\ntlbe\WebCore\obj\Debug\WebCore.pdb

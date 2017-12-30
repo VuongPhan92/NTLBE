@@ -50,7 +50,7 @@ namespace WebCore.Command
                     activity.Previous_value = previousValue;
                     activity.Current_value = statusCodeList.Where(p => p.Id == bolEntity.StatusCode).Select(p => p.StatusName).FirstOrDefault();
                     activity.CreatedDate = System.DateTime.Now;
-                    activity.CreatedBy = "Admin";
+                    activity.CreatedBy = "";
                     iActivityServices.AddActivity(new ActivityAddCommand { Activity = activity });
                 }
                 catch (DbEntityValidationException dbEx)

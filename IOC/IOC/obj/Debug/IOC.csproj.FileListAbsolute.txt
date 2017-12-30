@@ -249,3 +249,30 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Debug\Data.pdb
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Debug\IOC.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Debug\IOC.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\IOC.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\IOC.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Core.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Domain.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Infrastructure.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Newtonsoft.Json.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\System.Net.Http.Formatting.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\System.Web.Http.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\WebCore.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\EntityFramework.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Data.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Core.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Infrastructure.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Domain.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\WebCore.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Newtonsoft.Json.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\SimpleInjector.Integration.WebApi.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\System.Net.Http.Formatting.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\System.Web.Http.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\EntityFramework.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Debug\Data.pdb
+E:\NTL\ntlbe\IOC\IOC\obj\Debug\IOC.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\IOC\IOC\obj\Debug\IOC.dll
+E:\NTL\ntlbe\IOC\IOC\obj\Debug\IOC.pdb

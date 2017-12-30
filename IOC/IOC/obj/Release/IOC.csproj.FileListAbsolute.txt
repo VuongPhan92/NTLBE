@@ -25,3 +25,30 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\bin\Release\Data.pdb
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Release\IOC.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Release\IOC.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\IOC\IOC\obj\Release\IOC.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Release\IOC.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\IOC.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Core.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Domain.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Infrastructure.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Newtonsoft.Json.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\SimpleInjector.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\SimpleInjector.Integration.WebApi.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\System.Net.Http.Formatting.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\System.Web.Http.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\WebCore.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\EntityFramework.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Data.dll
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Core.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Infrastructure.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Domain.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Release\WebCore.pdb
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Newtonsoft.Json.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Release\SimpleInjector.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Release\SimpleInjector.Integration.WebApi.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Release\System.Net.Http.Formatting.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Release\System.Web.Http.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Release\EntityFramework.xml
+E:\NTL\ntlbe\IOC\IOC\bin\Release\Data.pdb
+E:\NTL\ntlbe\IOC\IOC\obj\Release\IOC.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\IOC\IOC\obj\Release\IOC.dll
+E:\NTL\ntlbe\IOC\IOC\obj\Release\IOC.pdb

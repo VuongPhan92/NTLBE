@@ -31,3 +31,36 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\bin\Release\SimpleInjecto
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Release\WebCore.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Release\WebCore.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\WebCore\obj\Release\WebCore.pdb
+E:\NTL\ntlbe\WebCore\bin\Release\WebCore.dll.config
+E:\NTL\ntlbe\WebCore\bin\Release\WebCore.dll
+E:\NTL\ntlbe\WebCore\bin\Release\WebCore.pdb
+E:\NTL\ntlbe\WebCore\bin\Release\AutoMapper.dll
+E:\NTL\ntlbe\WebCore\bin\Release\Core.dll
+E:\NTL\ntlbe\WebCore\bin\Release\Data.dll
+E:\NTL\ntlbe\WebCore\bin\Release\Domain.dll
+E:\NTL\ntlbe\WebCore\bin\Release\EntityFramework.dll
+E:\NTL\ntlbe\WebCore\bin\Release\EntityFramework.SqlServer.dll
+E:\NTL\ntlbe\WebCore\bin\Release\Infrastructure.dll
+E:\NTL\ntlbe\WebCore\bin\Release\Microsoft.Web.Infrastructure.dll
+E:\NTL\ntlbe\WebCore\bin\Release\SimpleInjector.dll
+E:\NTL\ntlbe\WebCore\bin\Release\SimpleInjector.Integration.Web.dll
+E:\NTL\ntlbe\WebCore\bin\Release\SimpleInjector.Integration.Web.Mvc.dll
+E:\NTL\ntlbe\WebCore\bin\Release\System.Web.Helpers.dll
+E:\NTL\ntlbe\WebCore\bin\Release\System.Web.Mvc.dll
+E:\NTL\ntlbe\WebCore\bin\Release\System.Web.Razor.dll
+E:\NTL\ntlbe\WebCore\bin\Release\System.Web.WebPages.Deployment.dll
+E:\NTL\ntlbe\WebCore\bin\Release\System.Web.WebPages.dll
+E:\NTL\ntlbe\WebCore\bin\Release\System.Web.WebPages.Razor.dll
+E:\NTL\ntlbe\WebCore\bin\Release\Core.pdb
+E:\NTL\ntlbe\WebCore\bin\Release\Infrastructure.pdb
+E:\NTL\ntlbe\WebCore\bin\Release\Data.pdb
+E:\NTL\ntlbe\WebCore\bin\Release\Domain.pdb
+E:\NTL\ntlbe\WebCore\bin\Release\AutoMapper.xml
+E:\NTL\ntlbe\WebCore\bin\Release\EntityFramework.xml
+E:\NTL\ntlbe\WebCore\bin\Release\EntityFramework.SqlServer.xml
+E:\NTL\ntlbe\WebCore\bin\Release\SimpleInjector.xml
+E:\NTL\ntlbe\WebCore\bin\Release\SimpleInjector.Integration.Web.xml
+E:\NTL\ntlbe\WebCore\bin\Release\SimpleInjector.Integration.Web.Mvc.xml
+E:\NTL\ntlbe\WebCore\obj\Release\WebCore.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\WebCore\obj\Release\WebCore.dll
+E:\NTL\ntlbe\WebCore\obj\Release\WebCore.pdb

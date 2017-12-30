@@ -117,3 +117,16 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Debug\EntityFramework.
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Debug\Domain.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Debug\Domain.pdb
+E:\NTL\ntlbe\Domain\bin\Debug\Domain.dll
+E:\NTL\ntlbe\Domain\bin\Debug\Domain.pdb
+E:\NTL\ntlbe\Domain\bin\Debug\Core.dll
+E:\NTL\ntlbe\Domain\bin\Debug\Data.dll
+E:\NTL\ntlbe\Domain\bin\Debug\SimpleInjector.dll
+E:\NTL\ntlbe\Domain\bin\Debug\EntityFramework.dll
+E:\NTL\ntlbe\Domain\bin\Debug\Core.pdb
+E:\NTL\ntlbe\Domain\bin\Debug\Data.pdb
+E:\NTL\ntlbe\Domain\bin\Debug\SimpleInjector.xml
+E:\NTL\ntlbe\Domain\bin\Debug\EntityFramework.xml
+E:\NTL\ntlbe\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\Domain\obj\Debug\Domain.dll
+E:\NTL\ntlbe\Domain\obj\Debug\Domain.pdb

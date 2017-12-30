@@ -54,7 +54,6 @@ namespace WebCore.Command
                             break;
                         }   
                     }
-
                     //log
                     var activity = new Activity();
                     activity.Source = "Chi nhánh";

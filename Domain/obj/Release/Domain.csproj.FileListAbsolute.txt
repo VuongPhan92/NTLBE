@@ -11,3 +11,16 @@ C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\bin\Release\EntityFramewor
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Release\Domain.csprojResolveAssemblyReference.cache
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Release\Domain.dll
 C:\Users\ntt\Desktop\Vuong Phan\New pull\ntlbe\Domain\obj\Release\Domain.pdb
+E:\NTL\ntlbe\Domain\bin\Release\Domain.dll
+E:\NTL\ntlbe\Domain\bin\Release\Domain.pdb
+E:\NTL\ntlbe\Domain\bin\Release\Core.dll
+E:\NTL\ntlbe\Domain\bin\Release\Data.dll
+E:\NTL\ntlbe\Domain\bin\Release\SimpleInjector.dll
+E:\NTL\ntlbe\Domain\bin\Release\EntityFramework.dll
+E:\NTL\ntlbe\Domain\bin\Release\Core.pdb
+E:\NTL\ntlbe\Domain\bin\Release\Data.pdb
+E:\NTL\ntlbe\Domain\bin\Release\SimpleInjector.xml
+E:\NTL\ntlbe\Domain\bin\Release\EntityFramework.xml
+E:\NTL\ntlbe\Domain\obj\Release\Domain.csprojResolveAssemblyReference.cache
+E:\NTL\ntlbe\Domain\obj\Release\Domain.dll
+E:\NTL\ntlbe\Domain\obj\Release\Domain.pdb
